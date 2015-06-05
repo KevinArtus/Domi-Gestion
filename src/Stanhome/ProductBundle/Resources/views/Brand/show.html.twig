@@ -1,0 +1,49 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
+        <li class="active"><a href="{{ path('stanhome_product_brand_index') }}">{{ 'StanhomeProductBundle.brand.page_index.header'|trans }}</a></li>
+        <li class="active">{{ 'StanhomeProductBundle.brand.page_show.title'|trans }}{{ brand.libelle }}</li>
+    </ol>
+    <div id="fwp-content" class="col-md-12">
+        <div class="col-md-2 right">
+            <a href="{{ path('stanhome_product_category_new') }}"><i class="icon-plus left"></i><i class="icon-icon-project"></i><div>{{ 'StanhomeProductBundle.category.page_index.add'|trans }}</div></a>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 col-md-9  col-md-offset-1">
+                <h1>{{ brand.libelle }}</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel panel-default table-responsive">
+                <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="col-md-2">{{ 'StanhomeProductBundle.products.page_index.libelle'|trans }}</th>
+                            <th>{{ 'StanhomeProductBundle.products.page_index.modifier'|trans }}</th>
+                            <th>{{ 'StanhomeProductBundle.products.page_index.supprimer'|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cat in category %}
+                            <tr>
+                                <td>
+                                    <div class="checkbox left">
+                                        <input type="checkbox" class="flat-checkbox-1 check">
+                                    </div>
+                                    <a href="{{ path('stanhome_product_product_listbycat', {"idcat" : cat.id, "catlibelle" : cat.libelle, "idbrand" : brand.id, "brandlibelle" : brand.libelle }) }}">{{ cat.libelle }}</a>
+                                </td>
+                                <input type='hidden' name='_method' value='PUT'>
+                                <td class="center"><a href="{{ path('stanhome_product_category_edit', { 'id': cat.id }) }}"><i class="icon-pencil2"></i></a></td>
+                                <input type='hidden' name='_method' value='DELETE'>
+                                <td class="center"><a href="{{ path('stanhome_product_category_delete', { 'id': cat.id }) }}"><i class="icon-pencil2"></i></a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+{% endblock %}

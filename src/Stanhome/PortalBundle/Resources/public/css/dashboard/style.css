@@ -1,0 +1,70 @@
+/* Gridster */
+
+.gridster {
+    margin-top: 15px;
+}
+
+.gridster * {
+  margin:0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.gridster li {
+    font-size: 1em;
+    line-height: 100%;
+}
+
+.gridster .gs-w {
+    background: #fff;
+    cursor: pointer;
+}
+
+.gridster .preview-holder {
+    border: none!important;
+    background: #999999!important;
+}
+
+/* Widgets */
+.boxWidget {
+    color: black;
+    border: 2px solid #3381C4;
+    border-radius: 5px;
+    display: none;
+}
+
+.widgetTitle {
+    background: #3381C4!important;
+    padding: 7px 0 7px 10px;
+    color: white;
+}
+
+.widgetTitle a {
+    color: white;
+}
+
+.widgetTitle:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.widgetTitle h3 {
+    float: left;
+    margin: 3px 0 3px 0;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.widgetActions {
+    margin-top: 0px;
+    float: right;
+    margin-right: 10px;
+}

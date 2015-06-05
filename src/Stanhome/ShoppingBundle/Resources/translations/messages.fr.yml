@@ -1,0 +1,29 @@
+StanhomeShoppingBundle:
+    shoppings:
+        page_index:
+            header: "Liste des commandes"
+            listTitle: "Liste des produits de la commande:"
+            add: "Ajouter une commande"
+            reference: "Référence"
+            libelle: "Libellé"
+            details: "Afficher"
+            customer: "Client(e)"
+            date: "Date"
+            amount: "Montant"
+            cat: "Catégorie de produit"
+            noProduct: "Aucune commande trouvée"
+            modifier: "Modifier"
+            supprimer: "Supprimer"
+        page_new_edit:
+            title: "Nouvelle commande"
+            customer: "Client(e)"
+            products: "Liste des produits"
+            quantity: "Quantité"
+            product: "Produit"
+        page_show:
+            header: "Information de la commande"
+            meeting: "Réunion"
+            nomeeting: "Pas de réunion"
+            date: "Date"
+            customer: "Client(e)"
+            price: "Montant total"

@@ -1,0 +1,3 @@
+stanhome_shopping_shopping_import:
+    resource: "@StanhomeShoppingBundle/Resources/config/routing/shopping.yml"
+    prefix: /shopping
