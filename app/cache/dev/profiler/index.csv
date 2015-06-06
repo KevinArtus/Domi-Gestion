@@ -1,0 +1,9 @@
+649e68,::1,GET,http://localhost/stanhome/web/app_dev.php/,1433368728,,200
+6d371f,::1,GET,http://localhost/stanhome/web/app_dev.php/customer/,1433368738,,200
+677cee,::1,GET,http://localhost/stanhome/web/app_dev.php/customer/show/105,1433368741,,200
+e69be8,::1,GET,http://localhost/stanhome/web/app_dev.php/customer/,1433419737,e0f2dd,200
+e0f2dd,::1,GET,http://localhost/stanhome/web/app_dev.php/customer/,1433419737,,500
+a1aece,::1,GET,http://localhost/stanhome/web/app_dev.php/,1433492956,8e24cc,200
+8e24cc,::1,GET,http://localhost/stanhome/web/app_dev.php/,1433492957,,500
+5d0f8d,::1,GET,http://localhost/stanhome/web/app_dev.php/,1433510492,178298,200
+178298,::1,GET,http://localhost/stanhome/web/app_dev.php/,1433510492,,500

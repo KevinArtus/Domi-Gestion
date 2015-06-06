@@ -1,0 +1,726 @@
+[2015-05-24 00:00:18,017][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:00:18,067][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:00:48,022][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:01:18,029][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:01:48,037][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:01:48,037][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:02:18,042][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:02:48,047][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:02:48,047][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:03:18,057][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:03:48,059][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:03:48,059][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:04:18,065][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:04:48,069][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:04:48,069][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:05:18,076][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:05:48,085][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:05:48,085][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:06:18,096][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:06:48,103][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:06:48,103][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:07:18,108][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:07:48,118][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:07:48,118][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:08:18,122][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:08:48,129][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:08:48,129][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:09:18,131][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:09:48,138][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:09:48,138][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:10:18,143][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:10:48,150][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:10:48,150][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:11:18,159][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:11:48,164][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:11:48,164][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:12:18,169][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:12:48,178][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:12:48,178][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:13:18,185][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:13:48,187][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:13:48,187][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:14:18,190][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:14:48,200][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:14:48,200][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:15:18,207][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:15:48,217][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:15:48,217][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:16:18,227][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:16:48,231][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:16:48,231][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:17:18,238][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:17:48,245][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:17:48,245][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:18:18,250][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:18:48,255][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:18:48,255][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:19:18,259][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:19:48,264][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:19:48,264][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:20:18,272][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:20:48,281][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:20:48,281][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:21:18,292][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:21:48,299][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:21:48,299][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:22:18,306][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:22:48,308][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:22:48,308][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:23:18,309][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:23:48,318][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:23:48,318][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:24:18,328][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:24:48,335][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:24:48,335][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:25:18,338][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:25:48,346][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:25:48,346][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:26:18,350][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:26:48,353][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:26:48,353][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:27:18,362][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:27:48,370][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:27:48,370][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:28:18,380][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:28:48,389][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:28:48,389][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:29:18,391][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:29:48,400][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:29:48,400][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:30:18,410][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:30:48,419][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:30:48,419][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:31:18,427][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:31:48,429][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:31:48,429][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:32:18,434][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:32:48,444][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:32:48,444][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:33:18,446][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:33:48,448][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:33:48,448][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:34:18,450][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:34:48,459][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:34:48,459][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:35:18,461][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:35:48,471][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:35:48,471][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:36:18,481][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:36:48,484][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:36:48,484][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:37:18,487][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:37:48,490][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:37:48,490][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:38:18,497][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:38:48,499][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:38:48,499][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:39:18,505][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:39:48,508][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:39:48,508][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:40:18,511][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:40:48,517][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:40:48,517][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:41:18,523][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:41:48,532][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:41:48,532][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:42:18,534][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:42:48,536][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:42:48,536][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:43:18,540][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:43:48,550][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:43:48,550][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:44:18,557][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:44:48,565][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:44:48,565][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:45:18,566][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:45:48,574][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:45:48,574][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:46:18,584][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:46:48,592][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:46:48,592][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:47:18,597][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:47:48,600][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:47:48,600][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:48:18,605][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:48:48,610][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:48:48,610][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:49:18,619][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:49:48,623][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:49:48,623][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:50:18,633][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:50:48,635][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:50:48,635][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:51:18,644][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:51:48,648][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:51:48,648][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:52:18,659][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:52:48,667][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:52:48,667][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:53:18,674][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:53:48,680][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:53:48,680][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:54:18,688][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:54:48,684][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:54:48,684][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:55:18,694][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:55:48,704][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:55:48,704][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:56:18,712][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:56:48,723][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:56:48,723][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:57:18,729][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:57:48,727][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:57:48,727][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:58:18,735][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:58:48,740][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:58:48,740][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 00:59:18,747][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:59:48,756][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 00:59:48,756][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:00:18,760][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:00:48,765][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:00:48,765][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:01:18,770][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:01:48,777][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:01:48,777][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:02:18,785][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:02:48,793][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:02:48,793][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:03:18,797][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:03:48,802][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:03:48,802][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:04:18,812][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:04:48,814][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:04:48,814][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:05:18,816][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:05:48,824][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:05:48,824][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:06:18,829][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:06:48,832][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:06:48,832][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:07:18,833][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:07:48,834][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:07:48,834][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:08:18,842][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:08:48,851][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:08:48,851][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:09:18,850][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:09:48,853][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:09:48,853][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:10:18,855][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:10:48,896][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:10:48,896][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:11:18,868][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:11:48,869][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:12:18,870][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:12:18,870][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:12:48,868][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:13:18,870][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:13:18,871][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:13:48,876][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:14:18,877][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:14:18,877][INFO ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 01:14:48,881][WARN ][cluster.routing.allocation.decider] [Jumbo Carnation] high disk watermark [10%] exceeded on [TVGoOk30TjmQS3EBk83pZw][Jumbo Carnation] free: 2.8gb[1.1%], shards will be relocated away from this node
+[2015-05-24 01:15:06,736][INFO ][bootstrap                ] running graceful exit on windows
+[2015-05-24 01:15:06,923][INFO ][node                     ] [Jumbo Carnation] stopping ...
+[2015-05-24 01:15:10,808][INFO ][node                     ] [Jumbo Carnation] stopped
+[2015-05-24 01:15:10,808][INFO ][node                     ] [Jumbo Carnation] closing ...
+[2015-05-24 20:02:14,543][INFO ][node                     ] [War] version[1.5.2], pid[1492], build[62ff986/2015-04-27T09:21:06Z]
+[2015-05-24 20:02:14,553][INFO ][node                     ] [War] initializing ...
+[2015-05-24 20:02:14,583][INFO ][plugins                  ] [War] loaded [], sites [head]
+[2015-05-24 20:02:20,290][INFO ][node                     ] [War] initialized
+[2015-05-24 20:02:20,425][INFO ][node                     ] [War] starting ...
+[2015-05-24 20:02:20,953][INFO ][transport                ] [War] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.83:9300]}
+[2015-05-24 20:02:21,486][INFO ][discovery                ] [War] elasticsearch/Uon8HN00SYCrjm-GHuRdOg
+[2015-05-24 20:02:25,279][INFO ][cluster.service          ] [War] new_master [War][Uon8HN00SYCrjm-GHuRdOg][Kevin_PC][inet[/192.168.1.83:9300]], reason: zen-disco-join (elected_as_master)
+[2015-05-24 20:02:25,639][INFO ][http                     ] [War] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.83:9200]}
+[2015-05-24 20:02:25,639][INFO ][node                     ] [War] started
+[2015-05-24 20:02:26,234][INFO ][gateway                  ] [War] recovered [2] indices into cluster_state
+[2015-05-24 20:02:55,349][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:02:55,349][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:03:25,300][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:03:55,301][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:04:25,306][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:04:25,306][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:04:55,311][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:05:25,319][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:05:25,319][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:05:55,324][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:06:25,329][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:06:25,331][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:06:55,329][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:07:25,337][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:07:25,337][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:07:55,338][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:08:25,348][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:08:25,348][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:08:55,350][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:09:25,361][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:09:25,361][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:09:55,364][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:10:25,369][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:10:25,369][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:10:55,373][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:11:25,378][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:11:25,378][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 20:11:55,385][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 20:12:02,087][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x0e3d3079, /192.168.1.83:54366 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,090][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x932d7083, /192.168.1.83:54358 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,090][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x82a8f34f, /192.168.1.83:54357 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xd5e80e5b, /192.168.1.83:54365 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x35743691, /192.168.1.83:54367 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x7f6dd25f, /192.168.1.83:54366 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x9e18d06f, /192.168.1.83:54360 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x9926d7aa, /192.168.1.83:54360 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xfb4906d4, /192.168.1.83:54358 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x31b5da09, /192.168.1.83:54363 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x1ca05d58, /192.168.1.83:54368 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x6ba4fc00, /192.168.1.83:54365 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x46c84d96, /192.168.1.83:54368 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x83dfb2c4, /192.168.1.83:54356 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x7271275c, /192.168.1.83:54363 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x4edfd41f, /192.168.1.83:54359 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x54ed3a5b, /192.168.1.83:54357 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xc1afa1a3, /192.168.1.83:54362 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,089][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x13c3e070, /192.168.1.83:54364 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xea4d7903, /192.168.1.83:54361 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x162fbb37, /192.168.1.83:54364 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x708111ea, /192.168.1.83:54356 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xf9bc9511, /192.168.1.83:54361 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x2232defb, /192.168.1.83:54367 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,088][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0xa0ad4f4b, /192.168.1.83:54359 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 20:12:02,087][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x40ad937e, /192.168.1.83:54362 => /192.168.1.83:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 23:29:19,569][WARN ][transport.netty          ] [War] exception caught on transport layer [[id: 0x4ecded06]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-05-24 23:29:25,971][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
+[2015-05-24 23:29:26,141][INFO ][cluster.routing.allocation.decider] [War] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-05-24 23:29:49,560][WARN ][cluster.routing.allocation.decider] [War] high disk watermark [10%] exceeded on [Uon8HN00SYCrjm-GHuRdOg][War] free: 2.3gb[0.9%], shards will be relocated away from this node
