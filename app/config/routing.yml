@@ -1,4 +1,0 @@
-stanhome_meeting:
-    resource: "@StanhomeMeetingBundle/Resources/config/routing.yml"
-    prefix:   /
-

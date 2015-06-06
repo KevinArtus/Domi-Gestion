@@ -1,3 +1,0 @@
-stanhome_portal_dashboard_index:
-    pattern:     /
-    defaults: { _controller: StanhomePortalBundle:Dashboard:index }
