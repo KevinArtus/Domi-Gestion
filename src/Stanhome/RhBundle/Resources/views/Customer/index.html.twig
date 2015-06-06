@@ -1,0 +1,64 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
+        <li class="active"><a href="{{ path('stanhome_rh_customer_index') }}">{{ 'StanhomeRhBundle.customers.page_index.header'|trans }}</a></li>
+    </ol>
+    <div id="fwp-content" class="col-md-12">
+        <div class="row">
+            <div class="col-md-2  col-md-offset-1">
+                <h2>{{ 'StanhomeRhBundle.customers.page_index.header'|trans }} ({{ pagination.getTotalItemCount }})</h2>
+            </div>
+            {#<div class="col-md-2 right">#}
+                {#<a href="{{ path('stanhome_rh_customer_new') }}"><i class="icon-plus left"></i><i class="icon-icon-project"></i><div>{{ 'StanhomeRhBundle.customers.page_index.add'|trans }}</div></a>#}
+            {#</div>#}
+        </div>
+        <div class="container">
+            {#{% if customers is empty %}#}
+                {#{{ 'StanhomeProductBundle.products.page_index.noProduct'|trans }}#}
+            {#{% else %}#}
+                <div class="panel panel-default table-responsive">
+                    <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>{{ knp_pagination_sortable(pagination, 'Sexe', 'customers.sexe') }}</th>
+                            <th{% if pagination.isSorted('c.nom') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Nom', 'c.nom') }}</th>
+                            {#<th class="col-md-2">{{ sylius_resource_sort('name', 'StanhomeRhBundle.customers.page_index.sexe'|trans) }}</th>#}
+                            <th class="col-md-2">{{ 'StanhomeRhBundle.customers.page_index.lastName'|trans }}</th>
+                            <th class="col-md-2">{{ 'StanhomeRhBundle.customers.page_index.fixe'|trans }}</th>
+                            <th class="col-md-2">{{ 'StanhomeRhBundle.customers.page_index.mobile'|trans }}</th>
+                            <th class="col-md-2">{{ 'StanhomeRhBundle.customers.page_index.email'|trans }}</th>
+                            <th class="col-md-2">{{ 'StanhomeRhBundle.customers.page_index.address'|trans }}</th>
+                            <th>{{ 'StanhomeRhBundle.customers.page_index.modify'|trans }}</th>
+                            {#<th>{{ sylius_resource_sort('name', 'StanhomeRhBundle.customers.page_index.delete'|trans) }}</th>#}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for customer in pagination %}
+                            <tr>
+                                <td> {{ customer.sexe }}</td>
+                                <td>
+                                    <a href="{{ path('stanhome_rh_customer_show', { 'id': customer.id }) }}">{{ customer.nom }}</a>
+                                </td>
+                                <td> {{ customer.prenom }}</td>
+                                <td> {{ customer.fixe }}</td>
+                                <td> {{ customer.portable }}</td>
+                                <td> <a href="mailto:{{ customer.email }}">{{ customer.email }}</a></td>
+                                <td> {{ customer.inlineAddress }} </td>
+                                <input type='hidden' name='_method' value='PUT'>
+                                <td class="center"><a href="{{ path('stanhome_rh_customer_edit', { 'id': customer.id }) }}"><i class="icon-pencil2"></i></a></td>
+                                {#<input type='hidden' name='_method' value='DELETE'>#}
+                                {#<td class="center"><a href="{{ path('stanhome_rh_customer_delete', { 'id': customer.id }) }}"><i class="icon-pencil2"></i></a></td>#}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            {#{% endif %}#}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+<?php
+
+namespace Stanhome\OrderBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Category
+ *
+ * @ORM\Table(name="orderproduct")
+ * @ORM\Entity
+ */
+class OrderProduct
+{
+    /**
+     * @ORM\Id
+     * @ORM\ManyToOne(targetEntity="Stanhome\OrderBundle\Entity\Order")
+     */
+    private $order;
+
+    /**
+     * @ORM\Id
+     * @ORM\ManyToOne(targetEntity="Stanhome\ProductBundle\Entity\Product")
+     */
+    private $product;
+
+    /**
+     * @ORM\Column()
+     */
+    private $quantity;
+
+}

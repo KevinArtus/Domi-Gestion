@@ -1,0 +1,8 @@
+sylius_resource:
+    resources:
+        stanhome.meeting:
+            driver: doctrine/orm
+            templates: StanhomeMeetingBundle:Meeting
+            classes:
+                model: Stanhome\MeetingBundle\Entity\Meeting
+                controller: Stanhome\MeetingBundle\Controller\MeetingController

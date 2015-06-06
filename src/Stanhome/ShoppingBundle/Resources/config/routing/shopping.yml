@@ -1,0 +1,38 @@
+stanhome_shopping_shopping_index:
+    pattern: /
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:index
+
+stanhome_shopping_shopping_new:
+    pattern: /new
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:new
+
+stanhome_shopping_shopping_create:
+    pattern: /create
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:create
+
+stanhome_shopping_shopping_show:
+    pattern: /show/{id}
+    methods: [GET]
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:show
+
+stanhome_shopping_shopping_edit:
+    pattern: /edit/{id}
+    methods: [GET]
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:edit
+
+stanhome_shopping_shopping_update:
+    pattern: /update/{id}
+    methods: [POST]
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:update
+
+stanhome_shopping_shopping_delete:
+    pattern: /delete/{id}
+    methods: [GET]
+    defaults:
+        _controller: StanhomeShoppingBundle:Shopping:delete

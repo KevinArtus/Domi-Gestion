@@ -1,0 +1,9 @@
+StanhomeUserBundle:
+    portal:
+        login:
+            page_title: "Domi'Gestion"
+            title: "Connexion"
+            username: "Utilisateur"
+            password: "Mot de passe"
+            button: "Connexion"
+            remember_me: "Se souvenir de moi"

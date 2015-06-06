@@ -1,0 +1,13 @@
+{% set htmlDisplayed = false %}
+{% for priority, providers in providersWithPriority %}
+    {% for provider in providers %}
+        {% set renderHTML = provider.render(searchString, maxNbResponse) %}
+        {% if renderHTML %}
+            {% if htmlDisplayed %}
+                <li class="divider"></li>
+            {% endif %}
+            {{ renderHTML|raw }}
+            {% set htmlDisplayed = true %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}

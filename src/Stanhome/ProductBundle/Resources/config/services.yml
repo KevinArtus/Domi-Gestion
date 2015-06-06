@@ -1,0 +1,5 @@
+services:
+    stanhome_product.form.type.product:
+        class: Stanhome\ProductBundle\Form\Type\ProductType
+        tags:
+            - { name: form.product, alias: product}
