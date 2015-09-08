@@ -1,158 +1,1070 @@
-[2015-05-26 13:14:26,400][INFO ][node                     ] [Jack Kirby] version[1.5.2], pid[3676], build[62ff986/2015-04-27T09:21:06Z]
-[2015-05-26 13:14:26,400][INFO ][node                     ] [Jack Kirby] initializing ...
-[2015-05-26 13:14:26,463][INFO ][plugins                  ] [Jack Kirby] loaded [], sites [head]
-[2015-05-26 13:14:31,432][INFO ][node                     ] [Jack Kirby] initialized
-[2015-05-26 13:14:31,923][INFO ][node                     ] [Jack Kirby] starting ...
-[2015-05-26 13:14:32,277][INFO ][transport                ] [Jack Kirby] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.58.124.132:9300]}
-[2015-05-26 13:14:32,953][INFO ][discovery                ] [Jack Kirby] elasticsearch/IBukEWXxQNe7i_hxigV62w
-[2015-05-26 13:14:36,928][INFO ][cluster.service          ] [Jack Kirby] new_master [Jack Kirby][IBukEWXxQNe7i_hxigV62w][Kevin_PC][inet[/10.58.124.132:9300]], reason: zen-disco-join (elected_as_master)
-[2015-05-26 13:14:37,399][INFO ][http                     ] [Jack Kirby] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.58.124.132:9200]}
-[2015-05-26 13:14:37,399][INFO ][node                     ] [Jack Kirby] started
-[2015-05-26 13:14:46,223][INFO ][gateway                  ] [Jack Kirby] recovered [2] indices into cluster_state
-[2015-05-26 13:15:07,047][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.6gb[10.6%], replicas will not be assigned to this node
-[2015-05-26 13:15:36,953][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:16:06,954][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:16:36,957][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:17:06,961][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:17:36,964][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:17:43,521][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:17:43,770][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:18:06,963][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:18:36,975][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:19:06,982][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:19:36,989][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:20:06,993][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:20:37,001][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:21:07,013][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:21:37,016][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:21:38,076][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:21:38,154][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:21:47,699][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:21:47,774][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:21:52,728][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:21:52,802][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:22:07,020][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:22:37,020][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:23:02,941][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:23:03,027][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:23:07,022][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:23:37,036][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:23:49,404][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:23:49,473][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:24:07,051][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:24:37,066][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:25:07,082][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:25:37,089][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.7gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:26:07,093][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:26:37,107][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:26:54,284][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:26:54,370][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:27:07,120][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:27:37,121][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:28:07,122][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:28:37,135][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:29:07,140][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:29:37,153][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:30:07,162][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:30:37,166][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:30:44,437][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:30:44,509][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:30:48,438][INFO ][cluster.metadata         ] [Jack Kirby] [fime] deleting index
-[2015-05-26 13:30:48,502][INFO ][cluster.metadata         ] [Jack Kirby] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-05-26 13:31:07,168][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:31:37,182][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:32:07,187][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:32:37,190][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:33:07,201][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:33:37,204][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:34:07,205][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:34:37,205][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:35:07,206][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:35:37,208][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:36:07,208][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:36:37,208][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:37:07,209][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:37:37,210][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:38:07,210][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:38:37,211][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:39:07,212][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:39:37,213][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:40:07,213][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:40:37,214][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:41:07,215][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:41:37,215][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:42:07,216][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:42:37,217][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:43:07,218][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:43:37,218][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:44:07,219][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:44:37,224][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:45:07,220][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:45:37,221][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:46:07,222][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:46:37,223][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:47:07,223][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:47:37,224][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:48:07,225][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:48:37,225][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:49:07,226][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:49:37,229][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:50:07,232][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:50:37,239][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:51:07,254][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:51:37,266][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:52:07,280][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:52:37,290][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:53:07,293][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:53:37,307][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:54:07,310][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:54:37,314][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:55:07,313][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:55:37,314][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:56:07,315][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:56:37,315][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:57:07,316][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:57:37,326][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:58:07,327][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:58:37,329][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:59:07,336][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 13:59:37,346][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:00:07,360][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:00:37,364][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:01:07,369][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:01:37,371][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:02:07,372][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:02:37,373][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:03:07,373][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:03:37,374][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:04:07,386][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:04:37,395][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:05:07,402][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:05:37,405][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:06:07,414][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:06:37,423][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:07:07,430][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:07:37,441][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:08:07,456][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:08:37,467][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:09:07,468][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:09:37,483][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:10:07,486][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:10:37,493][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:11:07,504][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:11:37,513][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:12:07,526][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:12:37,539][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:13:07,548][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:13:37,551][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:14:07,561][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:14:37,569][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:15:07,574][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:15:37,581][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:16:07,596][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:16:37,598][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:17:07,602][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:17:37,618][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:18:07,626][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:18:37,634][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
-[2015-05-26 14:19:07,646][INFO ][cluster.routing.allocation.decider] [Jack Kirby] low disk watermark [15%] exceeded on [IBukEWXxQNe7i_hxigV62w][Jack Kirby] free: 26.8gb[10.7%], replicas will not be assigned to this node
+[2015-06-22 09:02:43,298][INFO ][node                     ] [Magik] version[1.5.2], pid[5316], build[62ff986/2015-04-27T09:21:06Z]
+[2015-06-22 09:02:43,298][INFO ][node                     ] [Magik] initializing ...
+[2015-06-22 09:02:43,330][INFO ][plugins                  ] [Magik] loaded [], sites [head]
+[2015-06-22 09:02:49,030][INFO ][node                     ] [Magik] initialized
+[2015-06-22 09:02:49,141][INFO ][node                     ] [Magik] starting ...
+[2015-06-22 09:02:49,687][INFO ][transport                ] [Magik] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.16:9300]}
+[2015-06-22 09:02:50,200][INFO ][discovery                ] [Magik] elasticsearch/jajg69UCRpyXdhSByOFp0A
+[2015-06-22 09:02:54,027][INFO ][cluster.service          ] [Magik] new_master [Magik][jajg69UCRpyXdhSByOFp0A][Kevin_PC][inet[/192.168.1.16:9300]], reason: zen-disco-join (elected_as_master)
+[2015-06-22 09:02:54,386][INFO ][http                     ] [Magik] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.16:9200]}
+[2015-06-22 09:02:54,386][INFO ][node                     ] [Magik] started
+[2015-06-22 09:02:54,942][INFO ][gateway                  ] [Magik] recovered [2] indices into cluster_state
+[2015-06-22 09:03:24,078][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:03:24,078][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:03:54,051][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:04:24,052][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:04:54,055][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:04:54,055][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:05:24,061][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:05:54,063][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:05:54,063][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:06:24,079][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:06:54,082][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:06:54,082][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:07:24,089][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:07:54,105][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:07:54,105][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:08:24,107][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:08:54,110][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:08:54,110][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:09:24,121][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:09:54,137][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:09:54,137][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:10:24,144][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:10:54,147][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:10:54,147][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:11:24,150][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:11:54,151][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:11:54,151][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:12:24,161][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:12:54,164][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:12:54,164][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:13:24,164][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:13:54,171][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:13:54,171][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:14:24,176][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:14:54,180][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:14:54,180][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:15:24,183][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:15:54,193][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:15:54,193][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:16:24,200][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:16:54,206][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:16:54,206][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:17:24,211][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:17:54,209][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:17:54,209][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:18:24,214][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:18:54,225][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:18:54,225][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 09:19:24,240][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x6fd47907, /192.168.1.16:49505 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xc5fd26de, /192.168.1.16:49501 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x03a89634, /192.168.1.16:49501 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x87ced052, /192.168.1.16:49500 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x79a8682a, /192.168.1.16:49500 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x619202b0, /192.168.1.16:49506 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xda7aedb2, /192.168.1.16:49496 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xda46e7c3, /192.168.1.16:49499 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x33e7c668, /192.168.1.16:49502 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xd283c929, /192.168.1.16:49502 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x61dd3629, /192.168.1.16:49507 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4f362a2d, /192.168.1.16:49503 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xfe2fb49c, /192.168.1.16:49497 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4279d8d4, /192.168.1.16:49499 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,516][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x3bd09067, /192.168.1.16:49495 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x133e9060, /192.168.1.16:49497 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x0e697136, /192.168.1.16:49504 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x282316f9, /192.168.1.16:49504 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xe5b42625, /192.168.1.16:49496 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x5d33a988, /192.168.1.16:49495 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x87043ae4, /192.168.1.16:49506 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xc506037f, /192.168.1.16:49498 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x886c5f17, /192.168.1.16:49505 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x7325080c, /192.168.1.16:49507 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x9a081153, /192.168.1.16:49498 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:38,500][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x38034bc4, /192.168.1.16:49503 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:40,294][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x0dadbe0c]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 09:19:40,294][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x33e93d94]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:23:59,671][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:24:02,424][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:24:02,424][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x15b726fc]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:02,424][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4e98e269]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:29,670][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xfbb372a4, /192.168.1.16:49816 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xdedd7f2d, /192.168.1.16:49818 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x31799bea, /192.168.1.16:49816 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xe12fdd42, /192.168.1.16:49819 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x3950f733, /192.168.1.16:49815 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4268df2f, /192.168.1.16:49812 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xd7b34bb5, /192.168.1.16:49822 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xa0b07f6e, /192.168.1.16:49811 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x0efbdef6, /192.168.1.16:49815 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x27aab21e, /192.168.1.16:49814 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x7ea2ddb5, /192.168.1.16:49813 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x46d1ec3c, /192.168.1.16:49810 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xc8b6f963, /192.168.1.16:49820 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xefff2514, /192.168.1.16:49817 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xe2b39bda, /192.168.1.16:49821 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xdb0d9283, /192.168.1.16:49819 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x07ec933d, /192.168.1.16:49812 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4e035e54, /192.168.1.16:49821 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x5bc5bfce, /192.168.1.16:49813 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x45d559b1, /192.168.1.16:49817 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xfdf2366b, /192.168.1.16:49810 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x98996b08, /192.168.1.16:49814 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x08438b5d, /192.168.1.16:49820 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4ee6a16c, /192.168.1.16:49822 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0x4d9dd3a9, /192.168.1.16:49811 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,283][WARN ][transport.netty          ] [Magik] exception caught on transport layer [[id: 0xe095affd, /192.168.1.16:49818 => /192.168.1.16:9300]], closing connection
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2015-06-22 10:24:59,675][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:25:29,682][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:25:29,682][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:25:59,687][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:26:29,700][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:26:29,700][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:26:56,616][WARN ][cluster.service          ] [Magik] failed to reconnect to node [Magik][jajg69UCRpyXdhSByOFp0A][Kevin_PC][inet[/192.168.1.16:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Magik][inet[/192.168.1.16:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:562)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: no further information: /192.168.1.16:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-06-22 10:26:59,705][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:27:29,711][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:27:29,711][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:27:59,716][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:28:29,731][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:28:29,731][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:28:59,735][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:29:29,737][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:29:29,737][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:29:59,740][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:30:02,799][WARN ][cluster.service          ] [Magik] failed to reconnect to node [Magik][jajg69UCRpyXdhSByOFp0A][Kevin_PC][inet[/192.168.1.16:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Magik][inet[/192.168.1.16:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:562)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: no further information: /192.168.1.16:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-06-22 10:30:29,744][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:30:29,744][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:30:59,751][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:31:29,755][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:31:29,755][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:31:59,765][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:32:29,768][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node
+[2015-06-22 10:32:29,768][INFO ][cluster.routing.allocation.decider] [Magik] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-06-22 10:32:59,773][WARN ][cluster.routing.allocation.decider] [Magik] high disk watermark [10%] exceeded on [jajg69UCRpyXdhSByOFp0A][Magik] free: 20.6gb[8.2%], shards will be relocated away from this node

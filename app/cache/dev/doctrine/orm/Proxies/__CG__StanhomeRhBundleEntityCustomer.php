@@ -64,10 +64,10 @@ class Customer extends \Stanhome\RhBundle\Entity\Customer implements \Doctrine\O
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', 'id', 'sexe', 'nom', 'prenom', 'fixe', 'portable', 'email', 'address', 'cp', 'city', 'shopping', 'meeting', 'user');
+            return array('__isInitialized__', 'id', 'sexe', 'nom', 'prenom', 'fixe', 'portable', 'email', 'address', 'cp', 'city', 'meeting', 'user');
         }
 
-        return array('__isInitialized__', 'id', 'sexe', 'nom', 'prenom', 'fixe', 'portable', 'email', 'address', 'cp', 'city', 'shopping', 'meeting', 'user');
+        return array('__isInitialized__', 'id', 'sexe', 'nom', 'prenom', 'fixe', 'portable', 'email', 'address', 'cp', 'city', 'meeting', 'user');
     }
 
     /**
@@ -406,39 +406,6 @@ class Customer extends \Stanhome\RhBundle\Entity\Customer implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getInlineAddress', array());
 
         return parent::getInlineAddress();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addShopping', array($shopping));
-
-        return parent::addShopping($shopping);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeShopping', array($shopping));
-
-        return parent::removeShopping($shopping);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getShopping()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getShopping', array());
-
-        return parent::getShopping();
     }
 
     /**

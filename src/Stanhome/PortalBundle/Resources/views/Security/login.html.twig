@@ -28,6 +28,9 @@
                     <input type="submit" value="{{ 'fime.portal.login.form.button'|trans }}" class='btn btn-primary' />
                 </div>
             </form>
+            {% if error %}
+                {{ error.messageKey|trans(error.messageData, 'security') }}
+                {% endif %}
             {#<div class="forget">#}
                 {#<a href="#"><span>{{ 'fime.portal.login.form.forgot_password'|trans }}</span></a>#}
             {#</div>#}

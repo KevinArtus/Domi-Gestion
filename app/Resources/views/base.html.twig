@@ -38,20 +38,20 @@
 
                 <ul class="nav navbar-nav">
                     <li class=""><a href="{{ path('stanhome_portal_dashboard_index') }}"><span class="icon-dashboard"></span>Dashboard</a></li>
-                    <li class="dropdown">
-                        <a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><span class="icon-icon-livrable"></span>Marques</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ path('stanhome_product_brand_index') }}">Toutes les marques</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Produits</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ path('stanhome_product_product_index') }}">Tous les produit</a></li>
-                            <li class="divider"></li>
-                            <li><a href="{{ path('stanhome_product_product_new') }}">Ajouter un produit</a></li>
-                        </ul>
-                    </li>
+                    {#<li class="dropdown">#}
+                        {#<a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><span class="icon-icon-livrable"></span>Marques</a>#}
+                        {#<ul class="dropdown-menu" role="menu">#}
+                            {#<li><a href="{{ path('stanhome_product_brand_index') }}">Toutes les marques</a></li>#}
+                        {#</ul>#}
+                    {#</li>#}
+                    {#<li class="dropdown">#}
+                        {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Produits</a>#}
+                        {#<ul class="dropdown-menu" role="menu">#}
+                            {#<li><a href="{{ path('stanhome_product_product_index') }}">Tous les produit</a></li>#}
+                            {#<li class="divider"></li>#}
+                            {#<li><a href="{{ path('stanhome_product_product_new') }}">Ajouter un produit</a></li>#}
+                        {#</ul>#}
+                    {#</li>#}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-rh"></span>Carnet clients</a>
                         <ul class="dropdown-menu" role="menu">
@@ -60,14 +60,14 @@
                             <li><a href="{{ path('stanhome_rh_customer_new') }}">Ajouter un client</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Commandes</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ path('stanhome_shopping_shopping_index') }}">Toutes les commandes</a></li>
-                            <li class="divider"></li>
-                            <li><a href="{{ path('stanhome_shopping_shopping_new') }}">Ajouter une commande</a></li>
-                        </ul>
-                    </li>
+                    {#<li class="dropdown">#}
+                        {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Commandes</a>#}
+                        {#<ul class="dropdown-menu" role="menu">#}
+                            {#<li><a href="{{ path('stanhome_shopping_shopping_index') }}">Toutes les commandes</a></li>#}
+                            {#<li class="divider"></li>#}
+                            {#<li><a href="{{ path('stanhome_shopping_shopping_new') }}">Ajouter une commande</a></li>#}
+                        {#</ul>#}
+                    {#</li>#}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Réunions</a>
                         <ul class="dropdown-menu" role="menu">
@@ -87,7 +87,7 @@
                         </ul>
                     </li>#}
                 </ul>
-    {% endif %}
+
                 <form class="navbar-form navbar-left" role="search">
                     <div class="input-group form-search">
                         <input type="text" id="searchForm" class="form-control search-query" autocomplete="off" placeholder="{% trans from "menu_item" %}Rechercher{% endtrans %}" fwp-autocomplete fwp-autocomplete-url-source="{{ path('portal_search', {'fields':'customer', 'modes':'url', 'searchString':'*searchString*'}) }}">
@@ -111,6 +111,7 @@
                     </li>
                 </ul>
             </div>
+            {% endif %}
         </div>
     </nav>
 

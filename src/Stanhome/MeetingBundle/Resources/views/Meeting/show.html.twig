@@ -3,7 +3,7 @@
 {% block content %}
     <ol class="breadcrumb">
         <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
-        <li class="active"><a href="{{ path('stanhome_shopping_shopping_index') }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.header'|trans }}</a></li>
+        <li class="active"><a href="{{ path('stanhome_meeting_meeting_index') }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.header'|trans }}</a></li>
     </ol>
     <div id="fwp-content" class="col-md-12">
         <div class="row">
@@ -45,44 +45,44 @@
                 </div>
             {% endif %}
         </div>
-        <div class="container">
-            {% if shopping is empty %}
-                {{ 'StanhomeShoppingBundle.shoppings.page_index.noProduct'|trans }}
-            {% else %}
-                <div class="panel panel-default table-responsive">
-                    <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th class="col-md-2">{{ sylius_resource_sort('name', 'StanhomeShoppingBundle.shoppings.page_index.details'|trans) }}</th>
-                            <th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.customer'|trans) }}</th>
-                            <th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.date'|trans) }}</th>
-                            <th class="col-md-2">{{ sylius_resource_sort('end_estimated_at', 'StanhomeShoppingBundle.shoppings.page_index.amount'|trans) }}</th>
-                            <th>Modifier</th>
-                            <th>Supprimer</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for shop in shopping %}
-                            <tr>
-                                <td>
-                                    <div class="checkbox left">
-                                        <input type="checkbox" class="flat-checkbox-1 check">
-                                    </div>
-                                    <a href="{{ path('stanhome_shopping_shopping_show', { 'id': shop.id }) }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.details'|trans }}</a>
-                                </td>
-                                <td><span class="label label-default"> {{ shop.customer.nom }} {{ shop.customer.prenom }}</span></td>
-                                <td><span class="label label-default">{{ shop.dateOrder|date("d/m/Y") }}</span></td>
-                                <td><span class="label label-default">{{ shop.totalPrice }} €</span></td>
-                                <input type='hidden' name='_method' value='PUT'>
-                                <td class="center"><a href="{{ path('stanhome_shopping_shopping_edit', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>
-                                <input type='hidden' name='_method' value='DELETE'>
-                                <td class="center"><a href="{{ path('stanhome_shopping_shopping_delete', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>
-                            </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            {% endif %}
-        </div>
+        {#<div class="container">#}
+            {#{% if shopping is empty %}#}
+                {#{{ 'StanhomeShoppingBundle.shoppings.page_index.noProduct'|trans }}#}
+            {#{% else %}#}
+                {#<div class="panel panel-default table-responsive">#}
+                    {#<table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">#}
+                        {#<thead>#}
+                        {#<tr>#}
+                            {#<th class="col-md-2">{{ sylius_resource_sort('name', 'StanhomeShoppingBundle.shoppings.page_index.details'|trans) }}</th>#}
+                            {#<th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.customer'|trans) }}</th>#}
+                            {#<th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.date'|trans) }}</th>#}
+                            {#<th class="col-md-2">{{ sylius_resource_sort('end_estimated_at', 'StanhomeShoppingBundle.shoppings.page_index.amount'|trans) }}</th>#}
+                            {#<th>Modifier</th>#}
+                            {#<th>Supprimer</th>#}
+                        {#</tr>#}
+                        {#</thead>#}
+                        {#<tbody>#}
+                        {#{% for shop in shopping %}#}
+                            {#<tr>#}
+                                {#<td>#}
+                                    {#<div class="checkbox left">#}
+                                        {#<input type="checkbox" class="flat-checkbox-1 check">#}
+                                    {#</div>#}
+                                    {#<a href="{{ path('stanhome_shopping_shopping_show', { 'id': shop.id }) }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.details'|trans }}</a>#}
+                                {#</td>#}
+                                {#<td><span class="label label-default"> {{ shop.customer.nom }} {{ shop.customer.prenom }}</span></td>#}
+                                {#<td><span class="label label-default">{{ shop.dateOrder|date("d/m/Y") }}</span></td>#}
+                                {#<td><span class="label label-default">{{ shop.totalPrice }} €</span></td>#}
+                                {#<input type='hidden' name='_method' value='PUT'>#}
+                                {#<td class="center"><a href="{{ path('stanhome_shopping_shopping_edit', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>#}
+                                {#<input type='hidden' name='_method' value='DELETE'>#}
+                                {#<td class="center"><a href="{{ path('stanhome_shopping_shopping_delete', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>#}
+                            {#</tr>#}
+                        {#{% endfor %}#}
+                        {#</tbody>#}
+                    {#</table>#}
+                {#</div>#}
+            {#{% endif %}#}
+        {#</div>#}
     </div>
 {% endblock %}

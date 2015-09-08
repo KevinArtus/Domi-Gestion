@@ -51,7 +51,7 @@ class __TwigTemplate_9c630ee94d713951a80c7c7fcfd755bf9c2f1e5f985f74614d25e1a33b3
                 <div class=\"pulse\"></div>
                 <img src=\"";
         // line 20
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/fimeportal/images/robot.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/fimeportal/images/robot.png"), "html", null, true);
         echo "\" alt=\"\">
             </div>
         </div>

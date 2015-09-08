@@ -143,18 +143,18 @@ class CustomerController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $customer = $em->getRepository('StanhomeRhBundle:Customer')->find($id);
-        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findAllShoppingByCustomerOrderByDate($this->get('security.token_storage')->getToken()->getUser(), $id);
+//        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findAllShoppingByCustomerOrderByDate($this->get('security.token_storage')->getToken()->getUser(), $id);
         $meetings = $em->getRepository('StanhomeMeetingBundle:Meeting')->findAllMeetingByCustomerOrderByDate($this->get('security.token_storage')->getToken()->getUser(), $id);
         if (!$customer) {
             throw $this->createNotFoundException('Unable to find Customer entity.');
         }
 
-        $paginator = $this->get('knp_paginator');
-        $pagination = $paginator->paginate(
-            $shoppings,
-            $request->query->get('page', 1),
-            5
-        );
+//        $paginator = $this->get('knp_paginator');
+//        $pagination = $paginator->paginate(
+//            $shoppings,
+//            $request->query->get('page', 1),
+//            5
+//        );
 
         $paginator2 = $this->get('knp_paginator');
         $pagination2 = $paginator2->paginate(
@@ -167,7 +167,7 @@ class CustomerController extends Controller
 
         return array(
             'customer' => $customer,
-            'pagination' => $pagination,
+//            'pagination' => $pagination,
             'pagination2' => $pagination2,
 //            'delete_form' => $deleteForm->createView(),
         );
@@ -297,7 +297,7 @@ class CustomerController extends Controller
         $searchString = $request->get("text", "");
         $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
 
-        var_dump($customers);
+//        var_dump($customers);
         return $this->render("StanhomeRhBundle:Customer:searchLi.html.twig", array("customers" => $customers));
     }
 

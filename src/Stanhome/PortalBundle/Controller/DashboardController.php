@@ -3,11 +3,16 @@ namespace Stanhome\PortalBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class DashboardController extends Controller
 {
     public function indexAction(Request $request)
     {
+        if (!$this->get('security.context')->isGranted('ROLE_USER')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
+        }
 
         $em = $this->getDoctrine()->getManager();
 

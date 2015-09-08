@@ -21,20 +21,20 @@ class __TwigTemplate_830f9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_28be6a18f8d78a0cee0752e0385e40d95b51dc0ddad005cd813c4b9cf0cd8eb8 = $this->env->getExtension("native_profiler");
-        $__internal_28be6a18f8d78a0cee0752e0385e40d95b51dc0ddad005cd813c4b9cf0cd8eb8->enter($__internal_28be6a18f8d78a0cee0752e0385e40d95b51dc0ddad005cd813c4b9cf0cd8eb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "StanhomeRhBundle:Customer:show.html.twig"));
+        $__internal_a805989fa5a9e8ca8c768258226881cc59100094f82c27111bca642247bb8a31 = $this->env->getExtension("native_profiler");
+        $__internal_a805989fa5a9e8ca8c768258226881cc59100094f82c27111bca642247bb8a31->enter($__internal_a805989fa5a9e8ca8c768258226881cc59100094f82c27111bca642247bb8a31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "StanhomeRhBundle:Customer:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_28be6a18f8d78a0cee0752e0385e40d95b51dc0ddad005cd813c4b9cf0cd8eb8->leave($__internal_28be6a18f8d78a0cee0752e0385e40d95b51dc0ddad005cd813c4b9cf0cd8eb8_prof);
+        $__internal_a805989fa5a9e8ca8c768258226881cc59100094f82c27111bca642247bb8a31->leave($__internal_a805989fa5a9e8ca8c768258226881cc59100094f82c27111bca642247bb8a31_prof);
 
     }
 
     // line 4
     public function block_content($context, array $blocks = array())
     {
-        $__internal_ea91cf1d6e8de00d15302acd6fc3225b4ee6f4b5e756f78426b8a36c46eb51f1 = $this->env->getExtension("native_profiler");
-        $__internal_ea91cf1d6e8de00d15302acd6fc3225b4ee6f4b5e756f78426b8a36c46eb51f1->enter($__internal_ea91cf1d6e8de00d15302acd6fc3225b4ee6f4b5e756f78426b8a36c46eb51f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_c76ba48b0cd11260389c173541297bfe218facc9191cc49b31601145618c7084 = $this->env->getExtension("native_profiler");
+        $__internal_c76ba48b0cd11260389c173541297bfe218facc9191cc49b31601145618c7084->enter($__internal_c76ba48b0cd11260389c173541297bfe218facc9191cc49b31601145618c7084_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 5
         echo "    <ol class=\"breadcrumb\">
@@ -164,93 +164,78 @@ class __TwigTemplate_830f9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd
         echo "                            </div>
                         </div>
                     </div>
-                    <h3>";
-        // line 80
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.nbshopping"), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["pagination"]) ? $context["pagination"] : $this->getContext($context, "pagination")), "getTotalItemCount", array()), "html", null, true);
-        echo "</h3>
-                    <div class=\"container\">
-                        <table id=\"tableShipping\" class=\"table table-hover table-responsive table-striped table-bordered\">
-                            <thead>
-                            <tr>
-                                <th>";
+                    ";
+        // line 81
+        echo "                    ";
+        // line 82
+        echo "                        ";
+        // line 83
+        echo "                            ";
+        // line 84
+        echo "                            ";
         // line 85
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.details"), "html", null, true);
-        echo "</th>
-                                <th>";
+        echo "                                ";
         // line 86
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.date"), "html", null, true);
-        echo "</th>
-                                <th>";
+        echo "                                ";
         // line 87
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.amount"), "html", null, true);
-        echo "</th>
-                                <th>";
+        echo "                                ";
         // line 88
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.modify"), "html", null, true);
-        echo "</th>
-                                <th>";
+        echo "                                ";
         // line 89
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.delete"), "html", null, true);
-        echo "</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            ";
+        echo "                                ";
+        // line 90
+        echo "                            ";
+        // line 91
+        echo "                            ";
+        // line 92
+        echo "                            ";
         // line 93
-        $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["pagination"]) ? $context["pagination"] : $this->getContext($context, "pagination")));
-        foreach ($context['_seq'] as $context["_key"] => $context["shopping"]) {
-            // line 94
-            echo "                                <tr>
-                                    <td class=\"center\">
-                                        <div class=\"checkbox left\">
-                                            <input type=\"checkbox\" class=\"flat-checkbox-1 check\">
-                                        </div>
-                                        <a href=\"";
-            // line 99
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("stanhome_shopping_shopping_show", array("id" => $this->getAttribute($context["shopping"], "id", array()))), "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["shopping"], "id", array()), "html", null, true);
-            echo "</a>
-                                    </td>
-                                    <td><span class=\"label label-default\">";
-            // line 101
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($this->getAttribute($context["shopping"], "dateOrder", array()), "date", array()), "d/m/Y"), "html", null, true);
-            echo "</span></td>
-                                    <td><span class=\"label label-default\">";
-            // line 102
-            echo twig_escape_filter($this->env, $this->getAttribute($context["shopping"], "totalPrice", array()), "html", null, true);
-            echo " €</span></td>
-                                    <input type='hidden' name='_method' value='PUT'>
-                                    <td class=\"center\"><a href=\"";
-            // line 104
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("stanhome_shopping_shopping_edit", array("id" => $this->getAttribute($context["shopping"], "id", array()))), "html", null, true);
-            echo "\"><i class=\"icon-pencil2\"></i></a></td>
-                                    <input type='hidden' name='_method' value='DELETE'>
-                                    <td class=\"center\"><a href=\"";
-            // line 106
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("stanhome_shopping_shopping_delete", array("id" => $this->getAttribute($context["shopping"], "id", array()))), "html", null, true);
-            echo "\"><i class=\"icon-pencil2\"></i></a></td>
-
-                                </tr>
-                            ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['shopping'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 110
-        echo "                            </tbody>
-                        </table>
-                    </div>
-                    <div class=\"navigation\">
-                        ";
-        // line 114
-        echo $this->env->getExtension('knp_pagination')->render((isset($context["pagination"]) ? $context["pagination"] : $this->getContext($context, "pagination")));
+        echo "                            ";
+        // line 94
+        echo "                                ";
+        // line 95
+        echo "                                    ";
+        // line 96
+        echo "                                        ";
+        // line 97
+        echo "                                            ";
+        // line 98
+        echo "                                        ";
+        // line 99
+        echo "                                        ";
+        // line 100
+        echo "                                    ";
+        // line 101
+        echo "                                    ";
+        // line 102
+        echo "                                    ";
+        // line 103
+        echo "                                    ";
+        // line 104
+        echo "                                    ";
+        // line 105
+        echo "                                    ";
+        // line 106
+        echo "                                    ";
+        // line 107
         echo "
-                    </div>
-
+                                ";
+        // line 109
+        echo "                            ";
+        // line 110
+        echo "                            ";
+        // line 111
+        echo "                        ";
+        // line 112
+        echo "                    ";
+        // line 113
+        echo "                    ";
+        // line 114
+        echo "                        ";
+        // line 115
+        echo "                    ";
+        // line 116
+        echo "
                     <h3>";
         // line 117
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("StanhomeRhBundle.customers.page_show.nbmeeting"), "html", null, true);
@@ -360,7 +345,7 @@ class __TwigTemplate_830f9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd
                     <div class=\"navigation\">
                         ";
         // line 153
-        echo $this->env->getExtension('knp_pagination')->render((isset($context["pagination"]) ? $context["pagination"] : $this->getContext($context, "pagination")));
+        echo $this->env->getExtension('knp_pagination')->render((isset($context["pagination2"]) ? $context["pagination2"] : $this->getContext($context, "pagination2")));
         echo "
                     </div>
                 </div>
@@ -369,7 +354,7 @@ class __TwigTemplate_830f9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd
     </div>
 ";
         
-        $__internal_ea91cf1d6e8de00d15302acd6fc3225b4ee6f4b5e756f78426b8a36c46eb51f1->leave($__internal_ea91cf1d6e8de00d15302acd6fc3225b4ee6f4b5e756f78426b8a36c46eb51f1_prof);
+        $__internal_c76ba48b0cd11260389c173541297bfe218facc9191cc49b31601145618c7084->leave($__internal_c76ba48b0cd11260389c173541297bfe218facc9191cc49b31601145618c7084_prof);
 
     }
 
@@ -385,6 +370,6 @@ class __TwigTemplate_830f9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd
 
     public function getDebugInfo()
     {
-        return array (  363 => 153,  357 => 149,  348 => 146,  343 => 144,  338 => 142,  334 => 141,  330 => 140,  326 => 139,  322 => 138,  318 => 137,  312 => 136,  309 => 135,  305 => 134,  298 => 130,  294 => 129,  290 => 128,  286 => 127,  282 => 126,  278 => 125,  274 => 124,  270 => 123,  266 => 122,  256 => 117,  250 => 114,  244 => 110,  234 => 106,  229 => 104,  224 => 102,  220 => 101,  213 => 99,  206 => 94,  202 => 93,  195 => 89,  191 => 88,  187 => 87,  183 => 86,  179 => 85,  169 => 80,  164 => 77,  162 => 76,  160 => 75,  150 => 69,  146 => 68,  137 => 63,  125 => 53,  114 => 45,  101 => 37,  89 => 28,  84 => 26,  75 => 22,  55 => 8,  49 => 7,  43 => 6,  40 => 5,  34 => 4,  11 => 1,);
+        return array (  348 => 153,  342 => 149,  333 => 146,  328 => 144,  323 => 142,  319 => 141,  315 => 140,  311 => 139,  307 => 138,  303 => 137,  297 => 136,  294 => 135,  290 => 134,  283 => 130,  279 => 129,  275 => 128,  271 => 127,  267 => 126,  263 => 125,  259 => 124,  255 => 123,  251 => 122,  241 => 117,  238 => 116,  236 => 115,  234 => 114,  232 => 113,  230 => 112,  228 => 111,  226 => 110,  224 => 109,  221 => 107,  219 => 106,  217 => 105,  215 => 104,  213 => 103,  211 => 102,  209 => 101,  207 => 100,  205 => 99,  203 => 98,  201 => 97,  199 => 96,  197 => 95,  195 => 94,  193 => 93,  191 => 92,  189 => 91,  187 => 90,  185 => 89,  183 => 88,  181 => 87,  179 => 86,  177 => 85,  175 => 84,  173 => 83,  171 => 82,  169 => 81,  164 => 77,  162 => 76,  160 => 75,  150 => 69,  146 => 68,  137 => 63,  125 => 53,  114 => 45,  101 => 37,  89 => 28,  84 => 26,  75 => 22,  55 => 8,  49 => 7,  43 => 6,  40 => 5,  34 => 4,  11 => 1,);
     }
 }

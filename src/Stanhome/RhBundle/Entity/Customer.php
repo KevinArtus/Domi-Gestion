@@ -64,7 +64,7 @@ class Customer
     /**
      * @ORM\OneToMany(targetEntity="Stanhome\ShoppingBundle\Entity\Shopping", mappedBy="customer")
      */
-    protected $shopping;
+//    protected $shopping;
 
     /**
      * @ORM\OneToMany(targetEntity="Stanhome\MeetingBundle\Entity\Meeting", mappedBy="customer")
@@ -323,32 +323,32 @@ class Customer
      * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
      * @return Customer
      */
-    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-        $this->shopping[] = $shopping;
-
-        return $this;
-    }
+//    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+//    {
+//        $this->shopping[] = $shopping;
+//
+//        return $this;
+//    }
 
     /**
      * Remove shopping
      *
      * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
      */
-    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-        $this->shopping->removeElement($shopping);
-    }
+//    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+//    {
+//        $this->shopping->removeElement($shopping);
+//    }
 
     /**
      * Get shopping
      *
      * @return \Doctrine\Common\Collections\Collection 
      */
-    public function getShopping()
-    {
-        return $this->shopping;
-    }
+//    public function getShopping()
+//    {
+//        return $this->shopping;
+//    }
 
     /**
      * Add meeting

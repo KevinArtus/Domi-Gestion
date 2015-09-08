@@ -2,12 +2,12 @@
 
 namespace Stanhome\ProductBundle\Entity;
 
-use Stanhome\ProductBundle\Entity\Brand;
 use Sylius\Bundle\ResourceBundle\Doctrine\ORM\EntityRepository;
 
 class BrandRepository extends EntityRepository {
 
-    private function brandCategory($id) {
+    private function brandCategory($id)
+    {
         $qb = $this->createQueryBuilder("b")
             ->select('COUNT(b)')
             ->where("b. = :token")
@@ -17,7 +17,8 @@ class BrandRepository extends EntityRepository {
         return (bool) $qb->getQuery()->getSingleScalarResult();
     }
 
-    public function getUnusedToken() {
+    public function getUnusedToken()
+    {
         do {
             $token = Tools::getRandomString(15, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
         } while ($this->tokenExists($token));

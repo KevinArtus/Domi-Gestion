@@ -76,7 +76,7 @@ class Meeting
     /**
      * @ORM\OneToMany(targetEntity="Stanhome\ShoppingBundle\Entity\Shopping", mappedBy="shopping")
      */
-    private $shopping;
+//    private $shopping;
 
 
     /**
@@ -405,30 +405,30 @@ class Meeting
      * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
      * @return Meeting
      */
-    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-        $this->shopping[] = $shopping;
-
-        return $this;
-    }
+//    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+//    {
+//        $this->shopping[] = $shopping;
+//
+//        return $this;
+//    }
 
     /**
      * Remove shopping
      *
      * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
      */
-    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-    {
-        $this->shopping->removeElement($shopping);
-    }
+//    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+//    {
+//        $this->shopping->removeElement($shopping);
+//    }
 
     /**
      * Get shopping
      *
      * @return \Doctrine\Common\Collections\Collection 
      */
-    public function getShopping()
-    {
-        return $this->shopping;
-    }
+//    public function getShopping()
+//    {
+//        return $this->shopping;
+//    }
 }

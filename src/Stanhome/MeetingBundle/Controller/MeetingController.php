@@ -10,6 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\MeetingBundle\Entity\Meeting;
 use Stanhome\MeetingBundle\Form\MeetingType;
 use Stanhome\MeetingBundle\Form\MeetingEditType;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 
 /**
@@ -21,7 +22,7 @@ class MeetingController extends Controller
 {
 
     /**
-     * Liste tous les clients
+     * Liste toutes les réunions
      *
      * @Route("/", name="meeting")
      * @Method("GET")
@@ -29,6 +30,10 @@ class MeetingController extends Controller
      */
     public function indexAction(Request $request)
     {
+        if (!$this->get('security.context')->isGranted('ROLE_USER')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
+        }
         $em = $this->getDoctrine()->getManager();
 
         $customers = $em->getRepository('StanhomeMeetingBundle:Meeting')->findAllMeetingOrderByDate($this->get('security.token_storage')->getToken()->getUser());
@@ -46,7 +51,7 @@ class MeetingController extends Controller
     }
 
     /**
-     * Liste tout les produits d'une catégorie
+     * Liste les informations d'une catégorie
      *
      * @Template("StanhomeMeetingBundle:Meeting:list.html.twig")
      */
@@ -67,9 +72,8 @@ class MeetingController extends Controller
     }
 
     /**
-     * Creates a new Meeting entity.
+     * Crée une nouvelle réunion
      *
-     * @Route("/", name="customer_create")
      * @Method("POST")
      * @Template("StanhomeMeetingBundle:Meeting:new.html.twig")
      */
@@ -100,7 +104,7 @@ class MeetingController extends Controller
     }
 
     /**
-     * Creates a form to create a Meeting entity.
+     * Crée un form afin de créer une nouvelle entité Meeting
      *
      * @param Meeting $entity The entity
      *
@@ -119,9 +123,8 @@ class MeetingController extends Controller
     }
 
     /**
-     * Displays a form to create a new Customer entity.
+     * Affiche le formulaire de création d'une entité Meeting
      *
-     * @Route("/new", name="customer_new")
      * @Method("GET")
      * @Template()
      */
@@ -137,9 +140,8 @@ class MeetingController extends Controller
     }
 
     /**
-     * Finds and displays a Meeting entity.
+     * Trouve et affiche les informations d'une entitée Meeting
      *
-     * @Route("/{reference}", name="meeting_show")
      * @Method("GET")
      * @Template()
      */
@@ -148,7 +150,7 @@ class MeetingController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $meeting = $em->getRepository('StanhomeMeetingBundle:Meeting')->find($id);
-        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findBy(array('meeting' => $id));
+//        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findBy(array('meeting' => $id));
 
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
@@ -158,7 +160,7 @@ class MeetingController extends Controller
 
         return array(
             'meeting' => $meeting,
-            'shopping' => $shoppings,
+//            'shopping' => $shoppings,
             'delete_form' => $deleteForm->createView(),
         );
     }
@@ -282,7 +284,7 @@ class MeetingController extends Controller
         $searchString = $request->get("text", "");
         $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
 
-        var_dump($customers);
+//        var_dump($customers);
         return $this->render("StanhomeMeetingBundle:Meeting:searchLi.html.twig", array("customers" => $customers));
     }
 

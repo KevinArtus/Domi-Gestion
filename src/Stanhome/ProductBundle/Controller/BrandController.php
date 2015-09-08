@@ -8,7 +8,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ProductBundle\Entity\Brand;
-use Stanhome\ProductBundle\Entity\Category;
 use Stanhome\ProductBundle\Form\BrandEditType;
 
 /**

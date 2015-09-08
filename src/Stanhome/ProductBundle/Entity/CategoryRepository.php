@@ -2,7 +2,6 @@
 
 namespace Stanhome\ProductBundle\Entity;
 
-use Stanhome\ProductBundle\Entity\Category;
 use Sylius\Bundle\ResourceBundle\Doctrine\ORM\EntityRepository;
 
 class CategoryRepository extends EntityRepository {

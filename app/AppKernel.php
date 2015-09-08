@@ -25,10 +25,10 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
             new Stanhome\RhBundle\StanhomeRhBundle(),
-            new Stanhome\ProductBundle\StanhomeProductBundle(),
+//            new Stanhome\ProductBundle\StanhomeProductBundle(),
             new Stanhome\UserBundle\StanhomeUserBundle(),
             new Stanhome\PortalBundle\StanhomePortalBundle(),
-            new Stanhome\ShoppingBundle\StanhomeShoppingBundle(),
+//            new Stanhome\ShoppingBundle\StanhomeShoppingBundle(),
 
             new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Stanhome\MeetingBundle\StanhomeMeetingBundle(),

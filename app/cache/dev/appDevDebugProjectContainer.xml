@@ -22,10 +22,8 @@
       <parameter key="FOSElasticaBundle">FOS\ElasticaBundle\FOSElasticaBundle</parameter>
       <parameter key="JMSSerializerBundle">JMS\SerializerBundle\JMSSerializerBundle</parameter>
       <parameter key="StanhomeRhBundle">Stanhome\RhBundle\StanhomeRhBundle</parameter>
-      <parameter key="StanhomeProductBundle">Stanhome\ProductBundle\StanhomeProductBundle</parameter>
       <parameter key="StanhomeUserBundle">Stanhome\UserBundle\StanhomeUserBundle</parameter>
       <parameter key="StanhomePortalBundle">Stanhome\PortalBundle\StanhomePortalBundle</parameter>
-      <parameter key="StanhomeShoppingBundle">Stanhome\ShoppingBundle\StanhomeShoppingBundle</parameter>
       <parameter key="KnpPaginatorBundle">Knp\Bundle\PaginatorBundle\KnpPaginatorBundle</parameter>
       <parameter key="StanhomeMeetingBundle">Stanhome\MeetingBundle\StanhomeMeetingBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
@@ -437,7 +435,7 @@
     <parameter key="assetic.read_from">C:\wamp\www\Stanhome\app/../web</parameter>
     <parameter key="assetic.write_to">C:\wamp\www\Stanhome\app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">C:\ProgramData\Oracle\Java\javapath\java.EXE</parameter>
+    <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
@@ -1129,10 +1127,8 @@
             <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle/Resources/translations\messages.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/translations\messages.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle/Resources/translations\messages.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/translations\messages.fr.yml</argument>
             <argument>C:\wamp\www\Stanhome\app/Resources/translations\base.fr.yml</argument>
           </argument>
@@ -2428,7 +2424,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>556f788613cef</argument>
+            <argument>55eea778447ce</argument>
           </service>
         </argument>
       </argument>
@@ -2750,7 +2746,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>556f788613cef</argument>
+            <argument>55eea778447ce</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3317,9 +3313,7 @@
           <call method="setEntityNamespaces">
             <argument type="collection">
               <argument key="StanhomeRhBundle">Stanhome\RhBundle\Entity</argument>
-              <argument key="StanhomeProductBundle">Stanhome\ProductBundle\Entity</argument>
               <argument key="StanhomeUserBundle">Stanhome\UserBundle\Entity</argument>
-              <argument key="StanhomeShoppingBundle">Stanhome\ShoppingBundle\Entity</argument>
               <argument key="StanhomeMeetingBundle">Stanhome\MeetingBundle\Entity</argument>
             </argument>
           </call>
@@ -3341,9 +3335,7 @@
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
                       </argument>
                     </service>
@@ -3356,24 +3348,7 @@
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>Stanhome\ProductBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
                       </argument>
                     </service>
@@ -3386,24 +3361,7 @@
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>Stanhome\ShoppingBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle\Entity</argument>
                         <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
                       </argument>
                     </service>
@@ -4348,9 +4306,6 @@
       <tag name="form.type" alias="stanhome_rhbundle_user_selector"/>
       <argument type="service" id="doctrine.orm.default_entity_manager"/>
     </service>
-    <service id="stanhome_product.form.type.product" class="Stanhome\ProductBundle\Form\Type\ProductType">
-      <tag name="form.product" alias="product"/>
-    </service>
     <service id="knp_paginator" class="Knp\Component\Pager\Paginator">
       <argument type="service" id="debug.event_dispatcher"/>
       <call method="setDefaultPaginatorOptions">
@@ -4792,20 +4747,12 @@
         <argument>StanhomeRh</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\ProductBundle/Resources/views</argument>
-        <argument>StanhomeProduct</argument>
-      </call>
-      <call method="addPath">
         <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/views</argument>
         <argument>StanhomeUser</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/views</argument>
         <argument>StanhomePortal</argument>
-      </call>
-      <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle/Resources/views</argument>
-        <argument>StanhomeShopping</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/views</argument>
@@ -5038,10 +4985,8 @@
                       <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
                       <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ProductBundle">C:\wamp\www\Stanhome\src\Stanhome\ProductBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ShoppingBundle">C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle/Resources/config/serializer</argument>
                       <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
@@ -5072,10 +5017,8 @@
                       <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
                       <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ProductBundle">C:\wamp\www\Stanhome\src\Stanhome\ProductBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ShoppingBundle">C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle/Resources/config/serializer</argument>
                       <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
@@ -5106,10 +5049,8 @@
                       <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
                       <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ProductBundle">C:\wamp\www\Stanhome\src\Stanhome\ProductBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\ShoppingBundle">C:\wamp\www\Stanhome\src\Stanhome\ShoppingBundle/Resources/config/serializer</argument>
                       <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
                       <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
