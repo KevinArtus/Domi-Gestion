@@ -77,6 +77,20 @@ class Customer
      */
     protected $user;
 
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="latitude", type="float", nullable=true)
+     */
+    public $latitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="longitude", type="float", nullable=true)
+     */
+    public $longitude;
+
     public function __toString()
     {
         return sprintf("%s %s", strtoupper($this->getNom()), $this->getPrenom());
@@ -404,5 +418,51 @@ class Customer
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set latitude
+     *
+     * @param float $latitude
+     * @return Fiche
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Get latitude
+     *
+     * @return float
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * Set longitude
+     *
+     * @param float $longitude
+     * @return Fiche
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    /**
+     * Get longitude
+     *
+     * @return float
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
     }
 }

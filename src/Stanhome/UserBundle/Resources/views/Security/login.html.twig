@@ -9,7 +9,7 @@
         <div class="login-body">
             <h2>{{ 'StanhomeUserBundle.portal.login.title'|trans }}</h2>
             {% if error %}
-                <div class="alert alert-error">{{ error|trans }}</div>
+                <div class="alert alert-error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
             <form action="{{ path('fos_user_security_check') }}" method="post" class='form-validate'>
                 <div class="control-group">

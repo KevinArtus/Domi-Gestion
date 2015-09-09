@@ -10,3 +10,6 @@
 /.idea/
 /web/app.php
 /elasticsearch-1.5.2/
+/web/config.php
+/src/Stanhome/ProductBundle
+/src/Stanhome/ShoppingBundle

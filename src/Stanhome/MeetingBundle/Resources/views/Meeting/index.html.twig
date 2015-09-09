@@ -37,7 +37,7 @@
                                 <a href="{{ path('stanhome_meeting_meeting_show', { 'id': meeting.id }) }}"> {{ 'StanhomeMeetingBundle.meetings.page_index.details'|trans }}</a>
                             </td>
                             <td> {{ meeting.date|date("d/m/Y") }} </td>
-                            <td> {{ meeting.customer.nom }} {{ meeting.customer.prenom }}</td>
+                            <td> {{ meeting.customer.nom }} {{ meeting. customer.prenom }}</td>
                             <td> {{ meeting.address }} {{ meeting.cp }} {{ meeting.city }} </td>
                             <input type='hidden' name='_method' value='PUT'>
                             <td class="center"><a href="{{ path('stanhome_meeting_meeting_edit', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>

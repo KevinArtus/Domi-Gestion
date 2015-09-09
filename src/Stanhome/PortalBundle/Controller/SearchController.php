@@ -18,13 +18,13 @@ class SearchController extends Controller {
 	 */
 	public function searchAction($fields, $modes, $searchString) {
 		// Retrieve the modes
-		$arrayModes = split(',', $modes);
+		$arrayModes = explode(',', $modes);
 
-		// Retrieve the max number of responses
-		if (preg_match('/^\[(\d+)\]/', $fields, $matches))
-			$maxNbResponses = $matches[1];
-		else
-			$maxNbResponses = self::$defaultMaxNbResponses;
+//		// Retrieve the max number of responses
+//		if (preg_match('/^\[(\d+)\]/', $fields, $matches))
+//			$maxNbResponses = $matches[1];
+//		else
+//			$maxNbResponses = self::$defaultMaxNbResponses;
 
 		// Run the parsing of fields
 		preg_match_all('/([a-zA-Z]+)(?:\[(\d+)\])?/', $fields, $matches, PREG_SET_ORDER);
