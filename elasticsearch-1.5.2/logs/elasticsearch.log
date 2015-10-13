@@ -1,31 +1,11 @@
-[2015-09-09 10:30:09,500][INFO ][node                     ] [Ape-X] version[1.5.2], pid[8448], build[62ff986/2015-04-27T09:21:06Z]
-[2015-09-09 10:30:09,503][INFO ][node                     ] [Ape-X] initializing ...
-[2015-09-09 10:30:09,508][INFO ][plugins                  ] [Ape-X] loaded [], sites [head]
-[2015-09-09 10:30:11,455][INFO ][node                     ] [Ape-X] initialized
-[2015-09-09 10:30:11,508][INFO ][node                     ] [Ape-X] starting ...
-[2015-09-09 10:30:11,648][INFO ][transport                ] [Ape-X] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.16:9300]}
-[2015-09-09 10:30:11,718][INFO ][discovery                ] [Ape-X] elasticsearch/iOE-4h4MRVm-sc58nbyh-Q
-[2015-09-09 10:30:15,533][INFO ][cluster.service          ] [Ape-X] new_master [Ape-X][iOE-4h4MRVm-sc58nbyh-Q][PC-Kévin][inet[/192.168.1.16:9300]], reason: zen-disco-join (elected_as_master)
-[2015-09-09 10:30:15,590][INFO ][http                     ] [Ape-X] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.16:9200]}
-[2015-09-09 10:30:15,590][INFO ][node                     ] [Ape-X] started
-[2015-09-09 10:30:16,140][INFO ][gateway                  ] [Ape-X] recovered [2] indices into cluster_state
-[2015-09-09 10:31:25,433][INFO ][node                     ] [Invisible Woman] version[1.5.2], pid[8860], build[62ff986/2015-04-27T09:21:06Z]
-[2015-09-09 10:31:25,433][INFO ][node                     ] [Invisible Woman] initializing ...
-[2015-09-09 10:31:25,438][INFO ][plugins                  ] [Invisible Woman] loaded [], sites [head]
-[2015-09-09 10:31:27,226][INFO ][node                     ] [Invisible Woman] initialized
-[2015-09-09 10:31:27,305][INFO ][node                     ] [Invisible Woman] starting ...
-[2015-09-09 10:31:27,469][INFO ][transport                ] [Invisible Woman] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.1.16:9301]}
-[2015-09-09 10:31:27,541][INFO ][discovery                ] [Invisible Woman] elasticsearch/e-aJwxMAR8-KP_DUlw7Ksg
-[2015-09-09 10:31:30,578][INFO ][cluster.service          ] [Ape-X] added {[Invisible Woman][e-aJwxMAR8-KP_DUlw7Ksg][PC-Kévin][inet[/192.168.1.16:9301]],}, reason: zen-disco-receive(join from node[[Invisible Woman][e-aJwxMAR8-KP_DUlw7Ksg][PC-Kévin][inet[/192.168.1.16:9301]]])
-[2015-09-09 10:31:30,609][INFO ][cluster.service          ] [Invisible Woman] detected_master [Ape-X][iOE-4h4MRVm-sc58nbyh-Q][PC-Kévin][inet[/192.168.1.16:9300]], added {[Ape-X][iOE-4h4MRVm-sc58nbyh-Q][PC-Kévin][inet[/192.168.1.16:9300]],}, reason: zen-disco-receive(from master [[Ape-X][iOE-4h4MRVm-sc58nbyh-Q][PC-Kévin][inet[/192.168.1.16:9300]]])
-[2015-09-09 10:31:30,800][INFO ][http                     ] [Invisible Woman] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.1.16:9201]}
-[2015-09-09 10:31:30,801][INFO ][node                     ] [Invisible Woman] started
-[2015-09-09 10:31:32,044][INFO ][bootstrap                ] running graceful exit on windows
-[2015-09-09 10:31:32,045][INFO ][node                     ] [Invisible Woman] stopping ...
-[2015-09-09 10:31:32,045][INFO ][cluster.service          ] [Ape-X] removed {[Invisible Woman][e-aJwxMAR8-KP_DUlw7Ksg][PC-Kévin][inet[/192.168.1.16:9301]],}, reason: zen-disco-node_left([Invisible Woman][e-aJwxMAR8-KP_DUlw7Ksg][PC-Kévin][inet[/192.168.1.16:9301]])
-[2015-09-09 10:31:32,076][INFO ][node                     ] [Invisible Woman] stopped
-[2015-09-09 10:31:32,076][INFO ][node                     ] [Invisible Woman] closing ...
-[2015-09-09 10:31:32,076][INFO ][node                     ] [Invisible Woman] closed
-[2015-09-09 10:31:58,160][INFO ][cluster.metadata         ] [Ape-X] [fime] deleting index
-[2015-09-09 10:31:58,236][INFO ][cluster.metadata         ] [Ape-X] [fime] creating index, cause [api], templates [], shards [5]/[1], mappings [Customers]
-[2015-09-09 10:31:59,735][INFO ][cluster.metadata         ] [Ape-X] [fime] update_mapping [Customers] (dynamic)
+[2015-10-13 09:13:11,971][INFO ][node                     ] [Starshine] version[1.5.2], pid[7408], build[62ff986/2015-04-27T09:21:06Z]
+[2015-10-13 09:13:11,971][INFO ][node                     ] [Starshine] initializing ...
+[2015-10-13 09:13:12,000][INFO ][plugins                  ] [Starshine] loaded [], sites [head]
+[2015-10-13 09:13:14,933][INFO ][node                     ] [Starshine] initialized
+[2015-10-13 09:13:15,022][INFO ][node                     ] [Starshine] starting ...
+[2015-10-13 09:13:15,289][INFO ][transport                ] [Starshine] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.224.10.127:9300]}
+[2015-10-13 09:13:15,399][INFO ][discovery                ] [Starshine] elasticsearch/Re8QQMGQRNuEiYHZhfXnEQ
+[2015-10-13 09:13:19,219][INFO ][cluster.service          ] [Starshine] new_master [Starshine][Re8QQMGQRNuEiYHZhfXnEQ][PC-Kévin][inet[/10.224.10.127:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 09:13:19,266][INFO ][http                     ] [Starshine] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.224.10.127:9200]}
+[2015-10-13 09:13:19,281][INFO ][node                     ] [Starshine] started
+[2015-10-13 09:13:19,831][INFO ][gateway                  ] [Starshine] recovered [2] indices into cluster_state

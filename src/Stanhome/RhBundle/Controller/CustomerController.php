@@ -85,6 +85,14 @@ class CustomerController extends Controller
             $em->persist($entity);
             $em->flush();
 
+            $adress = str_replace(" ", "+",$entity->getAddress());
+            $cp = $entity->getCp();
+
+            $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
+            $json = json_decode($coordpolaire);
+            $entity->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
+            $entity->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
+
             return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $entity->getId())));
         }
 
@@ -150,14 +158,11 @@ class CustomerController extends Controller
         }
 
 
-        $adress = str_replace(" ", "_",$customer->getAddress());
-        $adress = utf8_encode($adress);
-        $adress = urlencode($adress);
+        $adress = str_replace(" ", "+",$customer->getAddress());
         $cp = $customer->getCp();
 
         $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
         $json = json_decode($coordpolaire);
-            var_dump($json);
 //        $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
 //        $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
 
@@ -252,8 +257,13 @@ class CustomerController extends Controller
 
 //        if ($editForm->isValid()) {
             $em->flush();
+        $adress = str_replace(" ", "+",$entity->getAddress());
+        $cp = $entity->getCp();
 
-//            var_dump($id);
+        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
+        $json = json_decode($coordpolaire);
+        $entity->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
+        $entity->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
 
             return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $entity->getId())));
 //        }
