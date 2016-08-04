@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: 'C:\wamp\www\Stanhome\app/config/routing_dev.yml'
+    resource: /media/www-dev/public/Domi-Gestion/app/config/routing_dev.yml

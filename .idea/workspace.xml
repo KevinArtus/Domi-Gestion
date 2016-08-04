@@ -2,8 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2e514d2-a19e-45f7-844b-99165945ab8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/1b646f0f1c26aee207673b26c768151cdc6d2137#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/1b646f0f1c26aee207673b26c768151cdc6d2137.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$address.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$city.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$cp.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$email.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$fixe.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$meeting.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$nom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$portable.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$prenom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$sexe.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/339cb2c9eb16110df66b54a0dfa4d29ec0af122f$user.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/790c64d50e3a356e588a187ce078a88c8f69d311#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/790c64d50e3a356e588a187ce078a88c8f69d311#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/790c64d50e3a356e588a187ce078a88c8f69d311.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40#toolbarAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$address.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$city.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$cp.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$customer.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$date.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$montantHt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$montantKm.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$montantTtc.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$nbKm.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$nbPersons.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$profit.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ba8b90fca5e840b613b692ba932da9062b93092f$user.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/doctrine/orm/Proxies/__CG__StanhomeRhBundleEntityCustomer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/doctrine/orm/Proxies/__CG__StanhomeUserBundleEntityUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0b/4d/79fb04262bb427f8f029582b67a9bbcf57f9515797f639b3a4fe2f2b950c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/19/71/bf1d46872ee6614654cc272235d2d8938f42178c4d6c64ca3c2e1c08a25f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1f/b6/8c16011f5b48048d701c9b80c7d6c2cff9c4b8fd064981ed724cd9edd14e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/26/0d/95c87c4318f734f61e67f0ac43a6dc20c34e51096b51921f89ce2e140ce2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/2f/1f9525abbe7b02cf096ab5b8132cad633b7e18e047a4732e1f7ee45412c5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2c/6f/87544bfe5d7c611ffec5ae27a860f5c4a6d3ae6130368dbc2d65b5137d7b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2f/5a/19afd8f8804bc05a639a9ef20ad6ee36cfcbcdd2188beacb75e95c7868cb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/35/d1/8f89c45ab25cebd26899a103f3eb2a2b677b691ef692ed588f46d33351ff.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/7b/eeca9cbc8766390e1eae770cc6b7d025e8be18b6c3098537114dd71d2e47.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/a0/660bc55e1a990f503e37bd7351d747887592859fe5dfe48e4a4d1a9a761a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3a/a7/ea75de2fc9ed15c5121e2099cc42c8b5f378eea0d6a13b52e4c7ac3e4704.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/40/be/b743414f49d42260f18a2cdf8c0c172e7398018cc4784b445a19874e241b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/47/02/19721659ff9c322c432ec3f944307f642076b749af6c7b8b24a61045829a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4a/57/816059eb911b3c14f397a4b91d16dc4e69fb11da026c38f8dbfab9641918.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4d/9c/7fa35abf24ed60a55145876feb628b14a331b011a532f670da67ed441a86.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/56/f1/e393d657a8df03da93550e5e4d5e8aa95b34cbe50ff69edc08cfff68837c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/62/f6/4b5a9e9d7f9e64e9fe41122d7faf752d1071835b9f19044eacb6e5af6d25.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/63/00/ac5610658b15e7542b860523aa1dfe5a4ff07ca36a4a1096942ef9408ee9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/64/cc/7e262edfc47e29aa3fd2b29d5df5f01e9a4fdfab1901a866dec24879e6cf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/68/98/8890170cab909c4d8ad3d89caaa75bbd741c6a9f16bf3e83da43cf74dc86.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/72/14/f03938c08343f4be0e2b1f89be844eca12b089b73aaaa2ee6a8c26d1cd9b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/75/8e/4dc7cbf2650bb807a2b2193d295bdc520c330db5ff9d8d811c953aebbcf3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7a/08/eae752f47e68609f43e62a4b8bba9607757642a62a40ccf9466fa85fcffa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/83/0f/9d6137d6f897226e9d5f47cc66d2dfee3fc2940ca7cdacf65ff5ddd2beaf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/83/3a/2df2b1f00ea8f599368d58b7915867dfeab1e4b4065936cf63259a86270a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/a8/bcff74c15a502c593d8336b8dce67380d5fcfef43a0f74a6e2b55a98b20a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8b/b3/86b352f4db1235e1a5efaa34b2231af630d69745c3e56b512d626f880191.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/97/5b/438b9341e246c12c493aaf8e45a2b8c7386b23a5fc79148d732cfa02d6da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9c/0f/6eda93d9f67ef0dfba930ca1615b9425fa099fabd62e950d0488c6adac43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a1/3c/888fdd08717cef3b397514b948fb1ecb4d2bf15af1b4bbfc13b4d97324f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a4/ed/21beca3621e71372b92661585fc10f69cab9087f232136fc0f13d138844a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b1/45/58b1813e2d60b369abdafa865dad8191f32c13e0c42ab9fb2e9c41870047.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b5/87/f6583404074b18be39a25c9bd5466d22e90ca9e3728598f4dfd6f083a081.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ba/c5/b632360487ec60eb6d8987ec5c25bf13f7e28e08e6b27ab391b7d85107d9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/be/88/85012e0236098036ae159588d775560e96f1a9a3e626ee5d451bf254848d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c9/69/c42dc43bda9f74cbfb22e2a8348948818957825f02d7c79159c4a4a50cd5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d0/63/7f91a44e18b4718f1b2f5e898190f0a65814d73d9d0aacc94071d7a8c0b5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/dc/ba/d1e18bb9c3dd0dbc6e46dee3abceb053e753dab04c340235c8a407f797c4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e3/a2/535a7b62b35ae10e0c24c573584fde23f8343901f970e914b46292969650.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e6/83/52f46aa1dd0a4610ac6c95f81914068e5f3accaa388339625f558e8fed6d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f5/b4/2425919f48e24613821810ed4a0a0fc77bb7e67b91a86425e050e8679cb1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fa/b8/69bcb0fee619ad7574572599ecace00a8da0b537d37d24b5358cc0fc02d3.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" afterPath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
     </list>
     <ignored path="Stanhome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,14 +257,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MeetingController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MeetingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stanhome/MeetingBundle/Controller/MeetingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="169" column="6" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
+            <state relative-caret-position="741">
+              <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
               <folding>
                 <element signature="e#4348#4379#1#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -533,12 +630,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1426783372194</updated>
-      <workItem from="1470301117120" duration="141000" />
+      <workItem from="1470301117120" duration="283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141000" />
+    <option name="totallyTimeSpent" value="283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1491" y="-4" width="1229" height="1028" extended-state="6" />
@@ -947,21 +1044,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stanhome/MeetingBundle/Controller/MeetingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding>
+            <element signature="e#4348#4379#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stanhome/MeetingBundle/Controller/MeetingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="169" column="6" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
-          <folding>
-            <element signature="e#4348#4379#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

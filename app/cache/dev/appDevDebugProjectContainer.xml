@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">C:\wamp\www\Stanhome\app</parameter>
+    <parameter key="kernel.root_dir">/media/www-dev/public/Domi-Gestion/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">C:\wamp\www\Stanhome\app\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\wamp\www\Stanhome\app\logs</parameter>
+    <parameter key="kernel.name">ap_</parameter>
+    <parameter key="kernel.cache_dir">/media/www-dev/public/Domi-Gestion/app/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/media/www-dev/public/Domi-Gestion/app/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -116,7 +116,7 @@
     <parameter key="session.storage.options" type="collection">
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\wamp\www\Stanhome\app\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">/media/www-dev/public/Domi-Gestion/app/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="security.secure_random.class">Symfony\Component\Security\Core\Util\SecureRandom</parameter>
     <parameter key="form.resolved_type_factory.class">Symfony\Component\Form\ResolvedFormTypeFactory</parameter>
@@ -173,7 +173,7 @@
     <parameter key="data_collector.form.extractor.class">Symfony\Component\Form\Extension\DataCollector\FormDataExtractor</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\wamp\www\Stanhome\app\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/media/www-dev/public/Domi-Gestion/app/cache/dev/profiler</parameter>
     <parameter key="profiler.storage.username"></parameter>
     <parameter key="profiler.storage.password"></parameter>
     <parameter key="profiler.storage.lifetime">86400</parameter>
@@ -197,7 +197,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">C:\wamp\www\Stanhome\app\cache\dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">/media/www-dev/public/Domi-Gestion/app/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -208,7 +208,7 @@
     <parameter key="debug.stopwatch.class">Symfony\Component\Stopwatch\Stopwatch</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.event_dispatcher.class">Symfony\Component\HttpKernel\Debug\TraceableEventDispatcher</parameter>
-    <parameter key="debug.container.dump">C:\wamp\www\Stanhome\app\cache\dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/media/www-dev/public/Domi-Gestion/app/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="debug.controller_resolver.class">Symfony\Component\HttpKernel\Controller\TraceableControllerResolver</parameter>
     <parameter key="security.context.class">Symfony\Component\Security\Core\SecurityContext</parameter>
     <parameter key="security.user_checker.class">Symfony\Component\Security\Core\User\UserChecker</parameter>
@@ -398,7 +398,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">C:\wamp\www\Stanhome\app\cache\dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/media/www-dev/public/Domi-Gestion/app/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -423,7 +423,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">C:\wamp\www\Stanhome\app\cache\dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">/media/www-dev/public/Domi-Gestion/app/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection"/>
     <parameter key="assetic.twig_extension.class">Symfony\Bundle\AsseticBundle\Twig\AsseticExtension</parameter>
     <parameter key="assetic.twig_formula_loader.class">Assetic\Extension\Twig\TwigFormulaLoader</parameter>
@@ -433,8 +433,8 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">C:\wamp\www\Stanhome\app/../web</parameter>
-    <parameter key="assetic.write_to">C:\wamp\www\Stanhome\app/../web</parameter>
+    <parameter key="assetic.read_from">/media/www-dev/public/Domi-Gestion/app/../web</parameter>
+    <parameter key="assetic.write_to">/media/www-dev/public/Domi-Gestion/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
@@ -545,7 +545,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\Stanhome\app\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/media/www-dev/public/Domi-Gestion/app/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -846,7 +846,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:\wamp\www\Stanhome\app/Resources</argument>
+                <argument>/media/www-dev/public/Domi-Gestion/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -887,7 +887,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>C:\wamp\www\Stanhome\app/Resources</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>9d7b9c0f4791d407a63423a18f31feb5592aa7a3</argument>
@@ -995,396 +995,396 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\Stanhome\app\cache\dev/translations</argument>
+        <argument key="cache_dir">/media/www-dev/public/Domi-Gestion/app/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
-          <argument key="af" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.af.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.af.yml</argument>
-          </argument>
-          <argument key="ar" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ar.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ar.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
-          </argument>
-          <argument key="az" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
-          </argument>
-          <argument key="bg" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.bg.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.bg.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
-          </argument>
-          <argument key="ca" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ca.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ca.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
-          </argument>
-          <argument key="cs" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.cs.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.cs.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
-          </argument>
-          <argument key="cy" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
-          </argument>
-          <argument key="da" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.da.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.da.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
-          </argument>
-          <argument key="de" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.de.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.de.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
-          </argument>
-          <argument key="el" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.el.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.el.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
-          </argument>
-          <argument key="en" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.en.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.en.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
-          </argument>
-          <argument key="es" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.es.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.es.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
-          </argument>
-          <argument key="et" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.et.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.et.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
-          </argument>
-          <argument key="eu" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
-          </argument>
-          <argument key="fa" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
-          </argument>
-          <argument key="fi" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.fi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.fi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
-          </argument>
-          <argument key="fr" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/translations\messages.fr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\app/Resources/translations\base.fr.yml</argument>
-          </argument>
-          <argument key="gl" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
-          </argument>
-          <argument key="he" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.he.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.he.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
-          </argument>
-          <argument key="hr" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.hr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.hr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
-          </argument>
-          <argument key="hu" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.hu.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.hu.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
-          </argument>
-          <argument key="hy" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
-          </argument>
-          <argument key="id" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.id.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.id.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
+          <argument key="pt_BR" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.it.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.it.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
-          </argument>
-          <argument key="ja" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ja.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ja.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
-          </argument>
-          <argument key="lb" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
-          </argument>
-          <argument key="lt" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
-          </argument>
-          <argument key="mn" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
-          </argument>
-          <argument key="nb" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
-          </argument>
-          <argument key="nl" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.nl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.nl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
-          </argument>
-          <argument key="no" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.no.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.no.yml</argument>
-          </argument>
-          <argument key="pl" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.pl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.pl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
-          </argument>
-          <argument key="pt" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.pt.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.pt.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
-          </argument>
-          <argument key="pt_BR" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
-          </argument>
-          <argument key="ro" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ro.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ro.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
-          </argument>
-          <argument key="ru" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ru.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ru.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
-          </argument>
-          <argument key="sk" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.sk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
-          </argument>
-          <argument key="sl" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.sl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
-          </argument>
-          <argument key="sq" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
-          </argument>
-          <argument key="sr_Cyrl" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sr_Cyrl.yml</argument>
-          </argument>
-          <argument key="sr_Latn" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sr_Latn.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.it.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.it.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.it.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sv.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.sv.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sv.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.sv.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sv.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml</argument>
           </argument>
-          <argument key="th" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.th.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.th.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
+          <argument key="eu" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml</argument>
+          </argument>
+          <argument key="et" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.et.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.et.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.tr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.tr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.tr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.tr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.tr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml</argument>
+          </argument>
+          <argument key="ru" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ru.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ru.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ru.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
+          </argument>
+          <argument key="cy" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
+          </argument>
+          <argument key="ja" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ja.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ja.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml</argument>
+          </argument>
+          <argument key="fa" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fa.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.uk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.uk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.uk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.uk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml</argument>
+          </argument>
+          <argument key="fi" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.fi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.fi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml</argument>
+          </argument>
+          <argument key="hy" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
+          </argument>
+          <argument key="da" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.da.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.da.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.da.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml</argument>
+          </argument>
+          <argument key="nb" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml</argument>
+          </argument>
+          <argument key="cs" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.cs.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.cs.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.cs.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml</argument>
+          </argument>
+          <argument key="ca" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ca.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ca.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ca.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml</argument>
+          </argument>
+          <argument key="af" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.af.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.af.yml</argument>
+          </argument>
+          <argument key="hr" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.hr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.hr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml</argument>
+          </argument>
+          <argument key="de" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.de.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.de.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.de.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
+          </argument>
+          <argument key="hu" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hu.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.hu.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.hu.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml</argument>
+          </argument>
+          <argument key="el" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.el.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.el.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.el.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml</argument>
+          </argument>
+          <argument key="sq" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
+          </argument>
+          <argument key="ar" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ar.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ar.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ar.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.vi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.vi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.vi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.vi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml</argument>
+          </argument>
+          <argument key="sr_Cyrl" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sr_Cyrl.yml</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml</argument>
+          </argument>
+          <argument key="gl" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.gl.xlf</argument>
+          </argument>
+          <argument key="nl" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.nl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.nl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.nl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml</argument>
+          </argument>
+          <argument key="az" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.az.xlf</argument>
+          </argument>
+          <argument key="ro" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ro.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ro.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ro.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
+          </argument>
+          <argument key="es" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.es.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.es.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.es.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
+          </argument>
+          <argument key="lt" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml</argument>
+          </argument>
+          <argument key="he" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.he.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.he.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.he.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml</argument>
+          </argument>
+          <argument key="id" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.id.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.id.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml</argument>
+          </argument>
+          <argument key="pt" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.pt.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.pt.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
+          </argument>
+          <argument key="lb" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lb.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml</argument>
+          </argument>
+          <argument key="sk" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sk.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.sk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml</argument>
+          </argument>
+          <argument key="en" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.en.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.en.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.en.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
+          </argument>
+          <argument key="th" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.th.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.th.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml</argument>
+          </argument>
+          <argument key="fr" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fr.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/PortalBundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/app/Resources/translations/base.fr.yml</argument>
+          </argument>
+          <argument key="sl" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.sl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml</argument>
+          </argument>
+          <argument key="mn" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
+          </argument>
+          <argument key="no" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.no.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.no.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.no.yml</argument>
+          </argument>
+          <argument key="bg" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.bg.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.bg.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml</argument>
+          </argument>
+          <argument key="sr_Latn" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sr_Latn.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml</argument>
+          </argument>
+          <argument key="pl" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pl.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.pl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.pl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
-          </argument>
-          <argument key="pt_PT" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ua.xlf</argument>
           </argument>
-          <argument key="be" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.be.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.be.yml</argument>
+          <argument key="pt_PT" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_PT.xlf</argument>
           </argument>
           <argument key="ko" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ko.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ko.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ko.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ko.yml</argument>
           </argument>
-          <argument key="ms" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.ms.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.ms.yml</argument>
+          <argument key="be" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.be.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.be.yml</argument>
           </argument>
           <argument key="sr" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.sr.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.sr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.sr.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.sr.yml</argument>
+          </argument>
+          <argument key="ms" type="collection">
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.ms.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.ms.yml</argument>
           </argument>
           <argument key="zh" type="collection">
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\flashes.zh.yml</argument>
-            <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/translations\messages.zh.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/messages.zh.yml</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/translations/flashes.zh.yml</argument>
           </argument>
         </argument>
       </argument>
@@ -1600,7 +1600,7 @@
     </service>
     <service id="security.secure_random" class="Symfony\Component\Security\Core\Util\SecureRandom">
       <tag name="monolog.logger" channel="security"/>
-      <argument>C:\wamp\www\Stanhome\app\cache\dev/secure_random.seed</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/secure_random.seed</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="ignore"/>
     </service>
     <service id="form.resolved_type_factory" class="Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy">
@@ -1845,7 +1845,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>C:\wamp\www\Stanhome\app\cache\dev</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev</argument>
     </service>
     <service id="templating.helper.assets" class="Symfony\Bundle\FrameworkBundle\Templating\Helper\AssetsHelper">
       <tag name="templating.helper" alias="assets"/>
@@ -1877,8 +1877,8 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
-          <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1899,7 +1899,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
@@ -1920,7 +1920,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:C:\wamp\www\Stanhome\app\cache\dev/profiler</argument>
+          <argument>file:/media/www-dev/public/Domi-Gestion/app/cache/dev/profiler</argument>
           <argument></argument>
           <argument></argument>
           <argument>86400</argument>
@@ -2425,7 +2425,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>55fc90aaa01b3</argument>
+            <argument>57a304b8eb52a</argument>
           </service>
         </argument>
       </argument>
@@ -2747,7 +2747,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>55fc90aaa01b3</argument>
+            <argument>57a304b8eb52a</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2804,7 +2804,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">C:\wamp\www\Stanhome\app\cache\dev/twig</argument>
+        <argument key="cache">/media/www-dev/public/Domi-Gestion/app/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2878,7 +2878,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>C:\wamp\www\Stanhome\app</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -3063,7 +3063,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>C:\wamp\www\Stanhome\app\logs/dev.log</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -3125,7 +3125,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>C:\wamp\www\Stanhome\app\cache\dev/assetic/config</argument>
+                <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -3139,7 +3139,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>C:\wamp\www\Stanhome\app/Resources/views</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -3154,7 +3154,7 @@
           <factory service="service_container" method="getParameterBag"/>
         </service>
       </argument>
-      <argument>C:\wamp\www\Stanhome\app/../web</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -3175,7 +3175,7 @@
       <argument type="service" id="profiler" on-invalid="null"/>
     </service>
     <service id="assetic.cache" class="Assetic\Cache\FilesystemCache" public="false">
-      <argument>C:\wamp\www\Stanhome\app\cache\dev/assetic/assets</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/assetic/assets</argument>
     </service>
     <service id="assetic.request_listener" class="Symfony\Bundle\AsseticBundle\EventListener\RequestListener">
       <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
@@ -3289,17 +3289,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_10a43f2575049534016ba9d939e40b419b744d2ca2bca3af119d2ebf09f69a52</argument>
+        <argument>sf2orm_default_d17254f29146b8f79f363295cdb1c9d775c1f770c0b3d77fb74523de6481e95c</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_10a43f2575049534016ba9d939e40b419b744d2ca2bca3af119d2ebf09f69a52</argument>
+        <argument>sf2orm_default_d17254f29146b8f79f363295cdb1c9d775c1f770c0b3d77fb74523de6481e95c</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_10a43f2575049534016ba9d939e40b419b744d2ca2bca3af119d2ebf09f69a52</argument>
+        <argument>sf2orm_default_d17254f29146b8f79f363295cdb1c9d775c1f770c0b3d77fb74523de6481e95c</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -3335,9 +3335,9 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3348,9 +3348,9 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3361,9 +3361,9 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle\Entity</argument>
-                        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle\Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Entity</argument>
+                        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3375,7 +3375,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
+                            <argument key="/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -3388,7 +3388,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>C:\wamp\www\Stanhome\app\cache\dev/doctrine/orm/Proxies</argument>
+            <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -4242,7 +4242,7 @@
     <service id="jms_serializer.datetime_handler" class="JMS\Serializer\Handler\DateHandler">
       <tag name="jms_serializer.subscribing_handler"/>
       <argument>Y-m-d\TH:i:sO</argument>
-      <argument>Europe/Paris</argument>
+      <argument>Europe/Berlin</argument>
       <argument>true</argument>
     </service>
     <service id="jms_serializer.array_collection_handler" class="JMS\Serializer\Handler\ArrayCollectionHandler">
@@ -4468,7 +4468,7 @@
       <argument>^/(app(_[\w]+)?\.php/)?_wdt</argument>
     </service>
     <service id="sensio_distribution.webconfigurator" class="Sensio\Bundle\DistributionBundle\Configurator\Configurator">
-      <argument>C:\wamp\www\Stanhome\app</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app</argument>
       <call method="addStep">
         <argument type="service">
           <service class="Sensio\Bundle\DistributionBundle\Configurator\Step\DoctrineStep" public="false">
@@ -4633,7 +4633,7 @@
       <argument>sylius_entity_to_identifier</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>C:\wamp\www\Stanhome\app\cache\dev/sessions</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -4657,9 +4657,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>C:\wamp\www\Stanhome\app\cache\dev/assetic/routing.yml</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\Stanhome\app\cache\dev</argument>
+        <argument key="cache_dir">/media/www-dev/public/Domi-Gestion/app/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -4679,7 +4679,7 @@
       <argument type="service">
         <service class="Doctrine\Common\Annotations\AnnotationReader" public="false"/>
       </argument>
-      <argument>C:\wamp\www\Stanhome\app\cache\dev/annotations</argument>
+      <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/annotations</argument>
       <argument>true</argument>
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
@@ -4708,78 +4708,78 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\app/Resources/TwigBundle/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/app/Resources/TwigBundle/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/views</argument>
         <argument>SyliusResource</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/elastica-bundle/Resources/views</argument>
         <argument>FOSElastica</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Resources/views</argument>
         <argument>StanhomeRh</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Resources/views</argument>
         <argument>StanhomeUser</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/PortalBundle/Resources/views</argument>
         <argument>StanhomePortal</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
         <argument>KnpPaginator</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Resources/views</argument>
         <argument>StanhomeMeeting</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views</argument>
         <argument>SensioDistribution</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\app/Resources/views</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
+        <argument>/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
@@ -4900,7 +4900,7 @@
           <call method="setCache">
             <argument type="service">
               <service class="Metadata\Cache\FileCache" public="false">
-                <argument>C:\wamp\www\Stanhome\app\cache\dev/jms_serializer</argument>
+                <argument>/media/www-dev/public/Domi-Gestion/app/cache/dev/jms_serializer</argument>
               </service>
             </argument>
           </call>
@@ -4972,28 +4972,28 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Stanhome\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Stanhome\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\Stanhome\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-fixtures-bundle\Doctrine\Bundle\FixturesBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Stanhome\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="Sylius\Bundle\ResourceBundle">C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Stanhome\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Stanhome\vendor\sensio\generator-bundle\Sensio\Bundle\GeneratorBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-fixtures-bundle/Doctrine/Bundle/FixturesBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="Sylius\Bundle\ResourceBundle">/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\ElasticaBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/elastica-bundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/media/www-dev/public/Domi-Gestion/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\RhBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\UserBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\PortalBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/PortalBundle/Resources/config/serializer</argument>
+                      <argument key="Knp\Bundle\PaginatorBundle">/media/www-dev/public/Domi-Gestion/vendor/knplabs/knp-paginator-bundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\MeetingBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -5004,28 +5004,28 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Stanhome\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Stanhome\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\Stanhome\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-fixtures-bundle\Doctrine\Bundle\FixturesBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Stanhome\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="Sylius\Bundle\ResourceBundle">C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Stanhome\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Stanhome\vendor\sensio\generator-bundle\Sensio\Bundle\GeneratorBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-fixtures-bundle/Doctrine/Bundle/FixturesBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="Sylius\Bundle\ResourceBundle">/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\ElasticaBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/elastica-bundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/media/www-dev/public/Domi-Gestion/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\RhBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\UserBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\PortalBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/PortalBundle/Resources/config/serializer</argument>
+                      <argument key="Knp\Bundle\PaginatorBundle">/media/www-dev/public/Domi-Gestion/vendor/knplabs/knp-paginator-bundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\MeetingBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -5036,28 +5036,28 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Stanhome\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Stanhome\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\Stanhome\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">C:\wamp\www\Stanhome\vendor\doctrine\doctrine-fixtures-bundle\Doctrine\Bundle\FixturesBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Stanhome\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="Sylius\Bundle\ResourceBundle">C:\wamp\www\Stanhome\vendor\sylius\resource-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\ElasticaBundle">C:\wamp\www\Stanhome\vendor\friendsofsymfony\elastica-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\Stanhome\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\RhBundle">C:\wamp\www\Stanhome\src\Stanhome\RhBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\UserBundle">C:\wamp\www\Stanhome\src\Stanhome\UserBundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\PortalBundle">C:\wamp\www\Stanhome\src\Stanhome\PortalBundle/Resources/config/serializer</argument>
-                      <argument key="Knp\Bundle\PaginatorBundle">C:\wamp\www\Stanhome\vendor\knplabs\knp-paginator-bundle/Resources/config/serializer</argument>
-                      <argument key="Stanhome\MeetingBundle">C:\wamp\www\Stanhome\src\Stanhome\MeetingBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Stanhome\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Stanhome\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Stanhome\vendor\sensio\generator-bundle\Sensio\Bundle\GeneratorBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/media/www-dev/public/Domi-Gestion/vendor/doctrine/doctrine-fixtures-bundle/Doctrine/Bundle/FixturesBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="Sylius\Bundle\ResourceBundle">/media/www-dev/public/Domi-Gestion/vendor/sylius/resource-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\ElasticaBundle">/media/www-dev/public/Domi-Gestion/vendor/friendsofsymfony/elastica-bundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/media/www-dev/public/Domi-Gestion/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\RhBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/RhBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\UserBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/UserBundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\PortalBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/PortalBundle/Resources/config/serializer</argument>
+                      <argument key="Knp\Bundle\PaginatorBundle">/media/www-dev/public/Domi-Gestion/vendor/knplabs/knp-paginator-bundle/Resources/config/serializer</argument>
+                      <argument key="Stanhome\MeetingBundle">/media/www-dev/public/Domi-Gestion/src/Stanhome/MeetingBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/media/www-dev/public/Domi-Gestion/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/media/www-dev/public/Domi-Gestion/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
