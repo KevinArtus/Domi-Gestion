@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /media/www-dev/public/Domi-Gestion/app/config/routing_dev.yml
