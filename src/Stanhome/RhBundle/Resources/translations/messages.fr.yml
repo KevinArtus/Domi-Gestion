@@ -31,7 +31,10 @@ StanhomeRhBundle:
             delete: "Supprimer"
         page_new_edit:
             title: "Création d'un nouveau client"
+            subtitle_global: "Informations globales"
             sexe: "Sexe"
+            sexe_woman: "Femme"
+            sexe_man: "Homme"
             firstName: "Nom"
             lastName: "Prénom"
             fixe: "Fixe"
@@ -40,3 +43,4 @@ StanhomeRhBundle:
             address: "Adresse"
             postalCode: "Code Postale"
             city: "Ville"
+            validate: "Valider"
