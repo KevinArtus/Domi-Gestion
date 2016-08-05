@@ -1,12 +1,12 @@
 #==[Symfony]==========================#
 /app/bootstrap.php.cache
-/app/cache/*
-/app/logs/*
+/app/cache/
+/app/logs/
 /app/config/parameters.yml
 /app/config/config.yml
 /app/SymfonyRequirements.php
-/bin/*
-elasticsearch-1.5.2/*
+/bin/
+/elasticsearch-1.5.2/
 /web/bundles/
 /web/uploads/
 /web/assets/vendor/
