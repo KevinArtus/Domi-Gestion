@@ -14,24 +14,29 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\ElasticaBundle\FOSElasticaBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
+            new \winzou\Bundle\StateMachineBundle\winzouStateMachineBundle(),
+            new Stanhome\MeetingBundle\StanhomeMeetingBundle(),
             new Stanhome\RhBundle\StanhomeRhBundle(),
-//            new Stanhome\ProductBundle\StanhomeProductBundle(),
             new Stanhome\UserBundle\StanhomeUserBundle(),
             new Stanhome\PortalBundle\StanhomePortalBundle(),
 //            new Stanhome\ShoppingBundle\StanhomeShoppingBundle(),
+//            new Stanhome\ProductBundle\StanhomeProductBundle(),
 
             new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
-            new Stanhome\MeetingBundle\StanhomeMeetingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -5,9 +5,11 @@
 /app/config/parameters.yml
 /app/config/config.yml
 /app/SymfonyRequirements.php
-/bin
-/elasticsearch-1.5.2/
+/bin/*
+elasticsearch-1.5.2/*
 /web/bundles/
+/web/uploads/
+/web/assets/vendor/
 
 #==[Vendor]===========================#
 /vendor/
@@ -18,3 +20,6 @@ Supprimerait app/cache/
 Supprimerait app/log/
 Supprimerait app/logs/
 Supprimerait log/
+
+#==[COMPOSER]==============================#
+/composer.phar
