@@ -1,7 +1,7 @@
 Stanhome
 ========
 
-Projet de fin d'année de ma première année du Master DNR2I de la faculté de Caen Basse-Normandie.
+Projet de fin de première année du Master DNR2I de la faculté de Caen Basse-Normandie.
 
 Application permettant de gérer l'activité d'une conseillère pour des réunions à domicile.
 Gestion des réunions, du carnet de contact client.
@@ -18,7 +18,7 @@ Lancez un serveur elasticsearch (il faut que la BDD soit créée et des clients 
 Votre serveur est maintenant lancé, vous pouvez utilisez le champ de recherche de l'application pour rechercher un client.
 
 
-Liste des bundles tiers utilisés :
+**Liste des bundles tiers utilisés :**
 - FOSUserBundle
 - FOSElasticaBundle
 - JMSSerializerBundle
