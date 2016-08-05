@@ -3,7 +3,8 @@
 {% block content %}
     <ol class="breadcrumb">
         <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
-        <li class="active"><a href="{{ path('stanhome_meeting_meeting_index') }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.header'|trans }}</a></li>
+        <li class="active"><a href="{{ path('stanhome_rh_customer_index') }}">{{ 'StanhomeMeetingBundle.meetings.page_index.header'|trans }}</a></li>
+        <li class="active">{{ 'StanhomeMeetingBundle.meetings.page_show.title'|trans }} {{ meeting.date|date("d/m/Y") }}</li>
     </ol>
     <div id="fwp-content" class="col-md-12">
         <div class="row">

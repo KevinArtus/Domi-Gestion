@@ -160,7 +160,7 @@ class MeetingController extends Controller
 
         return array(
             'meeting' => $meeting,
-//            'shopping' => $shoppings,
+//          'shopping' => $shoppings,
             'delete_form' => $deleteForm->createView(),
         );
     }

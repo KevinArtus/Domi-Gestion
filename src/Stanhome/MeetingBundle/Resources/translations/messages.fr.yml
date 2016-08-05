@@ -15,6 +15,7 @@ StanhomeMeetingBundle:
             modify: "Modifier"
         page_show:
             header: "Informations de la réunion"
+            title: "Informations de la réunion du"
             km: "Nombre de KM"
             nbPersons: "Nombre de personnes"
             montantTtc: "Montant TTC"
