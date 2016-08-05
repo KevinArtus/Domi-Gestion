@@ -26,6 +26,7 @@ StanhomeMeetingBundle:
             address: "Adresse"
         page_new_edit:
             title: "Ajouter une nouvelle réunion"
+            subtitle_global: "Informations globales"
             meeting: "Réunion"
             date: "Date"
             customer: "Hôtesse"
@@ -36,3 +37,4 @@ StanhomeMeetingBundle:
             nbPersons: "Nombre de personnes"
             montantTtc: "Montant TTC"
             montantHt: "Montant HT"
+            validate: "Valider"
