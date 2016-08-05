@@ -3,11 +3,13 @@
 namespace Stanhome\PortalBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Stanhome\PortalBundle\Search\SearchProvider;
 
+/**
+ * Class SearchController
+ * @package Stanhome\PortalBundle\Controller
+ */
 class SearchController extends Controller {
 
 	private static $defaultMaxNbResponses = 15;
@@ -109,6 +111,12 @@ class SearchController extends Controller {
 		return new JsonResponse($res);
 	}
 
+    /**
+     * @param SearchProvider $searchProvider
+     * @param $entityToShow
+     * @return string
+     * @throws \Exception
+     */
 	private function getShowURL(SearchProvider $searchProvider, $entityToShow) {
 		$router = $this->get('router');
 		$linkShow = $searchProvider->getLinkShow();
@@ -123,6 +131,12 @@ class SearchController extends Controller {
 		return $router->generate($linkShow, $arrayProperties);
 	}
 
+    /**
+     * @param $variables
+     * @param $entity
+     * @return array
+     * @throws \Exception
+     */
 	private function getEntityVariables($variables, $entity) {
 		$reflexionEntity = new \ReflectionObject($entity);	
 

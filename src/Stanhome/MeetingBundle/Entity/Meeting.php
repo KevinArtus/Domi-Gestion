@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\MeetingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

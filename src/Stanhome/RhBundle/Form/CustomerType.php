@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\RhBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
@@ -11,6 +12,10 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  */
 class CustomerType extends AbstractType
 {
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -49,6 +54,9 @@ class CustomerType extends AbstractType
             );
     }
 
+    /**
+     * @param OptionsResolverInterface $resolver
+     */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(

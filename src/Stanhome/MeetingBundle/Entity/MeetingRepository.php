@@ -4,8 +4,16 @@ namespace Stanhome\MeetingBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
+/**
+ * Class MeetingRepository
+ * @package Stanhome\MeetingBundle\Entity
+ */
 class MeetingRepository extends EntityRepository
 {
+    /**
+     * @param User $user
+     * @return array
+     */
     public function nextMeeting($user)
     {
         return $this->createQueryBuilder('m')
@@ -18,6 +26,10 @@ class MeetingRepository extends EntityRepository
             ->getResult();
     }
 
+    /**
+     * @param User $user
+     * @return array
+     */
     public function findMontantKmByUser($user)
     {
         return $this->createQueryBuilder('m')
@@ -27,6 +39,10 @@ class MeetingRepository extends EntityRepository
             ->getResult();
     }
 
+    /**
+     * @param User $user
+     * @return array
+     */
     public function findAllMeetingOrderByDate($user)
     {
         return $this->createQueryBuilder('m')
@@ -37,6 +53,11 @@ class MeetingRepository extends EntityRepository
             ->getResult();
     }
 
+    /**
+     * @param User $user
+     * @param Customer $customer
+     * @return array
+     */
     public function findAllMeetingByCustomerOrderByDate($user, $customer)
     {
         return $this->createQueryBuilder('m')

@@ -14,9 +14,8 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 
 /**
- * Customer controller.
- *
- * @Route("/Customer")
+ * Class MeetingController
+ * @package Stanhome\MeetingBundle\Controller
  */
 class MeetingController extends Controller
 {
@@ -160,7 +159,7 @@ class MeetingController extends Controller
 
         return array(
             'meeting' => $meeting,
-//          'shopping' => $shoppings,
+//            'shopping' => $shoppings,
             'delete_form' => $deleteForm->createView(),
         );
     }

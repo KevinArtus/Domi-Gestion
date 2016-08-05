@@ -1,15 +1,25 @@
 <?php
+
 namespace Stanhome\RhBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
+/**
+ * Class CustomerEditType
+ * @package Stanhome\RhBundle\Form
+ */
 class CustomerEditType extends AbstractType
 {
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('sexe', 'choice', array("label" => "StanhomeRhBundle.customers.page_new_edit.sexe", 'choices' => array('F' => "Femme", "H" => "Homme")))
+        $builder
+            ->add('sexe', 'choice', array("label" => "StanhomeRhBundle.customers.page_new_edit.sexe", 'choices' => array('F' => "Femme", "H" => "Homme")))
             ->add('nom', 'text', array("label" => "StanhomeRhBundle.customers.page_new_edit.firstName"))
             ->add('prenom', 'text', array("label" => "StanhomeRhBundle.customers.page_new_edit.lastName"))
             ->add('fixe', 'text', array(
@@ -44,6 +54,9 @@ class CustomerEditType extends AbstractType
             );
     }
 
+    /**
+     * @param OptionsResolverInterface $resolver
+     */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(

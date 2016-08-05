@@ -1,12 +1,16 @@
 <?php
+
 namespace Stanhome\RHBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Stanhome\RHBundle\Entity\Customer;
 
+/**
+ * Class LoadCustomerData
+ * @package Stanhome\RHBundle\DataFixtures\ORM
+ */
 class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterface
 {
     /**

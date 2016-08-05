@@ -309,8 +309,6 @@ class CustomerController extends Controller
         $searchString = $request->get("text", "");
         $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
 
-//        var_dump($customers);
         return $this->render("StanhomeRhBundle:Customer:searchLi.html.twig", array("customers" => $customers));
     }
-
 }

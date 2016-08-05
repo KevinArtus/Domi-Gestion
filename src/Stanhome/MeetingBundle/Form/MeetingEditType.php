@@ -1,15 +1,25 @@
 <?php
+
 namespace Stanhome\MeetingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
+/**
+ * Class MeetingEditType
+ * @package Stanhome\MeetingBundle\Form
+ */
 class MeetingEditType extends AbstractType
 {
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('date', 'date', array("widget" => "single_text", "label" => "StanhomeMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy"))
+        $builder
+            ->add('date', 'date', array("widget" => "single_text", "label" => "StanhomeMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy"))
             ->add('customer','entity', array ('class' => 'Stanhome\RhBundle\Entity\Customer', 'empty_value' => 'Choisissez une hôtesse...', 'required' => true, "label" => "StanhomeMeetingBundle.meetings.page_new_edit.customer" ))
             ->add('address', 'text', array("label" => "StanhomeMeetingBundle.meetings.page_new_edit.address"))
             ->add('cp', 'text', array("label" => "StanhomeMeetingBundle.meetings.page_new_edit.cp"))
@@ -20,6 +30,9 @@ class MeetingEditType extends AbstractType
             ->add('montantHt', 'text', array("label" => "StanhomeMeetingBundle.meetings.page_new_edit.montantHt", "required" => false));
     }
 
+    /**
+     * @param OptionsResolverInterface $resolver
+     */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(

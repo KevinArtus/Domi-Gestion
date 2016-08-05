@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\RhBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -91,16 +92,19 @@ class Customer
      */
     public $longitude;
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return sprintf("%s %s", strtoupper($this->getNom()), $this->getPrenom());
     }
 
     /**
- * Get id
- *
- * @return integer
- */
+     * Get id
+     *
+     * @return integer
+     */
     public function getId()
     {
         return $this->id;

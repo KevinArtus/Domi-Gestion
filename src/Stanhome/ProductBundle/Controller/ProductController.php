@@ -4,18 +4,13 @@ namespace Stanhome\ProductBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ProductBundle\Entity\Product;
 use Stanhome\ProductBundle\Form\ProductType;
 use Stanhome\ProductBundle\Form\ProductEditType;
 
-
 /**
- * Product controller.
- *
- * @Route("/product")
+ * Class ProductController
+ * @package Stanhome\ProductBundle\Controller
  */
 class ProductController extends Controller
 {
@@ -41,7 +36,11 @@ class ProductController extends Controller
     /**
      * Liste tout les produits d'une catégorie
      *
-     * @Template("StanhomeProductBundle:Product:list.html.twig")
+     * @param integer $idcat
+     * @param string $catlibelle
+     * @param integer $idbrand
+     * @param string $brandlibelle
+     * @return array
      */
     public function listAction($idcat, $catlibelle, $idbrand, $brandlibelle)
     {
@@ -64,9 +63,8 @@ class ProductController extends Controller
     /**
      * Creates a new Product entity.
      *
-     * @Route("/", name="product_create")
-     * @Method("POST")
-     * @Template("StanhomeProductBundle:Product:new.html.twig")
+     * @param Request $request
+     * @return array|\Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function createAction(Request $request)
     {
@@ -74,8 +72,6 @@ class ProductController extends Controller
         $form = $this->createCreateForm($entity);
 
         $form->handleRequest($request);
-
-
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
@@ -93,9 +89,8 @@ class ProductController extends Controller
     /**
      * Creates a form to create a Product entity.
      *
-     * @param Product $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
+     * @param Product $entity
+     * @return \Symfony\Component\Form\Form
      */
     private function createCreateForm(Product $entity)
     {
@@ -112,9 +107,7 @@ class ProductController extends Controller
     /**
      * Displays a form to create a new Product entity.
      *
-     * @Route("/new", name="product_new")
-     * @Method("GET")
-     * @Template()
+     * @return array
      */
     public function newAction()
     {
@@ -130,9 +123,8 @@ class ProductController extends Controller
     /**
      * Finds and displays a Product entity.
      *
-     * @Route("/{reference}", name="product_show")
-     * @Method("GET")
-     * @Template()
+     * @param integer $reference
+     * @return array
      */
     public function showAction($reference)
     {
@@ -154,9 +146,8 @@ class ProductController extends Controller
     /**
      * Displays a form to edit an existing Product entity.
      *
-     * @Route("/{id}/edit", name="product_edit")
-     * @Method("GET")
-     * @Template()
+     * @param integer $reference
+     * @return array
      */
     public function editAction($reference)
     {
@@ -179,12 +170,11 @@ class ProductController extends Controller
     }
 
     /**
-    * Creates a form to edit a Product entity.
-    *
-    * @param Product $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a Product entity
+     * 
+     * @param Product $entity
+     * @return \Symfony\Component\Form\Form
+     */
     private function createEditForm(Product $entity)
     {
         $form = $this->createForm(new ProductEditType(), $entity, array(

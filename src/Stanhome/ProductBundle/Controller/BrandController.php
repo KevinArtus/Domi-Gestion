@@ -4,26 +4,19 @@ namespace Stanhome\ProductBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ProductBundle\Entity\Brand;
 use Stanhome\ProductBundle\Form\BrandEditType;
 
 /**
- * Product controller.
- *
- * @Route("/product")
+ * Class BrandController
+ * @package Stanhome\ProductBundle\Controller
  */
 class BrandController extends Controller
 {
 
     /**
-     * Lists all Brand entities.
-     *
-     * @Route("/", name="brand")
-     * @Method("GET")
-     * @Template()
+     * List of all product
+     * @return array
      */
     public function indexAction()
     {
@@ -37,10 +30,9 @@ class BrandController extends Controller
     }
 
     /**
-     * Finds and displays a Brand entity.
-     *
-     * @Method("GET")
-     * @Template()
+     * show spécific product
+     * @param integer $id
+     * @return array
      */
     public function showAction($id)
     {
@@ -66,11 +58,9 @@ class BrandController extends Controller
     }
 
     /**
-     * Displays a form to edit an existing Product entity.
-     *
-     * @Route("/{id}/edit", name="product_edit")
-     * @Method("GET")
-     * @Template()
+     * edit a specific product
+     * @param integer $id
+     * @return array
      */
     public function editAction($id)
     {
@@ -95,9 +85,8 @@ class BrandController extends Controller
     /**
      * Creates a form to edit a Product entity.
      *
-     * @param Product $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
+     * @param Brand $entity
+     * @return \Symfony\Component\Form\Form
      */
     private function createEditForm(Brand $entity)
     {
@@ -114,7 +103,9 @@ class BrandController extends Controller
     /**
      * Deletes a Brand entity.
      *
-     * @Method("DELETE")
+     * @param Request $request
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function deleteAction(Request $request, $id)
     {
@@ -139,9 +130,8 @@ class BrandController extends Controller
     /**
      * Creates a form to delete a Brand entity by id.
      *
-     * @param mixed $id The entity id
-     *
-     * @return \Symfony\Component\Form\Form The form
+     * @param $id
+     * @return \Symfony\Component\Form\Form|\Symfony\Component\Form\FormInterface
      */
     private function createDeleteForm($id)
     {

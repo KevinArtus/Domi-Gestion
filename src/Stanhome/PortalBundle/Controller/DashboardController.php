@@ -1,16 +1,24 @@
 <?php
+
 namespace Stanhome\PortalBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
+/**
+ * Class DashboardController
+ * @package Stanhome\PortalBundle\Controller
+ */
 class DashboardController extends Controller
 {
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction(Request $request)
     {
         if (!$this->get('security.context')->isGranted('ROLE_USER')) {
-            // Sinon on déclenche une exception « Accès interdit »
             throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
         }
 
@@ -26,7 +34,6 @@ class DashboardController extends Controller
         }
 
         $salary -= $montantKm;
-
         $paginator = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
             $meetings,
@@ -39,7 +46,5 @@ class DashboardController extends Controller
                 'salary' => $salary,
             )
         );
-
     }
-
 }

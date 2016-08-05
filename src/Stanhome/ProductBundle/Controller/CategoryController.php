@@ -4,16 +4,12 @@ namespace Stanhome\ProductBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ProductBundle\Entity\Category;
 use Stanhome\ProductBundle\Form\CategoryType;
 
 /**
- * Category controller.
- *
- * @Route("/product")
+ * Class CategoryController
+ * @package Stanhome\ProductBundle\Controller
  */
 class CategoryController extends Controller
 {
@@ -21,9 +17,7 @@ class CategoryController extends Controller
     /**
      * Lists all Category entities.
      *
-     * @Route("/", name="brand")
-     * @Method("GET")
-     * @Template()
+     * @return array
      */
     public function indexAction()
     {
@@ -39,9 +33,8 @@ class CategoryController extends Controller
     /**
      * Creates a new Category entity.
      *
-     * @Route("/", name="category_create")
-     * @Method("POST")
-     * @Template("StanhomeProductBundle:Category:new.html.twig")
+     * @param Request $request
+     * @return array|\Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function createAction(Request $request)
     {
@@ -49,8 +42,6 @@ class CategoryController extends Controller
         $form = $this->createCreateForm($entity);
 
         $form->handleRequest($request);
-
-
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
@@ -68,9 +59,8 @@ class CategoryController extends Controller
     /**
      * Creates a form to create a Category entity.
      *
-     * @param Category $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
+     * @param Category $entity
+     * @return \Symfony\Component\Form\Form
      */
     private function createCreateForm(Category $entity)
     {
@@ -87,9 +77,7 @@ class CategoryController extends Controller
     /**
      * Displays a form to create a new Category entity.
      *
-     * @Route("/new", name="product_new")
-     * @Method("GET")
-     * @Template()
+     * @return array
      */
     public function newAction()
     {
@@ -105,8 +93,8 @@ class CategoryController extends Controller
     /**
      * Finds and displays a Category entity.
      *
-     * @Method("GET")
-     * @Template()
+     * @param $id
+     * @return array
      */
     public function showAction($id)
     {
@@ -129,7 +117,9 @@ class CategoryController extends Controller
     /**
      * Deletes a Category entity.
      *
-     * @Method("DELETE")
+     * @param Request $request
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function deleteAction(Request $request, $id)
     {
