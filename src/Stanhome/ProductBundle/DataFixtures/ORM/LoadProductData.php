@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\ProductBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -7,6 +8,10 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Stanhome\ProductBundle\Entity\Product;
 
+/**
+ * Class LoadProductData
+ * @package Stanhome\ProductBundle\DataFixtures\ORM
+ */
 class LoadProductData extends AbstractFixture implements OrderedFixtureInterface
 {
     /**

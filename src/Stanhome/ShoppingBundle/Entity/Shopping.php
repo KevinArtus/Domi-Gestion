@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\ShoppingBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;

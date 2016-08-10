@@ -1,4 +1,5 @@
 <?php
+
 namespace Stanhome\ProductBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

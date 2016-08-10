@@ -5,6 +5,10 @@ namespace Stanhome\RhBundle\Search;
 use Elastica\Query\QueryString;
 use Stanhome\PortalBundle\Search\SearchProviderInterface;
 
+/**
+ * Class CustomerSearch
+ * @package Stanhome\RhBundle\Search
+ */
 class CustomerSearch implements SearchProviderInterface {
     private $templateService;
     private $searchService;

@@ -11,7 +11,6 @@ use Stanhome\RhBundle\Entity\Customer;
 use Stanhome\RhBundle\Form\CustomerType;
 use Stanhome\RhBundle\Form\CustomerEditType;
 
-
 /**
  * Customer controller.
  *

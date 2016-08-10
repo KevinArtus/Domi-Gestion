@@ -12,7 +12,6 @@ use Stanhome\MeetingBundle\Form\MeetingType;
 use Stanhome\MeetingBundle\Form\MeetingEditType;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
-
 /**
  * Class MeetingController
  * @package Stanhome\MeetingBundle\Controller

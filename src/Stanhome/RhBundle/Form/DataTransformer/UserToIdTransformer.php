@@ -2,13 +2,16 @@
 
 namespace Stanhome\RhBundle\Form\DataTransformer;
 
-
 use Doctrine\Common\Persistence\ObjectManager;
 use Stanhome\RhBundle\Entity\Customer;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\TransformationFailedException;
 use Symfony\Component\Form\Exception\UnexpectedTypeException;
 
+/**
+ * Class UserToIdTransformer
+ * @package Stanhome\RhBundle\Form\DataTransformer
+ */
 class UserToIdTransformer implements DataTransformerInterface {
     /**
      * @var ObjectManager

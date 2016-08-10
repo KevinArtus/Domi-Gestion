@@ -10,7 +10,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ShoppingBundle\Form\ShoppingProductType;
 
-
 /**
  * Product controller.
  *

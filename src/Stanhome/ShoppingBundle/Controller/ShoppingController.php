@@ -13,7 +13,6 @@ use Stanhome\ShoppingBundle\Entity\Shopping;
 use Stanhome\ShoppingBundle\Form\ShoppingType;
 use Stanhome\ShoppingBundle\Form\ShoppingEditType;
 
-
 /**
  * Product controller.
  *

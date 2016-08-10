@@ -1,10 +1,15 @@
 <?php
+
 namespace Stanhome\ShoppingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
+/**
+ * Class ShoppingProductType
+ * @package Stanhome\ShoppingBundle\Form
+ */
 class ShoppingProductType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)

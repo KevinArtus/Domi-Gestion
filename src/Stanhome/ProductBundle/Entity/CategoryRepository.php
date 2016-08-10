@@ -4,6 +4,10 @@ namespace Stanhome\ProductBundle\Entity;
 
 use Sylius\Bundle\ResourceBundle\Doctrine\ORM\EntityRepository;
 
+/**
+ * Class CategoryRepository
+ * @package Stanhome\ProductBundle\Entity
+ */
 class CategoryRepository extends EntityRepository {
 
     public function findByCategorysByBrand($id) {

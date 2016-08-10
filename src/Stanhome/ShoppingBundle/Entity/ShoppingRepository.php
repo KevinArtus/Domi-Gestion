@@ -4,6 +4,10 @@ namespace Stanhome\ShoppingBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
+/**
+ * Class ShoppingRepository
+ * @package Stanhome\ShoppingBundle\Entity
+ */
 class ShoppingRepository extends EntityRepository
 {
     public function findAllShoppingByCustomerOrderByDate($user, $customer)
