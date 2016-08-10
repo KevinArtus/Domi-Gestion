@@ -5,6 +5,8 @@ namespace Stanhome\PortalBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Stanhome\PortalBundle\Search\SearchProvider;
+use Symfony\Bundle\FrameworkBundle\Routing\Router;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 /**
  * Class SearchController
