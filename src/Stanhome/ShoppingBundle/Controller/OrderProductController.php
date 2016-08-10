@@ -25,7 +25,7 @@ class ShippingProductController extends Controller
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    public function createCreateForm(ShoppingProduct $entity)
+    private function createCreateForm(ShoppingProduct $entity)
     {
         $form = $this->createForm(new ShoppingProductType(), $entity, array(
             'action' => $this->generateUrl('stanhome_order_orderproduct_create'),

@@ -1,6 +1,6 @@
 {
     "description": "Application de gestion de réunions à domicile",
-    "name": "Kevin/stanhome",
+    "name": "kevin/stanhome",
     "license": "proprietary",
     "type": "project",
     "autoload": {

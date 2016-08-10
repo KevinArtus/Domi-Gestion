@@ -5,6 +5,7 @@ namespace Stanhome\PortalBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Stanhome\PortalBundle\Search\SearchProvider;
+use Symfony\Bundle\FrameworkBundle\Routing\Router;
 
 /**
  * Class SearchController
@@ -18,7 +19,8 @@ class SearchController extends Controller {
 	 * @Route("/search/{fields}/{modes}/{searchString}", requirements={"fields"="(\[\d+\])?[a-zA-Z]+(\[\d+\])?(,[a-zA-Z]+(\[\d+\])?)*", "modes"="[a-zA-Z0-9_]+(,[a-zA-Z0-9_]+)*"}, name="portal_search")
 	 * @Method({"GET"})
 	 */
-	public function searchAction($fields, $modes, $searchString) {
+	public function searchAction($fields, $modes, $searchString)
+    {
 		// Retrieve the modes
 		$arrayModes = explode(',', $modes);
 
@@ -117,7 +119,8 @@ class SearchController extends Controller {
      * @return string
      * @throws \Exception
      */
-	private function getShowURL(SearchProvider $searchProvider, $entityToShow) {
+	private function getShowURL(SearchProvider $searchProvider, $entityToShow)
+    {
 		$router = $this->get('router');
 		$linkShow = $searchProvider->getLinkShow();
 
@@ -137,9 +140,9 @@ class SearchController extends Controller {
      * @return array
      * @throws \Exception
      */
-	private function getEntityVariables($variables, $entity) {
-		$reflexionEntity = new \ReflectionObject($entity);	
-
+	private function getEntityVariables($variables, $entity)
+    {
+		$reflexionEntity = new \ReflectionObject($entity);
 		$arrayProperties = array();
 
 		foreach ($variables as $variableName) {
@@ -171,7 +174,6 @@ class SearchController extends Controller {
 			if (!array_key_exists($variableName, $arrayProperties))
 				throw new \Exception("The property '". $variableName ."' does NOT exist in '". get_class($entity) ."'");
 		}
-
 		return $arrayProperties;
 	}
 }

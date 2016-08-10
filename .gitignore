@@ -10,6 +10,7 @@
 /web/bundles/
 /web/uploads/
 /web/assets/vendor/
+/web/config.php
 
 #==[Vendor]===========================#
 /vendor/
