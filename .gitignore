@@ -15,12 +15,5 @@
 #==[Vendor]===========================#
 /vendor/
 
-#==[IDE]==============================#
-.idea/
-Supprimerait app/cache/
-Supprimerait app/log/
-Supprimerait app/logs/
-Supprimerait log/
-
 #==[COMPOSER]==============================#
 /composer.phar

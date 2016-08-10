@@ -3,15 +3,14 @@
 namespace Stanhome\ShoppingBundle\Controller;
 
 use Stanhome\ShoppingBundle\Entity\ShoppingProduct;
-use Stanhome\ShoppingBundle\Form\ShoppingProductType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\ShoppingBundle\Entity\Shopping;
-use Stanhome\ShoppingBundle\Form\ShoppingType;
-use Stanhome\ShoppingBundle\Form\ShoppingEditType;
+use Stanhome\ShoppingBundle\Form\Type\ShoppingType;
+use Stanhome\ShoppingBundle\Form\Type\ShoppingEditType;
 
 /**
  * Product controller.

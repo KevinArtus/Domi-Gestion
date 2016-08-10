@@ -1,6 +1,6 @@
 <?php
 
-namespace Stanhome\MeetingBundle\Form;
+namespace Stanhome\MeetingBundle\Form\Type;
 
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\Form\AbstractType;

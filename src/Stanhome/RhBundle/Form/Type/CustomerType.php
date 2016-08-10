@@ -1,6 +1,6 @@
 <?php
 
-namespace Stanhome\RhBundle\Form;
+namespace Stanhome\RhBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

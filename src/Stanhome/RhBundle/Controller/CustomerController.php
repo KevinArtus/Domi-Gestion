@@ -8,8 +8,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\RhBundle\Entity\Customer;
-use Stanhome\RhBundle\Form\CustomerType;
-use Stanhome\RhBundle\Form\CustomerEditType;
+use Stanhome\RhBundle\Form\Type\CustomerType;
+use Stanhome\RhBundle\Form\Type\CustomerEditType;
 
 /**
  * Customer controller.
@@ -149,13 +149,13 @@ class CustomerController extends Controller
         }
 
 
-        $adress = str_replace(" ", "_",$customer->getAddress());
-        $adress = utf8_encode($adress);
-        $adress = urlencode($adress);
-        $cp = $customer->getCp();
+//        $adress = str_replace(" ", "_",$customer->getAddress());
+//        $adress = utf8_encode($adress);
+//        $adress = urlencode($adress);
+//        $cp = $customer->getCp();
 
-        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
-        $json = json_decode($coordpolaire);
+//        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
+//        $json = json_decode($coordpolaire);
 
 //        $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
 //        $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
@@ -282,23 +282,6 @@ class CustomerController extends Controller
         $em->flush();
 
         return $this->redirect($this->generateUrl('stanhome_rh_customer_index'));
-    }
-
-    /**
-     * Creates a form to delete a Customer entity by id.
-     *
-     * @param mixed $id The entity id
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm($id)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('stanhome_rh_customer_delete', array('id' => $id)))
-            ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-            ;
     }
 
     /**

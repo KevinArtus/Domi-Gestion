@@ -1,26 +1,27 @@
 <?php
 
-namespace Stanhome\ProductBundle\Form;
+namespace Stanhome\ProductBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Class BrandType
+ * Class CategoryType
  * @package Stanhome\ProductBundle\Form
  */
-class BrandType extends AbstractType
+class CategoryType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('libelle', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.libelle"));
+        $builder->add('libelle', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.libelle"))
+            ->add('brand','entity', array ('class' => 'Stanhome\ProductBundle\Entity\Brand', 'property' => 'Libelle', 'required' => true));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Stanhome\ProductBundle\Entity\Brand'
+            'data_class' => 'Stanhome\ProductBundle\Entity\Category'
         ));
     }
 
@@ -31,6 +32,6 @@ class BrandType extends AbstractType
      */
     public function getName()
     {
-        return 'brand';
+        return 'category';
     }
 }

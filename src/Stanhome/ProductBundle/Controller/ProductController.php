@@ -5,8 +5,8 @@ namespace Stanhome\ProductBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Stanhome\ProductBundle\Entity\Product;
-use Stanhome\ProductBundle\Form\ProductType;
-use Stanhome\ProductBundle\Form\ProductEditType;
+use Stanhome\ProductBundle\Form\Type\ProductType;
+use Stanhome\ProductBundle\Form\Type\ProductEditType;
 
 /**
  * Class ProductController
@@ -252,7 +252,6 @@ class ProductController extends Controller
             ->setAction($this->generateUrl('stanhome_product_product_delete', array('reference' => $reference)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-        ;
+            ->getForm();
     }
 }

@@ -8,8 +8,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Stanhome\MeetingBundle\Entity\Meeting;
-use Stanhome\MeetingBundle\Form\MeetingType;
-use Stanhome\MeetingBundle\Form\MeetingEditType;
+use Stanhome\MeetingBundle\Form\Type\MeetingType;
+use Stanhome\MeetingBundle\Form\Type\MeetingEditType;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 /**
@@ -282,7 +282,6 @@ class MeetingController extends Controller
         $searchString = $request->get("text", "");
         $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
 
-//        var_dump($customers);
         return $this->render("StanhomeMeetingBundle:Meeting:searchLi.html.twig", array("customers" => $customers));
     }
 

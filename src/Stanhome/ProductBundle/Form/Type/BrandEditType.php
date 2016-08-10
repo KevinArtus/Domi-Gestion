@@ -1,28 +1,26 @@
 <?php
 
-namespace Stanhome\ProductBundle\Form;
+namespace Stanhome\ProductBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Class ProductEditType
+ * Class BrandEditType
  * @package Stanhome\ProductBundle\Form
  */
-class ProductEditType extends AbstractType
+class BrandEditType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('libelle', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.libelle"))
-            ->add('reference', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.reference"))
-            ->add('price', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.price"));
+        $builder->add('libelle', 'text', array("label" => "StanhomeProductBundle.products.page_new_edit.libelle"));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Stanhome\ProductBundle\Entity\Product'
+            'data_class' => 'Stanhome\ProductBundle\Entity\Brand'
         ));
     }
 
@@ -33,6 +31,6 @@ class ProductEditType extends AbstractType
      */
     public function getName()
     {
-        return 'product';
+        return 'brand';
     }
 }

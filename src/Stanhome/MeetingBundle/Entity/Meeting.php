@@ -89,12 +89,6 @@ class Meeting
     public function __toString()
     {
         return sprintf("(%s) - %s %s", date_format($this->getDate(), 'd-m-Y'),$this->getCustomer()->getNom(), $this->getCustomer()->getPrenom());
-
-//        try {
-//            return sprintf("%s", $this->getDate());
-//        } catch (\Exception $e){
-//            return '';
-//        }
     }
 
     /**
@@ -397,8 +391,6 @@ class Meeting
     {
         $this->meeting = new \Doctrine\Common\Collections\ArrayCollection();
     }
-
-
 
     /**
      * Add shopping

@@ -5,15 +5,12 @@ namespace Stanhome\PortalBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Stanhome\PortalBundle\Search\SearchProvider;
-use Symfony\Bundle\FrameworkBundle\Routing\Router;
 
 /**
  * Class SearchController
  * @package Stanhome\PortalBundle\Controller
  */
 class SearchController extends Controller {
-
-	private static $defaultMaxNbResponses = 15;
 
 	/**
 	 * @Route("/search/{fields}/{modes}/{searchString}", requirements={"fields"="(\[\d+\])?[a-zA-Z]+(\[\d+\])?(,[a-zA-Z]+(\[\d+\])?)*", "modes"="[a-zA-Z0-9_]+(,[a-zA-Z0-9_]+)*"}, name="portal_search")

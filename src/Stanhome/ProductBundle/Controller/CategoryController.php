@@ -5,7 +5,7 @@ namespace Stanhome\ProductBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Stanhome\ProductBundle\Entity\Category;
-use Stanhome\ProductBundle\Form\CategoryType;
+use Stanhome\ProductBundle\Form\Type\CategoryType;
 
 /**
  * Class CategoryController

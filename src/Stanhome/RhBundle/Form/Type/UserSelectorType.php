@@ -1,6 +1,6 @@
 <?php
 
-namespace Stanhome\RhBundle\Form;
+namespace Stanhome\RhBundle\Form\Type;
 
 use Doctrine\ORM\EntityManager;
 use Stanhome\RhBundle\Form\DataTransformer\UsersToIdsTransformer;

@@ -5,7 +5,7 @@ namespace Stanhome\ProductBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Stanhome\ProductBundle\Entity\Brand;
-use Stanhome\ProductBundle\Form\BrandEditType;
+use Stanhome\ProductBundle\Form\Type\BrandEditType;
 
 /**
  * Class BrandController

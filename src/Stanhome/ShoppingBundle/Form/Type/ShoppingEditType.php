@@ -1,6 +1,6 @@
 <?php
 
-namespace Stanhome\ShoppingBundle\Form;
+namespace Stanhome\ShoppingBundle\Form\Type;
 
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\Form\AbstractType;
