@@ -5,7 +5,7 @@ namespace Stanhome\PortalBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Stanhome\PortalBundle\Search\SearchProvider;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
  * Class SearchController
@@ -15,7 +15,7 @@ class SearchController extends Controller {
 
 	/**
 	 * @Route("/search/{fields}/{modes}/{searchString}", requirements={"fields"="(\[\d+\])?[a-zA-Z]+(\[\d+\])?(,[a-zA-Z]+(\[\d+\])?)*", "modes"="[a-zA-Z0-9_]+(,[a-zA-Z0-9_]+)*"}, name="portal_search")
-	 * @Method({"GET"})
+     * @Method("GET")
 	 */
 	public function searchAction($fields, $modes, $searchString)
     {
