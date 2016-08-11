@@ -142,30 +142,22 @@ class CustomerController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $customer = $em->getRepository('StanhomeRhBundle:Customer')->find($id);
-//        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findAllShoppingByCustomerOrderByDate($this->get('security.token_storage')->getToken()->getUser(), $id);
         $meetings = $em->getRepository('StanhomeMeetingBundle:Meeting')->findAllMeetingByCustomerOrderByDate($this->get('security.token_storage')->getToken()->getUser(), $id);
         if (!$customer) {
             throw $this->createNotFoundException('Unable to find Customer entity.');
         }
 
+        $adress = str_replace(" ", "_",$customer->getAddress());
+        $adress = utf8_encode($adress);
+        $adress = urlencode($adress);
+        $cp = $customer->getCp();
 
-//        $adress = str_replace(" ", "_",$customer->getAddress());
-//        $adress = utf8_encode($adress);
-//        $adress = urlencode($adress);
-//        $cp = $customer->getCp();
+        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
+        $json = json_decode($coordpolaire);
 
-//        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
-//        $json = json_decode($coordpolaire);
+        $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
+        $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
 
-//        $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
-//        $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
-
-//        $paginator = $this->get('knp_paginator');
-//        $pagination = $paginator->paginate(
-//            $shoppings,
-//            $request->query->get('page', 1),
-//            5
-//        );
 
         $paginator2 = $this->get('knp_paginator');
         $pagination2 = $paginator2->paginate(
@@ -174,13 +166,12 @@ class CustomerController extends Controller
             5
         );
 
-//        $deleteForm = $this->createDeleteForm($id);
+        $deleteForm = $this->createDeleteForm($id);
 
         return array(
             'customer' => $customer,
-//            'pagination' => $pagination,
             'pagination2' => $pagination2,
-//            'delete_form' => $deleteForm->createView(),
+            'delete_form' => $deleteForm->createView(),
         );
     }
 
@@ -251,8 +242,6 @@ class CustomerController extends Controller
 
 //        if ($editForm->isValid()) {
             $em->flush();
-
-//            var_dump($id);
 
             return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $entity->getId())));
 //        }
