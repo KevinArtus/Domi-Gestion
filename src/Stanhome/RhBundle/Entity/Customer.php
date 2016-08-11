@@ -336,39 +336,6 @@ class Customer
     }
 
     /**
-     * Add shopping
-     *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
-     * @return Customer
-     */
-//    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-//    {
-//        $this->shopping[] = $shopping;
-//
-//        return $this;
-//    }
-
-    /**
-     * Remove shopping
-     *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
-     */
-//    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-//    {
-//        $this->shopping->removeElement($shopping);
-//    }
-
-    /**
-     * Get shopping
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-//    public function getShopping()
-//    {
-//        return $this->shopping;
-//    }
-
-    /**
      * Add meeting
      *
      * @param \Stanhome\MeetingBundle\Entity\Meeting $meeting

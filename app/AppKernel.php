@@ -33,8 +33,6 @@ class AppKernel extends Kernel
             new Stanhome\RhBundle\StanhomeRhBundle(),
             new Stanhome\UserBundle\StanhomeUserBundle(),
             new Stanhome\PortalBundle\StanhomePortalBundle(),
-//            new Stanhome\ShoppingBundle\StanhomeShoppingBundle(),
-//            new Stanhome\ProductBundle\StanhomeProductBundle(),
 
             new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         );

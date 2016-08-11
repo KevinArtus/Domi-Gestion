@@ -391,37 +391,4 @@ class Meeting
     {
         $this->meeting = new \Doctrine\Common\Collections\ArrayCollection();
     }
-
-    /**
-     * Add shopping
-     *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
-     * @return Meeting
-     */
-//    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-//    {
-//        $this->shopping[] = $shopping;
-//
-//        return $this;
-//    }
-
-    /**
-     * Remove shopping
-     *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
-     */
-//    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
-//    {
-//        $this->shopping->removeElement($shopping);
-//    }
-
-    /**
-     * Get shopping
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-//    public function getShopping()
-//    {
-//        return $this->shopping;
-//    }
 }
