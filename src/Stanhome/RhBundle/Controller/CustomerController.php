@@ -167,12 +167,12 @@ class CustomerController extends Controller
             5
         );
 
-        $deleteForm = $this->createDeleteForm($id);
+        //$deleteForm = $this->createDeleteForm($id);
 
         return array(
             'customer' => $customer,
             'pagination2' => $pagination2,
-            'delete_form' => $deleteForm->createView(),
+            //'delete_form' => $deleteForm->createView(),
         );
     }
 
