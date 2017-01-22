@@ -154,8 +154,10 @@ class CustomerController extends Controller
         $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
         $json = json_decode($coordpolaire);
 
-        $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
-        $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
+        if ($json->status != 'ZERO_RESULTS') {
+            $customer->setLatitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'});
+            $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
+        }
 
 
         $paginator2 = $this->get('knp_paginator');
