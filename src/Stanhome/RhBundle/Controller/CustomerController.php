@@ -18,7 +18,6 @@ use Stanhome\RhBundle\Form\Type\CustomerEditType;
  */
 class CustomerController extends Controller
 {
-
     /**
      * Liste tous les clients
      *

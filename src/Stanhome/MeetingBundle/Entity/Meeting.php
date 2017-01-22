@@ -53,7 +53,6 @@ class Meeting
      */
     protected $montantKm;
 
-
     /**
      * @ORM\Column(type="decimal", scale=2, nullable=true)
      */
@@ -78,7 +77,6 @@ class Meeting
      * @ORM\OneToMany(targetEntity="Stanhome\ShoppingBundle\Entity\Shopping", mappedBy="shopping")
      */
 //    private $shopping;
-
 
     /**
      * @ORM\ManyToOne(targetEntity="Stanhome\UserBundle\Entity\User")

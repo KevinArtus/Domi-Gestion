@@ -17,3 +17,6 @@
 
 #==[COMPOSER]==============================#
 /composer.phar
+
+.idea
+/elasticsearch-5.1.2

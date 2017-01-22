@@ -22,9 +22,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer1->setSexe('Homme');
         $customer1->setNom('Artus');
         $customer1->setPrenom('Kévin');
-        $customer1->setTel('0600000000');
+        $customer1->setPortable('0600000000');
         $customer1->setEmail('kevinar9@hotmail.fr');
-        $customer1->setaddress('46 rue Jules Ferry');
+        $customer1->setAddress('46 rue Jules Ferry');
         $customer1->setCp('14120');
         $customer1->setCity('Mondeville');
         $manager->persist($customer1);
@@ -34,9 +34,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer2->setSexe('Homme');
         $customer2->setNom('Artus');
         $customer2->setPrenom('Quentin');
-        $customer2->setTel('0699999999');
+        $customer2->setPortable('0699999999');
         $customer2->setEmail('quentinar@hotmail.fr');
-        $customer2->setaddress('76 allée des charmilles');
+        $customer2->setAddress('76 allée des charmilles');
         $customer2->setCp('86130');
         $customer2->setCity('Dissay');
         $manager->persist($customer2);
@@ -46,9 +46,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer3->setSexe('Femme');
         $customer3->setNom('Van Wynsberghe');
         $customer3->setPrenom('Charlène');
-        $customer3->setTel('0610101010');
+        $customer3->setPortable('0610101010');
         $customer3->setEmail('vw.charlene@live.fr');
-        $customer3->setaddress('46 rue Jules Ferry');
+        $customer3->setAddress('46 rue Jules Ferry');
         $customer3->setCp('14120');
         $customer3->setCity('Mondeville');
         $manager->persist($customer3);

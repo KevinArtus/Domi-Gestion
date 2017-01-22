@@ -18,7 +18,6 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
  */
 class MeetingController extends Controller
 {
-
     /**
      * Liste toutes les réunions
      *
@@ -284,5 +283,4 @@ class MeetingController extends Controller
 
         return $this->render("StanhomeMeetingBundle:Meeting:searchLi.html.twig", array("customers" => $customers));
     }
-
 }

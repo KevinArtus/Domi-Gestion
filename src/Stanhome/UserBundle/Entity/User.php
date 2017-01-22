@@ -28,7 +28,7 @@ class User extends BaseUser
     private $salary;
 
     /**
-     * @ORM\Column(name="tauxkm", type="decimal", scale=4)
+     * @ORM\Column(name="tauxkm", type="decimal", scale=4, nullable=true)
      */
     private $tauxKm;
 
@@ -97,8 +97,6 @@ class User extends BaseUser
 
         return $this;
     }
-
-
 //
 //    /**
 //     * @ORM\Column(name="username", type="string", length=255, unique=true)
@@ -227,5 +225,4 @@ class User extends BaseUser
 //
 //        return $this;
 //    }
-
 }

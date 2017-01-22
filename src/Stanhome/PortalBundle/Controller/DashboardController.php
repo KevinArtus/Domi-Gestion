@@ -29,7 +29,7 @@ class DashboardController extends Controller
         $salary = $this->get('security.token_storage')->getToken()->getUser()->getSalary();
 
         $montantKm = 0;
-        foreach($meetingskm as $value) {
+        foreach ($meetingskm as $value) {
             $montantKm += $value->getMontantKm();
         }
 

@@ -16,7 +16,8 @@ use Stanhome\RhBundle\Entity\Customer;
  * Class CustomerProvider
  * @package Stanhome\RhBundle\Security
  */
-class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
+class CustomerProvider implements UserProviderInterface, UserFactoryInterface
+{
     /**
      * @var \Doctrine\ORM\EntityManager
      */
@@ -32,7 +33,8 @@ class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
      * @param EntityManager $em
      * @param YamlRetriever $yamlRetriever
      */
-    public function __construct(EntityManager $em, YamlRetriever $yamlRetriever) {
+    public function __construct(EntityManager $em, YamlRetriever $yamlRetriever)
+    {
         $this->em = $em;
         $this->yamlRetriever = $yamlRetriever;
     }
@@ -41,7 +43,8 @@ class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
      * @param string $nom
      * @return mixed
      */
-    public function loadUserByUsername($nom) {
+    public function loadUserByUsername($nom)
+    {
         $entity = $this->em
             ->createQueryBuilder()
             ->select('u')
@@ -60,7 +63,8 @@ class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
      * @param UserInterface $user
      * @return mixed
      */
-    public function refreshUser(UserInterface $user) {
+    public function refreshUser(UserInterface $user)
+    {
   	if (!$user instanceof Customer)
             throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', get_class($user)));
 
@@ -71,7 +75,8 @@ class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
      * @param string $class
      * @return bool
      */
-    public function supportsClass($class) {
+    public function supportsClass($class)
+    {
         return $class === "Stanhome/RhBundle/Security/CustomerProvider";
     }
 
@@ -81,7 +86,8 @@ class CustomerProvider implements UserProviderInterface, UserFactoryInterface {
      * @param array $attributes
      * @return mixed
      */
-    public function createUser($username, array $rolesStr, array $attributes) {
+    public function createUser($username, array $rolesStr, array $attributes)
+    {
         if (!array_key_exists("cas:first_name", $attributes) || !array_key_exists("cas:last_name", $attributes) || !array_key_exists("cas:email", $attributes))
             throw new InvalidArgumentException("Missing CAS parameters (please check the AD structure)");
 
