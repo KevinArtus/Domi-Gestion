@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
+        <li class="active">500</li>
+    </ol>
+    <div id="error-page" class="container">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h1>500</h1>
+                <p>Oh non ! Le serveur a planté...</p>
+                <p>Qu'est-ce qu'on peut faire ? Attendre, recharger la page indéfiniment...</p>
+                <p>Contacter le responsable...</p>
+                <p>Aller boire un café...</p>
+                <p>En fait c'est plutôt cool, non ?! Bon...à part qu'il faut trouver le responsable...</p>
+            </div>
+            <div class="col-md-6">
+                <div class="pulse"></div>
+                <img src="{{ asset('bundles/fimeportal/images/robot.png') }}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{{ path('stanhome_portal_dashboard_index') }}">{{ 'StanhomePortalBundle.global.dashboard'|trans }}</a></li>
+        <li class="active"><a href="{{ path('stanhome_rh_customer_index') }}">{{ 'StanhomeMeetingBundle.meetings.page_index.header'|trans }}</a></li>
+        <li class="active">{{ 'StanhomeMeetingBundle.meetings.page_show.title'|trans }} {{ meeting.date|date("d/m/Y") }}</li>
+    </ol>
+    <div id="fwp-content" class="col-md-12">
+        <div class="row">
+            <div class="col-md-2  col-md-offset-1">
+                <h2>{{ 'StanhomeMeetingBundle.meetings.page_show.header'|trans }}</h2>
+            </div>
+        </div>
+        <div class="container">
+            {% if meeting is empty %}
+                {{ 'StanhomeShoppingBundle.shoppings.page_index.noProduct'|trans }}
+            {% else %}
+                <div class="panel panel-default table-responsive">
+                    <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.customer'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.date'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.km'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.nbPersons'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.montantTtc'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.montantHt'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.profit'|trans }}</th>
+                            <th>{{ 'StanhomeMeetingBundle.meetings.page_show.address'|trans }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a href="{{ path('stanhome_rh_customer_show', { 'id': meeting.customer.id }) }}"> {{ meeting.customer.nom }} {{ meeting.customer.prenom }}</a></td>
+                            <td><span class="label label-default">{{ meeting.date|date("d/m/Y") }}</span></td>
+                            <td><span class="label label-default">{{ meeting.nbKm }}</span></td>
+                            <td><span class="label label-default">{{ meeting.nbPersons }}</span></td>
+                            <td><span class="label label-default">{{ meeting.montantTtc }} €</span></td>
+                            <td><span class="label label-default">{{ meeting.montantHt }} €</span></td>
+                            <td><span class="label label-default">{{ meeting.profit }} €</span></td>
+                            <td><span class="label label-default">{{ meeting.inlineAddress }}</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </div>
+        {#<div class="container">#}
+            {#{% if shopping is empty %}#}
+                {#{{ 'StanhomeShoppingBundle.shoppings.page_index.noProduct'|trans }}#}
+            {#{% else %}#}
+                {#<div class="panel panel-default table-responsive">#}
+                    {#<table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">#}
+                        {#<thead>#}
+                        {#<tr>#}
+                            {#<th class="col-md-2">{{ sylius_resource_sort('name', 'StanhomeShoppingBundle.shoppings.page_index.details'|trans) }}</th>#}
+                            {#<th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.customer'|trans) }}</th>#}
+                            {#<th>{{ sylius_resource_sort('type', 'StanhomeShoppingBundle.shoppings.page_index.date'|trans) }}</th>#}
+                            {#<th class="col-md-2">{{ sylius_resource_sort('end_estimated_at', 'StanhomeShoppingBundle.shoppings.page_index.amount'|trans) }}</th>#}
+                            {#<th>Modifier</th>#}
+                            {#<th>Supprimer</th>#}
+                        {#</tr>#}
+                        {#</thead>#}
+                        {#<tbody>#}
+                        {#{% for shop in shopping %}#}
+                            {#<tr>#}
+                                {#<td>#}
+                                    {#<div class="checkbox left">#}
+                                        {#<input type="checkbox" class="flat-checkbox-1 check">#}
+                                    {#</div>#}
+                                    {#<a href="{{ path('stanhome_shopping_shopping_show', { 'id': shop.id }) }}">{{ 'StanhomeShoppingBundle.shoppings.page_index.details'|trans }}</a>#}
+                                {#</td>#}
+                                {#<td><span class="label label-default"> {{ shop.customer.nom }} {{ shop.customer.prenom }}</span></td>#}
+                                {#<td><span class="label label-default">{{ shop.dateOrder|date("d/m/Y") }}</span></td>#}
+                                {#<td><span class="label label-default">{{ shop.totalPrice }} €</span></td>#}
+                                {#<input type='hidden' name='_method' value='PUT'>#}
+                                {#<td class="center"><a href="{{ path('stanhome_shopping_shopping_edit', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>#}
+                                {#<input type='hidden' name='_method' value='DELETE'>#}
+                                {#<td class="center"><a href="{{ path('stanhome_shopping_shopping_delete', { 'id': shop.id }) }}"><i class="icon-pencil2"></i></a></td>#}
+                            {#</tr>#}
+                        {#{% endfor %}#}
+                        {#</tbody>#}
+                    {#</table>#}
+                {#</div>#}
+            {#{% endif %}#}
+        {#</div>#}
+    </div>
+{% endblock %}

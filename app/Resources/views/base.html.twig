@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="fwpApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FIME SAS">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
+    <title>{% block title %}Domi'Gestion{% endblock %}</title>
+    {% block stylesheets %}
+        {#    {% stylesheets filter='?yui_css, cssrewrite'
+                'vendor/bootstrap/dist/css/bootstrap.min.css'
+                '@FimePortalBundle/Resources/public/css/*'
+            %}
+                    {% endstylesheets %}
+    #}
+        <link rel="stylesheet" href="{{ asset('assets/css/bundled.css') }}"/>
+        <!--[if lt IE 9]>
+        <![endif]-->
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src=" {{  asset('assets/images/logo-white.png') }}" class="img-responsive col-xs-2 col-sm-3 col-md-3">
+                {#<a class="navbar-brand" href="{{ path('portal_dashboard') }}">FWP</a>#}
+            </div>
+            <div class="collapse navbar-collapse" >
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="{{ path('stanhome_portal_dashboard_index') }}"><span class="icon-dashboard"></span>Dashboard</a></li>
+                    {#<li class="dropdown">#}
+                    {#<a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><span class="icon-icon-livrable"></span>Marques</a>#}
+                    {#<ul class="dropdown-menu" role="menu">#}
+                    {#<li><a href="{{ path('stanhome_product_brand_index') }}">Toutes les marques</a></li>#}
+                    {#</ul>#}
+                    {#</li>#}
+                    {#<li class="dropdown">#}
+                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Produits</a>#}
+                    {#<ul class="dropdown-menu" role="menu">#}
+                    {#<li><a href="{{ path('stanhome_product_product_index') }}">Tous les produit</a></li>#}
+                    {#<li class="divider"></li>#}
+                    {#<li><a href="{{ path('stanhome_product_product_new') }}">Ajouter un produit</a></li>#}
+                    {#</ul>#}
+                    {#</li>#}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-rh"></span>Carnet clients</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ path('stanhome_rh_customer_index') }}"><i class="icon-address-book"></i>Tous les clients</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ path('stanhome_rh_customer_new') }}">Ajouter un client</a></li>
+                        </ul>
+                    </li>
+                    {#<li class="dropdown">#}
+                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Commandes</a>#}
+                    {#<ul class="dropdown-menu" role="menu">#}
+                    {#<li><a href="{{ path('stanhome_shopping_shopping_index') }}">Toutes les commandes</a></li>#}
+                    {#<li class="divider"></li>#}
+                    {#<li><a href="{{ path('stanhome_shopping_shopping_new') }}">Ajouter une commande</a></li>#}
+                    {#</ul>#}
+                    {#</li>#}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Réunions</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ path('stanhome_meeting_meeting_index') }}">Toutes les Réunions</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ path('stanhome_meeting_meeting_new') }}">Ajouter une réunion</a></li>
+                        </ul>
+                    </li>
+                    {#li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-rh"></span>Gestion RH</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ path('fime_rh_user_index') }}"><i class="icon-address-book"></i>Employés</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ path('fime_rh_userext_index') }}"><i class="icon-profile"></i>Externes</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ path('fime_rh_company_index') }}"><i class="icon-office"></i>Entreprises</a></li>
+                        </ul>
+                    </li>#}
+                </ul>
+
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="input-group form-search">
+                        <input type="text" id="searchForm" class="form-control search-query" autocomplete="off" placeholder="{% trans from "menu_item" %}Rechercher{% endtrans %}" fwp-autocomplete fwp-autocomplete-url-source="{{ path('portal_search', {'fields':'customer', 'modes':'url', 'searchString':'*searchString*'}) }}">
+                        {#<span class="input-group-btn">#}
+                        {#<button class="btn btn-normal" data-type="last" type="submit">Search</button>#}
+                        {#</span>#}
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="account">Bonjour {{ app.user.username }}</span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {#
+                                                        <li><a href="{{ path('fime_rh_user_show', { 'username': app.user.username }) }}"><i class="icon-user"></i>Mon profil</a></li>
+                            #}
+                            <li><a href="{{ path('fos_user_profile_show') }}"><i class="icon-cog"></i>Configuration</a></li>
+                            <li class="divider"></li>
+                            <a href="{{ path('fos_user_security_logout') }}"><i class="icon-lock"></i>Déconnexion</a>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        {% for type in ['success', 'danger', 'info', 'warning'] %}
+            {% for message in app.session.flashbag.get(type) %}
+                <div class="alert alert-{{ type }}">
+                    {{ message }}
+                    <a class="close" data-dismiss="alert" href="#">&times;</a>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+    {% block content %}
+    {% endblock %}
+{% endblock %}
+
+<script type="text/javascript" src="{{ asset('assets/js/bundled.min.js') }}"></script>
+
+{% block angular %}{% endblock angular %}
+{% block javascripts %}{% endblock javascripts %}
+</body>
+</html>
