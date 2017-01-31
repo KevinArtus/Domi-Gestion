@@ -1,0 +1,3 @@
+stanhome_meeting_meeting_import:
+    resource: "@DomiGestionMeetingBundle/Resources/config/routing/meeting.yml"
+    prefix: /meeting

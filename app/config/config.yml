@@ -2,7 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
-    - { resource: "@StanhomePortalBundle/Resources/config/services.xml" }
+    - { resource: "@DomiGestionPortalBundle/Resources/config/services.xml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -82,7 +82,7 @@ knp_paginator:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Stanhome\UserBundle\Entity\User
+    user_class: DomiGestion\UserBundle\Entity\User
 
 fos_elastica:
     clients:
@@ -117,7 +117,7 @@ fos_elastica:
                          prenom: { search_analyzer: custom_search_analyzer, index_analyzer: custom_index_analyzer, type: string, boost: 1 }
                      persistence:
                          driver: orm
-                         model: Stanhome\RhBundle\Entity\Customer
+                         model: DomiGestion\RhBundle\Entity\Customer
                          provider: ~
                          listener: ~
                          finder: ~

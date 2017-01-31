@@ -1,0 +1,38 @@
+stanhome_meeting_meeting_index:
+    path: /
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:index
+        sortable: true
+
+stanhome_meeting_meeting_new:
+    path: /new
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:new
+
+stanhome_meeting_meeting_create:
+    path: /create
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:create
+
+stanhome_meeting_meeting_show:
+    path: /show/{id}
+    methods: [GET]
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:show
+
+stanhome_meeting_meeting_edit:
+    path: /edit/{id}
+    methods: [GET]
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:edit
+
+stanhome_meeting_meeting_update:
+    path: /update/{id}
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:update
+
+stanhome_meeting_meeting_delete:
+    path: /delete/{id}
+    methods: [GET]
+    defaults:
+        _controller: DomiGestionMeetingBundle:Meeting:delete

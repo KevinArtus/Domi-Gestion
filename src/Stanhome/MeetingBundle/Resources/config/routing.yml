@@ -1,3 +1,0 @@
-stanhome_meeting_meeting_import:
-    resource: "@StanhomeMeetingBundle/Resources/config/routing/meeting.yml"
-    prefix: /meeting

@@ -1,0 +1,3 @@
+stanhome_portal_dashboard_index:
+    path:     /
+    defaults: { _controller: DomiGestionPortalBundle:Dashboard:index }

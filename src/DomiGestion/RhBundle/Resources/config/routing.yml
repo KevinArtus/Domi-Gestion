@@ -1,0 +1,9 @@
+stanhome_rh_customer_import:
+    resource: "@DomiGestionRhBundle/Resources/config/routing/customer.yml"
+    prefix: /customer
+
+portal_search:
+    path: /search/{fields}/{modes}/{searchString}
+    methods: [GET]
+    defaults:
+        _controller: DomiGestionPortalBundle:Search:search

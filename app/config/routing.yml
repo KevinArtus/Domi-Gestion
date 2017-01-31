@@ -1,13 +1,13 @@
 stanhome_rh:
-    resource: "@StanhomeRhBundle/Resources/config/routing.yml"
+    resource: "@DomiGestionRhBundle/Resources/config/routing.yml"
     prefix: /
 
 stanhome_portal:
-    resource: "@StanhomePortalBundle/Resources/config/routing.yml"
+    resource: "@DomiGestionPortalBundle/Resources/config/routing.yml"
     prefix: /
 
 stanhome_meeting:
-    resource: "@StanhomeMeetingBundle/Resources/config/routing.yml"
+    resource: "@DomiGestionMeetingBundle/Resources/config/routing.yml"
     prefix: /
 
 fos_user:

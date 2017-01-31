@@ -1,0 +1,8 @@
+DomiGestionPortalBundle:
+    global:
+        dashboard: "Acceuil"
+    dashboard:
+        page_index:
+            dashboard: "Accueil"
+            titleMeeting: "Les réunions à venir"
+            header: "Montant total gagné:"

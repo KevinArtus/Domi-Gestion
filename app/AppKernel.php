@@ -26,10 +26,10 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
 //            new \winzou\Bundle\StateMachineBundle\winzouStateMachineBundle(),
-            new Stanhome\MeetingBundle\StanhomeMeetingBundle(),
-            new Stanhome\RhBundle\StanhomeRhBundle(),
-            new Stanhome\UserBundle\StanhomeUserBundle(),
-            new Stanhome\PortalBundle\StanhomePortalBundle(),
+            new DomiGestion\MeetingBundle\DomiGestionMeetingBundle(),
+            new DomiGestion\RhBundle\DomiGestionRhBundle(),
+            new DomiGestion\UserBundle\DomiGestionUserBundle(),
+            new DomiGestion\PortalBundle\DomiGestionPortalBundle(),
 
             new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         ];
