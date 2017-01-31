@@ -3,16 +3,10 @@ stanhome_rh_customer_index:
     defaults:
         _controller: DomiGestionRhBundle:Customer:index
 
-stanhome_rh_customer_new:
-    path: /new
+stanhome_rh_customer_add:
+    path: /add
     defaults:
-        _controller: DomiGestionRhBundle:Customer:new
-
-stanhome_rh_customer_create:
-    path: /create
-    methods: [POST]
-    defaults:
-        _controller: DomiGestionRhBundle:Customer:create
+        _controller: DomiGestionRhBundle:Customer:add
 
 stanhome_rh_customer_show:
     path: /show/{id}

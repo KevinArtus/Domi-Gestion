@@ -4,15 +4,10 @@ stanhome_meeting_meeting_index:
         _controller: DomiGestionMeetingBundle:Meeting:index
         sortable: true
 
-stanhome_meeting_meeting_new:
-    path: /new
+stanhome_meeting_meeting_add:
+    path: /add
     defaults:
-        _controller: DomiGestionMeetingBundle:Meeting:new
-
-stanhome_meeting_meeting_create:
-    path: /create
-    defaults:
-        _controller: DomiGestionMeetingBundle:Meeting:create
+        _controller: DomiGestionMeetingBundle:Meeting:add
 
 stanhome_meeting_meeting_show:
     path: /show/{id}

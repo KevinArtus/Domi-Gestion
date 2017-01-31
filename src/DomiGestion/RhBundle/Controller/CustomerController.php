@@ -65,66 +65,28 @@ class CustomerController extends Controller
     }
 
     /**
-     * Creates a new Customer entity.
+     * Displays a form to create a new Customer entity.
      *
-     * @Route("/", name="customer_create")
-     * @Method("POST")
-     * @Template("DomiGestionRhBundle:Customer:new.html.twig")
+     * @Template()
      */
-    public function createAction(Request $request)
+    public function addAction(Request $request)
     {
-        $entity = new Customer();
-        $form = $this->createCreateForm($entity);
+        $customer = new Customer();
+        $form = $this->createForm(CustomerType::class, $customer);
+
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
-            $entity->setUser($this->get('security.token_storage')->getToken()->getUser());
+        if ($form->isSubmitted() && $form->isValid()) {
+            $customer->setUser($this->get('security.token_storage')->getToken()->getUser());
             $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
+            $em->persist($customer);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $entity->getId())));
+            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $customer->getId()));
         }
 
         return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        );
-    }
-
-    /**
-     * Creates a form to create a Customer entity.
-     *
-     * @param Customer $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createCreateForm(Customer $entity)
-    {
-        $form = $this->createForm(new CustomerType(), $entity, array(
-            'action' => $this->generateUrl('stanhome_rh_customer_create'),
-            'method' => 'POST',
-        ));
-
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
-        return $form;
-    }
-
-    /**
-     * Displays a form to create a new Customer entity.
-     *
-     * @Route("/new", name="customer_new")
-     * @Method("GET")
-     * @Template()
-     */
-    public function newAction()
-    {
-        $entity = new Customer();
-        $form   = $this->createCreateForm($entity);
-
-        return array(
-            'entity' => $entity,
+            'entity' => $customer,
             'form'   => $form->createView(),
         );
     }
@@ -212,12 +174,7 @@ class CustomerController extends Controller
      */
     private function createEditForm(Customer $entity)
     {
-        $form = $this->createForm(new CustomerEditType(), $entity, array(
-            'action' => $this->generateUrl('stanhome_rh_customer_update', array('id' => $entity->getId())),
-            'method' => 'POST',
-        ));
-
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form = $this->get('form.factory')->create(CustomerEditType::class, $entity);
 
         return $form;
     }

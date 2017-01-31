@@ -28,7 +28,7 @@ class MeetingController extends Controller
     public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        
+
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')) {
 
             $customers = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findAllMeetingOrderByDate($this->get('security.token_storage')->getToken()->getUser());
@@ -71,69 +71,33 @@ class MeetingController extends Controller
     }
 
     /**
-     * Crée une nouvelle réunion
+     * Affiche le formulaire de création d'une entité Meeting
      *
-     * @Method("POST")
-     * @Template("DomiGestionMeetingBundle:Meeting:new.html.twig")
+     * @Template()
      */
-    public function createAction(Request $request)
+    public function addAction(Request $request)
     {
-        $entity = new Meeting();
-        $form = $this->createCreateForm($entity);
+        $meeting = new Meeting();
+        $form = $this->createForm(MeetingType::class, $meeting);
+
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
-            $entity->setUser($this->get('security.token_storage')->getToken()->getUser());
+        if ($form->isSubmitted() && $form->isValid()) {
+            $meeting->setUser($this->get('security.token_storage')->getToken()->getUser());
 
             $tauxKm = $this->get('security.token_storage')->getToken()->getUser()->getTauxKm();
-            $entity->setMontantKm($entity->getNbKm()*$tauxKm);
-            $entity->setProfit($entity->getMontantTtc()-$entity->getMontantHt());
+            $meeting->setMontantKm($meeting->getNbKm()*$tauxKm);
+            $meeting->setProfit($meeting->getMontantTtc()-$meeting->getMontantHt());
 
             $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
+            $em->persist($meeting);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('stanhome_meeting_meeting_show', array('id' => $entity->getId())));
+            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $meeting->getId()));
         }
 
         return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        );
-    }
-
-    /**
-     * Crée un form afin de créer une nouvelle entité Meeting
-     *
-     * @param Meeting $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createCreateForm(Meeting $entity)
-    {
-        $form = $this->createForm(new MeetingType(), $entity, array(
-            'action' => $this->generateUrl('stanhome_meeting_meeting_create'),
-            'method' => 'POST',
-        ));
-
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
-        return $form;
-    }
-
-    /**
-     * Affiche le formulaire de création d'une entité Meeting
-     *
-     * @Method("GET")
-     * @Template()
-     */
-    public function newAction()
-    {
-        $entity = new Meeting();
-        $form   = $this->createCreateForm($entity);
-
-        return array(
-            'entity' => $entity,
+            'entity' => $meeting,
             'form'   => $form->createView(),
         );
     }

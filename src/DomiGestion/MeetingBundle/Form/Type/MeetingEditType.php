@@ -2,12 +2,17 @@
 
 namespace DomiGestion\MeetingBundle\Form\Type;
 
+use Doctrine\ORM\EntityRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+use Symfony\Component\Form\Extension\Core\Type\ButtonType;
 /**
- * Class MeetingEditType
+ * Class MeetingType
  * @package DomiGestion\MeetingBundle\Form
  */
 class MeetingEditType extends AbstractType
@@ -18,35 +23,11 @@ class MeetingEditType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder
-            ->add('date', 'date', array("widget" => "single_text", "label" => "DomiGestionMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy"))
-            ->add('customer','entity', array ('class' => 'DomiGestion\RhBundle\Entity\Customer', 'empty_value' => 'Choisissez une hôtesse...', 'required' => true, "label" => "StanhomeMeetingBundle.meetings.page_new_edit.customer" ))
-            ->add('address', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.address"))
-            ->add('cp', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.cp"))
-            ->add('city', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.city"))
-            ->add('nbPersons', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.nbPersons", "required" => false))
-            ->add('nbKm', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.km"))
-            ->add('montantTtc', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.montantTtc", "required" => false))
-            ->add('montantHt', 'text', array("label" => "DomiGestionMeetingBundle.meetings.page_new_edit.montantHt", "required" => false));
+        $builder->remove('date');
     }
 
-    /**
-     * @param OptionsResolverInterface $resolver
-     */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function getParent()
     {
-        $resolver->setDefaults(array(
-            'data_class' => 'DomiGestion\MeetingBundle\Entity\Meeting'
-        ));
-    }
-
-    /**
-     * Returns the name of this type.
-     *
-     * @return string The name of this type
-     */
-    public function getName()
-    {
-        return 'meeting';
+        return MeetingType::class;
     }
 }
