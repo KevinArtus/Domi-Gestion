@@ -1,6 +1,8 @@
 Stanhome
 ========
 
+| Sensio insight | [![SensioLabsInsight](https://insight.sensiolabs.com/projects/3ae1ff92-01d9-4281-9614-f0a11535965f/big.png)](https://insight.sensiolabs.com/projects/3ae1ff92-01d9-4281-9614-f0a11535965f) |
+
 Projet de fin de première année du Master DNR2I de la faculté de Caen Basse-Normandie.
 
 Application permettant de gérer l'activité d'une conseillère pour des réunions à domicile.
