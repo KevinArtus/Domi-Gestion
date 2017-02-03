@@ -20,3 +20,7 @@
 /vendor/
 /web/bundles/
 /web/config.php
+
+#==[Front]===========================#
+/node_modules/
+
