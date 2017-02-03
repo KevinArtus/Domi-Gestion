@@ -5,7 +5,7 @@ namespace DomiGestion\RhBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class StanhomeRhBundle
+ * Class DomiGestionRhBundle
  * @package DomiGestion\RhBundle
  */
 class DomiGestionRhBundle extends Bundle

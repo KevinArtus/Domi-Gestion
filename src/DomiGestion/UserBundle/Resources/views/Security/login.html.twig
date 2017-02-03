@@ -5,29 +5,29 @@
 {% block body %}
     <body class='login theme-fime'>
     <div class="wrapper">
-        <h1>{% block page_title %}{{ 'StanhomeUserBundle.portal.login.page_title'|trans }}{% endblock page_title %}</h1>
+        <h1>{% block page_title %}{{ 'DomiGestionUserBundle.portal.login.page_title'|trans }}{% endblock page_title %}</h1>
         <div class="login-body">
-            <h2>{{ 'StanhomeUserBundle.portal.login.title'|trans }}</h2>
+            <h2>{{ 'DomiGestionUserBundle.portal.login.title'|trans }}</h2>
             {% if error %}
                 <div class="alert alert-error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
             <form action="{{ path('fos_user_security_check') }}" method="post" class='form-validate'>
                 <div class="control-group">
                     <div class="email controls">
-                        <input type="text" name="_username" value="{{ last_username }}" placeholder="{{ 'StanhomeUserBundle.portal.login.username'|trans }}" class='input-block-level' data-rule-required="true" data-rule-email="true">
+                        <input type="text" name="_username" value="{{ last_username }}" placeholder="{{ 'DomiGestionUserBundle.portal.login.username'|trans }}" class='input-block-level' data-rule-required="true" data-rule-email="true">
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="pw controls">
-                        <input type="password" name="_password" placeholder="{{ 'StanhomeUserBundle.portal.login.password'|trans }}" class='input-block-level' data-rule-required="true" >
+                        <input type="password" name="_password" placeholder="{{ 'DomiGestionUserBundle.portal.login.password'|trans }}" class='input-block-level' data-rule-required="true" >
                     </div>
                 </div>
                 <div class="submit">
                     <div class="remember">
-                        <input type="checkbox" name="_remember_me" class='icheck-me' data-skin="square" data-color="blue" id="remember" /> <label for="remember">{{ 'StanhomeUserBundle.portal.login.remember_me'|trans }}</label>
+                        <input type="checkbox" name="_remember_me" class='icheck-me' data-skin="square" data-color="blue" id="remember" /> <label for="remember">{{ 'DomiGestionUserBundle.portal.login.remember_me'|trans }}</label>
                     </div>
                     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-                    <input type="submit" value="{{ 'StanhomeUserBundle.portal.login.button'|trans }}" class='btn btn-primary' />
+                    <input type="submit" value="{{ 'DomiGestionUserBundle.portal.login.button'|trans }}" class='btn btn-primary' />
                 </div>
             </form>
             {#<div class="forget">#}

@@ -52,7 +52,7 @@ class MeetingController extends Controller
     /**
      * Liste les informations d'une catégorie
      *
-     * @Template("StanhomeMeetingBundle:Meeting:list.html.twig")
+     * @Template("DomiGestionMeetingBundle:Meeting:list.html.twig")
      */
     public function listAction($id, $cat)
     {

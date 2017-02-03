@@ -36,8 +36,8 @@
         "friendsofsymfony/elastica-bundle": "3.2.2",
 
         "willdurand/hateoas-bundle": "^1.0",
-        "knplabs/knp-paginator-bundle": "dev-master",
-        "jms/serializer-bundle": "dev-master",
+        "knplabs/knp-paginator-bundle": "2.5.3",
+        "jms/serializer-bundle": "1.1.0",
         "symfony/assetic-bundle": "^2.8",
         "friendsofsymfony/user-bundle": "~2.0@dev"
     },

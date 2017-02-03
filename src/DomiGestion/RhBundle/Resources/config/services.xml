@@ -4,8 +4,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="fime.rh.security.user_provider.class">Stanhome\RhBundle\Security\CustomerProvider</parameter>
-        <parameter key="stanhome.rh.form.user_selector.class">Stanhome\RhBundle\Form\UserSelectorType</parameter>
+        <parameter key="fime.rh.security.user_provider.class">DomiGestion\RhBundle\Security\CustomerProvider</parameter>
+        <parameter key="stanhome.rh.form.user_selector.class">DomiGestion\RhBundle\Form\UserSelectorType</parameter>
 
     </parameters>
 
