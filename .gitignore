@@ -1,6 +1,9 @@
+#==[Symfony]==========================#
 /app/config/parameters.yml
-/build/
-/phpunit.xml
+/app/config/config.yml
+/app/config/parameters.yml.dist
+
+/bin
 /var/*
 !/var/cache
 /var/cache/*
@@ -12,8 +15,8 @@
 /var/sessions/*
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
+
+#==[Vendor]===========================#
 /vendor/
 /web/bundles/
-.idea/
-/var/
-/tests/
+/web/config.php

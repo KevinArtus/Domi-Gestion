@@ -172,6 +172,7 @@ class MeetingController extends Controller
 
         return $form;
     }
+
     /**
      * Edits an existing Customer entity.
      *
@@ -235,7 +236,6 @@ class MeetingController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('stanhome_meeting_meeting_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
             ;
     }
