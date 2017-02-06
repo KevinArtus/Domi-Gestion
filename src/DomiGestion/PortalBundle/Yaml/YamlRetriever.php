@@ -9,14 +9,16 @@ use Symfony\Component\Yaml\Yaml;
  * Class YamlRetriever
  * @package DomiGestion\PortalBundle\Yaml
  */
-class YamlRetriever {
+class YamlRetriever
+{
     private $kernelRootDir;
 
     /**
      * YamlRetriever constructor.
      * @param Container $container
      */
-    public function __construct(Container $container) {
+    public function __construct(Container $container)
+    {
         $this->kernelRootDir = $container->getParameter('kernel.root_dir');
     }
 
@@ -26,7 +28,8 @@ class YamlRetriever {
      * @param null $defaultValue
      * @return mixed
      */
-    public function getValueFromApp($fileName, $path, $defaultValue = null) {
+    public function getValueFromApp($fileName, $path, $defaultValue = null)
+    {
         $parametersFile = sprintf("%s/config/%s", $this->kernelRootDir, $fileName);
         $parsed = Yaml::parse(file_get_contents($parametersFile));
         $arrayPath = explode(".", $path);
@@ -40,7 +43,8 @@ class YamlRetriever {
      * @param $defaultValue
      * @return mixed
      */
-    private function getRecursiveValueFromArray(array $array, array $arrayPath, $defaultValue) {
+    private function getRecursiveValueFromArray(array $array, array $arrayPath, $defaultValue)
+    {
         if (empty($arrayPath) || !array_key_exists($arrayPath[0], $array))
             return $defaultValue;
 

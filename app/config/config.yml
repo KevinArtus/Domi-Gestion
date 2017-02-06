@@ -84,40 +84,40 @@ fos_user:
     firewall_name: main
     user_class: DomiGestion\UserBundle\Entity\User
 
-fos_elastica:
-    clients:
-        default: { host: %elastica_host%, port: %elastica_port% }
-    serializer:
-        callback_class: FOS\ElasticaBundle\Serializer\Callback
-        serializer: serializer
-    indexes:
-        fime:
-            client: default
-            settings:
-                index:
-                    analysis:
-                        analyzer:
-                            custom_search_analyzer:
-                                type: custom
-                                tokenizer: standard
-                                filter   : [standard, lowercase, asciifolding]
-                            custom_index_analyzer:
-                                type: custom
-                                tokenizer: edgeNGram
-                                filter   : [standard, lowercase, asciifolding]
-                        tokenizer:
-                            edgeNGram:
-                                type: edgeNGram
-                                min_gram: 1
-                                max_gram: 20
-            types:
-                Customers:
-                     mappings:
-                         nom: { search_analyzer: custom_search_analyzer, index_analyzer: custom_index_analyzer, type: string, boost: 1 }
-                         prenom: { search_analyzer: custom_search_analyzer, index_analyzer: custom_index_analyzer, type: string, boost: 1 }
-                     persistence:
-                         driver: orm
-                         model: DomiGestion\RhBundle\Entity\Customer
-                         provider: ~
-                         listener: ~
-                         finder: ~
+#fos_elastica:
+#    clients:
+#        default: { host: %elastica_host%, port: %elastica_port% }
+#    serializer:
+#        callback_class: FOS\ElasticaBundle\Serializer\Callback
+#        serializer: serializer
+#    indexes:
+#        fime:
+#            client: default
+#            settings:
+#                index:
+#                    analysis:
+#                        analyzer:
+#                            custom_search_analyzer:
+#                                type: custom
+#                                tokenizer: standard
+#                                filter   : [standard, lowercase, asciifolding]
+#                            custom_index_analyzer:
+#                                type: custom
+#                                tokenizer: edgeNGram
+#                                filter   : [standard, lowercase, asciifolding]
+#                        tokenizer:
+#                            edgeNGram:
+#                                type: edgeNGram
+#                                min_gram: 1
+#                                max_gram: 20
+#            types:
+#                Customers:
+#                     mappings:
+#                         nom: { search_analyzer: custom_search_analyzer, index_analyzer: custom_index_analyzer, type: string, boost: 1 }
+#                         prenom: { search_analyzer: custom_search_analyzer, index_analyzer: custom_index_analyzer, type: string, boost: 1 }
+#                     persistence:
+#                         driver: orm
+#                         model: DomiGestion\RhBundle\Entity\Customer
+#                         provider: ~
+#                         listener: ~
+#                         finder: ~

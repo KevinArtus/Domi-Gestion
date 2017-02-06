@@ -3,13 +3,13 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <parameters>
-        <parameter key="fime.portal.search.search_providers.class">DomiGestion\PortalBundle\Search\SearchProviders</parameter>
-    </parameters>
+    <!--<parameters>-->
+        <!--<parameter key="fime.portal.search.search_providers.class">DomiGestion\PortalBundle\Search\SearchProviders</parameter>-->
+    <!--</parameters>-->
 
-    <services>
-        <service id="fime.portal.search.search_providers" class="%fime.portal.search.search_providers.class%">
+    <!--<services>-->
+        <!--<service id="fime.portal.search.search_providers" class="%fime.portal.search.search_providers.class%">-->
 
-        </service>
-    </services>
+        <!--</service>-->
+    <!--</services>-->
 </container>

@@ -55,10 +55,55 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="navigation">
-                    {{ knp_pagination_render(pagination) }}
-                </div>
+                {#<div class="navigation">#}
+                    {#{{ knp_pagination_render(pagination) }}#}
+                {#</div>#}
             {#{% endif %}#}
         </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        (function ($) {
+        $('#tableShipping').dataTable( {
+            "pageLength": 5,
+            "stateSave" : true,
+            "order"     : [[1, "asc" ]],
+            "columns"   : [
+                { "orderable": false },
+                null,
+                null,
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false }
+            ],
+            "language" : {
+                "sProcessing"     : "{{ 'DomiGestionRhBundle.base.dataTable.processing'|trans }}",
+                "sSearch"         : "{{ 'DomiGestionRhBundle.base.dataTable.search'|trans }}",
+                "sLengthMenu"     : "{{ 'DomiGestionRhBundle.base.dataTable.lengthMenu'|trans }}",
+                "sInfo"           : "{{ 'DomiGestionRhBundle.base.dataTable.info'|trans }}",
+                "sInfoEmpty"      : "{{ 'DomiGestionRhBundle.base.dataTable.infoEmpty'|trans }}",
+                "sInfoFiltered"   : "{{ 'DomiGestionRhBundle.base.dataTable.infoFiltered'|trans }}",
+                "sInfoPostFix"    : "",
+                "sLoadingRecords" : "{{ 'DomiGestionRhBundle.base.dataTable.loadingRecords'|trans }}",
+                "sZeroRecords"    : "{{ 'DomiGestionRhBundle.base.dataTable.zeroRecords'|trans }}",
+                "sEmptyTable"     : "{{ 'DomiGestionRhBundle.base.dataTable.emptyTable'|trans }}",
+                "oPaginate" : {
+                    "sFirst"   : "{{ 'DomiGestionRhBundle.base.dataTable.first'|trans }}",
+                    "sPrevious": "{{ 'DomiGestionRhBundle.base.dataTable.previous'|trans }}",
+                    "sNext"    : "{{ 'DomiGestionRhBundle.base.dataTable.next'|trans }}",
+                    "sLast"    : "{{ 'DomiGestionRhBundle.base.dataTable.last'|trans }}"
+                },
+                "oAria": {
+                    "sSortAscending" : "{{ 'DomiGestionRhBundle.base.dataTable.sortAscending'|trans }}",
+                    "sSortDescending": "{{ 'DomiGestionRhBundle.base.dataTable.sortDescending'|trans }}"
+                },
+            }
+        });
+    } )(jQuery);
+</script>
+
 {% endblock %}

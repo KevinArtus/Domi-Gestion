@@ -7,18 +7,18 @@
         <parameter key="searchProvider.class">DomiGestion\PortalBundle\Search\SearchProvider</parameter>
     </parameters>
 
-    <services>
-        <service id="fime.rh.search.user_search" class="%searchProvider.class%">
-            <argument type="service" id="fos_elastica.manager.orm" />
-            <argument type="collection">
-                <argument>nom</argument>
-                <argument>prenom</argument>
-            </argument>
-            <argument>DomiGestionRhBundle:Customer</argument>
-            <argument>stanhome_rh_customer_show</argument>
-            <argument>DomiGestionRhBundle.customers.search_header</argument>
-            <argument>glyphicon-user violetFime</argument>
-            <tag name="fime_search.provider" searchName="customer"/>
-        </service>
-    </services>
+    <!--<services>-->
+        <!--<service id="fime.rh.search.user_search" class="%searchProvider.class%">-->
+            <!--<argument type="service" id="fos_elastica.manager.orm" />-->
+            <!--<argument type="collection">-->
+                <!--<argument>nom</argument>-->
+                <!--<argument>prenom</argument>-->
+            <!--</argument>-->
+            <!--<argument>DomiGestionRhBundle:Customer</argument>-->
+            <!--<argument>stanhome_rh_customer_show</argument>-->
+            <!--<argument>DomiGestionRhBundle.customers.search_header</argument>-->
+            <!--<argument>glyphicon-user violetFime</argument>-->
+            <!--<tag name="fime_search.provider" searchName="customer"/>-->
+        <!--</service>-->
+    <!--</services>-->
 </container>

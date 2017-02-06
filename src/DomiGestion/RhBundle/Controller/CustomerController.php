@@ -231,13 +231,13 @@ class CustomerController extends Controller
         return $this->redirect($this->generateUrl('stanhome_rh_customer_index'));
     }
 
-    /**
-     * Search customers
-     */
-    public function searchAction(Request $request) {
-        $searchString = $request->get("text", "");
-        $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
-
-        return $this->render("DomiGestionRhBundle:Customer:searchLi.html.twig", array("customers" => $customers));
-    }
+//    /**
+//     * Search customers
+//     */
+//    public function searchAction(Request $request) {
+//        $searchString = $request->get("text", "");
+//        $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
+//
+//        return $this->render("DomiGestionRhBundle:Customer:searchLi.html.twig", array("customers" => $customers));
+//    }
 }

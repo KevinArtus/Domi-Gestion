@@ -20,7 +20,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
-            new FOS\ElasticaBundle\FOSElasticaBundle(),
+//            new FOS\ElasticaBundle\FOSElasticaBundle(),
             new FOS\RestBundle\FOSRestBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
