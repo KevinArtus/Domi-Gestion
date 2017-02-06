@@ -71,7 +71,7 @@ class User extends BaseUser
      */
     public function setSalary($salary)
     {
-        $this->tauxkm = $salary;
+        $this->salary = $salary;
 
         return $this;
     }

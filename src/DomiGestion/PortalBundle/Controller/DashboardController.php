@@ -25,6 +25,7 @@ class DashboardController extends Controller
             $meetings = $em->getRepository('DomiGestionMeetingBundle:Meeting')->nextMeeting($this->get('security.token_storage')->getToken()->getUser());
 
             $meetingskm = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findMontantKmByUser($this->get('security.token_storage')->getToken()->getUser());
+//            echo '<pre>';\Doctrine\Common\Util\Debug::dump($meetingskm, 3);die;
             $salary = $this->get('security.token_storage')->getToken()->getUser()->getSalary();
 
             $montantKm = 0;
