@@ -30,6 +30,8 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer1->setCity('Le Viseney');
         $manager->persist($customer1);
         $manager->flush();
+        $this->addReference('customer1', $customer1);
+
 
         $customer2 = new Customer();
         $customer2->setUser($this->getReference('user'));
@@ -43,6 +45,8 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer2->setCity('Domgermain');
         $manager->persist($customer2);
         $manager->flush();
+        $this->addReference('customer2', $customer2);
+
 
         $customer3 = new Customer();
         $customer3->setUser($this->getReference('user'));
@@ -56,6 +60,7 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer3->setCity('Sévérac-le-Château');
         $manager->persist($customer3);
         $manager->flush();
+        $this->addReference('customer3', $customer3);
 
         $customer4 = new Customer();
         $customer4->setUser($this->getReference('user'));
@@ -69,6 +74,7 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer4->setCity('Saint-Clément');
         $manager->persist($customer4);
         $manager->flush();
+        $this->addReference('customer4', $customer4);
 
         $customer5 = new Customer();
         $customer5->setUser($this->getReference('user'));
@@ -82,6 +88,7 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer5->setCity('Prévessin-Moens');
         $manager->persist($customer5);
         $manager->flush();
+        $this->addReference('customer5', $customer5);
 
         $customer6 = new Customer();
         $customer6->setUser($this->getReference('user'));
