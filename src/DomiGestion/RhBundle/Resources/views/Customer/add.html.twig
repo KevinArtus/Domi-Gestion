@@ -29,6 +29,24 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3">
+                            <h6>{{ form_label(form.anniversaire) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="input-group date">
+                                {{ form_widget(form.anniversaire, { 'attr': { 'class' : 'form-control' }}) }}<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.status) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.status) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
                             <h6>{{ form_label(form.nom) }}</h6>
                         </div>
                         <div class="col-md-7">
@@ -84,12 +102,28 @@
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col-md-3">
-                                <h6>{{ form_label(form.city) }}</h6>
-                            </div>
-                            <div class="col-md-7">
-                                {{ form_widget(form.city) }}
-                            </div>
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.city) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.city) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.km) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.km) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.comment) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.comment) }}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -18,6 +18,11 @@ class Customer
     protected $id;
 
     /**
+     * @ORM\Column(type="string", length=7)
+     */
+    protected $status;
+
+    /**
      * @ORM\Column(type="string", length=5)
      */
     protected $sexe;
@@ -31,6 +36,11 @@ class Customer
      * @ORM\Column(type="string", length=50)
      */
     protected $prenom;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $anniversaire;
 
     /**
      * @ORM\Column(type="string", length=14, nullable=true)
@@ -63,6 +73,16 @@ class Customer
     protected $city;
 
     /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    protected $km;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $comment;
+
+    /**
      * @ORM\OneToMany(targetEntity="DomiGestion\ShoppingBundle\Entity\Shopping", mappedBy="customer")
      */
 //    protected $shopping;
@@ -93,6 +113,11 @@ class Customer
     public $longitude;
 
     /**
+     * @ORM\Column(type="integer", nullable=true, options={"default":0})
+     */
+    protected $pointCadeaux;
+
+    /**
      * @return string
      */
     public function __toString()
@@ -108,6 +133,29 @@ class Customer
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string status
+     * @return Customer
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
     }
 
     /**
@@ -177,6 +225,29 @@ class Customer
     public function getPrenom()
     {
         return $this->prenom;
+    }
+
+    /**
+     * Set anniversaire
+     *
+     * @param \DateTime $anniversaire
+     * @return Meeting
+     */
+    public function setAnniversaire($anniversaire)
+    {
+        $this->anniversaire = $anniversaire;
+
+        return $this;
+    }
+
+    /**
+     * Get anniversaire
+     *
+     * @return \DateTime
+     */
+    public function getAnniversaire()
+    {
+        return $this->anniversaire;
     }
 
     /**
@@ -315,6 +386,76 @@ class Customer
     public function getCity()
     {
         return $this->city;
+    }
+
+    /**
+     * Set km
+     *
+     * @param string $city
+     * @return Customer
+     */
+    public function setKm($km)
+    {
+        $this->km = $km;
+
+        return $this;
+    }
+
+    /**
+     * Get km
+     *
+     * @return string
+     */
+    public function getKm()
+    {
+        return $this->km;
+    }
+
+    /**
+     * Set comment
+     *
+     * @param string $comment
+     * @return Customer
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment
+     *
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * Set pointCadeaux
+     *
+     * @param string $pointCadeaux
+     * @return Customer
+     */
+    public function setPointCadeaux($pointCadeaux)
+    {
+        $this->pointCadeaux = $pointCadeaux;
+
+        return $this;
+    }
+
+    /**
+     * Get pointCadeaux
+
+     *
+     * @return string
+     */
+    public function getPointCadeaux()
+    {
+        return $this->pointCadeaux;
     }
 
     /**

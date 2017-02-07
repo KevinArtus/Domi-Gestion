@@ -19,7 +19,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
     public function load(ObjectManager $manager)
     {
         $customer1 = new Customer();
+        $customer1->setStatus("Hôtesse");
         $customer1->setUser($this->getReference('user'));
+        $customer1->setAnniversaire(new \DateTime('1974/11/16'));
         $customer1->setSexe('Femme');
         $customer1->setNom('Lefebvre');
         $customer1->setPrenom('Éloïse');
@@ -28,13 +30,16 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer1->setAddress('136 Rue Gauguet');
         $customer1->setCp('39800');
         $customer1->setCity('Le Viseney');
+        $customer1->setComment('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sem dolor. Praesent pretium a dui non condimentum. Donec vel vestibulum ligula.');
         $manager->persist($customer1);
         $manager->flush();
         $this->addReference('customer1', $customer1);
 
 
         $customer2 = new Customer();
+        $customer2->setStatus("Hôtesse");
         $customer2->setUser($this->getReference('user'));
+        $customer2->setAnniversaire(new \DateTime('1945/02/22'));
         $customer2->setSexe('Homme');
         $customer2->setNom('Rocher');
         $customer2->setPrenom('Dimitri');
@@ -49,7 +54,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
 
 
         $customer3 = new Customer();
+        $customer3->setStatus("Hôtesse");
         $customer3->setUser($this->getReference('user'));
+        $customer3->setAnniversaire(new \DateTime('1955/11/09'));
         $customer3->setSexe('Homme');
         $customer3->setNom('Berthelot');
         $customer3->setPrenom('Noah');
@@ -58,12 +65,15 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer3->setAddress('9 Avenue du Général-Dodds');
         $customer3->setCp('12150');
         $customer3->setCity('Sévérac-le-Château');
+        $customer3->setComment('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sem dolor. Praesent pretium a dui non condimentum. Donec vel vestibulum ligula.');
         $manager->persist($customer3);
         $manager->flush();
         $this->addReference('customer3', $customer3);
 
         $customer4 = new Customer();
+        $customer4->setStatus("Hôtesse");
         $customer4->setUser($this->getReference('user'));
+        $customer4->setAnniversaire(new \DateTime('1959/01/18'));
         $customer4->setSexe('Femme');
         $customer4->setNom('Bouvier');
         $customer4->setPrenom('Élise');
@@ -77,7 +87,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $this->addReference('customer4', $customer4);
 
         $customer5 = new Customer();
+        $customer5->setStatus("Hôtesse");
         $customer5->setUser($this->getReference('user'));
+        $customer5->setAnniversaire(new \DateTime('1982/12/03'));
         $customer5->setSexe('Femme');
         $customer5->setNom('Petit');
         $customer5->setPrenom('Julia');
@@ -86,12 +98,15 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer5->setAddress('66 Rue Gabriel-Vicaire');
         $customer5->setCp('01280');
         $customer5->setCity('Prévessin-Moens');
+        $customer5->setComment('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sem dolor. Praesent pretium a dui non condimentum. Donec vel vestibulum ligula.');
         $manager->persist($customer5);
         $manager->flush();
         $this->addReference('customer5', $customer5);
 
         $customer6 = new Customer();
+        $customer6->setStatus("Client");
         $customer6->setUser($this->getReference('user'));
+        $customer6->setAnniversaire(new \DateTime('1962/08/20'));
         $customer6->setSexe('Homme');
         $customer6->setNom('Marques');
         $customer6->setPrenom('Baptiste');
@@ -104,7 +119,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $manager->flush();
 
         $customer7 = new Customer();
+        $customer7->setStatus("Client");
         $customer7->setUser($this->getReference('user'));
+        $customer7->setAnniversaire(new \DateTime('1949/09/11'));
         $customer7->setSexe('Homme');
         $customer7->setNom('Fortin');
         $customer7->setPrenom('Roméo');
@@ -113,11 +130,14 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $customer7->setAddress('296 Rue Dulac');
         $customer7->setCp('63260');
         $customer7->setCity('Chazelles');
+        $customer7->setComment('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sem dolor. Praesent pretium a dui non condimentum. Donec vel vestibulum ligula.');
         $manager->persist($customer7);
         $manager->flush();
 
         $customer8 = new Customer();
+        $customer8->setStatus("Client");
         $customer8->setUser($this->getReference('user'));
+        $customer8->setAnniversaire(new \DateTime('1952/05/14'));
         $customer8->setSexe('Femme');
         $customer8->setNom('Legendre');
         $customer8->setPrenom('Margaux');
@@ -130,7 +150,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $manager->flush();
 
         $customer9 = new Customer();
+        $customer9->setStatus("Client");
         $customer9->setUser($this->getReference('user'));
+        $customer9->setAnniversaire(new \DateTime('1967/09/06'));
         $customer9->setSexe('Femme');
         $customer9->setNom('Dubois');
         $customer9->setPrenom('Laura');
@@ -143,7 +165,9 @@ class LoadCustomerData extends AbstractFixture implements OrderedFixtureInterfac
         $manager->flush();
 
         $customer10 = new Customer();
+        $customer10->setStatus("Client");
         $customer10->setUser($this->getReference('user'));
+        $customer10->setAnniversaire(new \DateTime('1978/06/06'));
         $customer10->setSexe('Femme');
         $customer10->setNom('Lebreton');
         $customer10->setPrenom('Françoise');

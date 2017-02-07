@@ -33,6 +33,8 @@ DomiGestionRhBundle:
             title: "Création d'un nouveau client"
             subtitle_global: "Informations globales"
             sexe: "Sexe"
+            status: "Status de la personne"
+            birthday: "Anniversaire"
             sexe_woman: "Femme"
             sexe_man: "Homme"
             firstName: "Nom"
@@ -43,6 +45,8 @@ DomiGestionRhBundle:
             address: "Adresse"
             postalCode: "Code Postale"
             city: "Ville"
+            km: "Nombre de km"
+            comment: "Commentaire"
             validate: "Valider"
     base:
           dataTable:
