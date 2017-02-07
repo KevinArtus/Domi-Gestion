@@ -1,7 +1,12 @@
 stanhome_rh_customer_index:
-    path: /
+    path: /client
     defaults:
         _controller: DomiGestionRhBundle:Customer:index
+
+domiGestion_rh_customer_hostess:
+    path: /hostess
+    defaults:
+        _controller: DomiGestionRhBundle:Customer:listHostess
 
 stanhome_rh_customer_add:
     path: /add

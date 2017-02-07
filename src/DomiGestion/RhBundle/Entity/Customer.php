@@ -18,7 +18,7 @@ class Customer
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=7)
+     * @ORM\Column(type="string", length=10)
      */
     protected $status;
 

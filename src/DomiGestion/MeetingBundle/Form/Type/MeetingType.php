@@ -50,11 +50,6 @@ class MeetingType extends AbstractType
                 'required' => false,
                 )
             )
-            ->add('nbKm', TextType::class, array(
-                "label" => "DomiGestionMeetingBundle.meetings.page_new_edit.km",
-                'required' => false,
-                )
-            )
             ->add('save', SubmitType::class, array('label' => 'Create'));
     }
     /**

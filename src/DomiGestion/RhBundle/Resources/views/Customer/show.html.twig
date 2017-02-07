@@ -53,6 +53,14 @@
                                         <span>{{ customer.portable }}</span>
                                     </div>
                                 </div>
+                                <div class="col-md-8 col-md-offset-2 panel panel-body">
+                                    <div class="col-md-4">
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>{{ customer.anniversaire|date("d/m/Y") }}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,6 +75,7 @@
                                     <div class="col-md-8">
                                         <p class="col-md-offset-1">{{ customer.address }}</p>
                                         <p class="col-md-offset-1">{{ customer.cp }}<span class="col-md-offset-1">{{ customer. city }}</span></p>
+                                        <p class="col-md-offset-1">{{ customer.km }}  {{ 'DomiGestionRhBundle.customers.page_show.km'|trans }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -74,6 +83,21 @@
                                 {#<iframe class="right" frameborder="0" style="border:0"#}
                                         {#src="https://www.google.com/maps/embed/v1/place?q={{ customer.inlineAddress }}key=AIzaSyCJgkR957zlNVpVXcnJTWy5k_Pt8RDtoFk"></iframe>#}
                                 {#<img class="right" src="http://maps.googleapis.com/maps/api/staticmap?center={{ customer.inlineAddress }}&zoom=11&size=600x300&maptype=roadmap&markers=color:purple%7Clabel:FIME%7C{{ customer.inlineAddress }}" width="100%" height="175px" frameborder="0" style="border:0" />#}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-md-10 col-md-offset-1 panel panel-body panel-info">
+                            <div class="col-md-12 container panel-heading center">
+                                {#<div class="right"><a href="{{ path('fime_rh_company_create') }}"><i class="icon-office"></i><i class="icon-plus"></i></a></div>#}
+                                <h3 class="">{{ 'DomiGestionRhBundle.customers.page_show.comment'|trans }}</h3>
+                            </div>
+                            <div class="col-md-5 panel panel-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="col-md-offset-1">{{ customer.comment }} </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,44 +138,45 @@
                         {#{{ knp_pagination_render(pagination) }}#}
                     {#</div>#}
 
-                    <h3>{{ 'DomiGestionRhBundle.customers.page_show.nbmeeting'|trans }} {{ pagination2.getTotalItemCount }}</h3>
-                    <div class="container">
-                        <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
-                            <thead>
-                            <tr>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.customer'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.date'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.km'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.nbPersons'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.montantTtc'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.montantHt'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.address'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_index.modify'|trans }}</th>
-                                <th>{{ 'DomiGestionMeetingBundle.meetings.page_index.delete'|trans }}</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for meeting in pagination2 %}
+                    {% if meetings %}
+                        <h3>{{ 'DomiGestionRhBundle.customers.page_show.nbmeeting'|trans }} {{ meetings|length }}</h3>
+                        <div class="container">
+                            <table id="tableShipping" class="table table-hover table-responsive table-striped table-bordered">
+                                <thead>
                                 <tr>
-                                    <td><span class="label label-default"> {{ meeting.customer.nom }} {{ meeting.customer.prenom }}</span></td>
-                                    <td><span class="label label-default">{{ meeting.date|date("d/m/Y") }}</span></td>
-                                    <td><span class="label label-default">{{ meeting.nbKm }}</span></td>
-                                    <td><span class="label label-default">{{ meeting.nbPersons }}</span></td>
-                                    <td><span class="label label-default">{{ meeting.montantTtc }} €</span></td>
-                                    <td><span class="label label-default">{{ meeting.montantHt }} €</span></td>
-                                    <td><span class="label label-default">{{ meeting.inlineAddress }}</span></td>
-                                    <input type='hidden' name='_method' value='PUT'>
-                                    <td class="center"><a href="{{ path('stanhome_meeting_meeting_edit', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
-                                    <input type='hidden' name='_method' value='DELETE'>
-                                    <td class="center"><a href="{{ path('stanhome_meeting_meeting_delete', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.customer'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.date'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.km'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.nbPersons'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.montantTtc'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_show.montantHt'|trans }}</th>
+                                    <th>{{ 'DomiGestionRhBundle.customers.page_show.montantKm'|trans }}</th>
+                                    <th>{{ 'DomiGestionRhBundle.customers.page_show.benefit'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_index.modify'|trans }}</th>
+                                    <th>{{ 'DomiGestionMeetingBundle.meetings.page_index.delete'|trans }}</th>
                                 </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="navigation">
-                        {{ knp_pagination_render(pagination2) }}
-                    </div>
+                                </thead>
+                                <tbody>
+                                {% for meeting in meetings %}
+                                    <tr>
+                                        <td><span class="label label-default"> {{ meeting.customer.nom }} {{ meeting.customer.prenom }}</span></td>
+                                        <td><span class="label label-default">{{ meeting.date|date("d/m/Y") }}</span></td>
+                                        <td><span class="label label-default">{{ meeting.nbKm }}</span></td>
+                                        <td><span class="label label-default">{{ meeting.nbPersons }}</span></td>
+                                        <td><span class="label label-default">{{ meeting.montantTtc }} €</span></td>
+                                        <td><span class="label label-default">{{ meeting.montantHt }} €</span></td>
+                                        <td><span class="label label-default">{{ meeting.montantKm }} €</span></td>
+                                        <td><span class="label label-default">{{ meeting.profit }} €</span></td>
+                                        <input type='hidden' name='_method' value='PUT'>
+                                        <td class="center"><a href="{{ path('stanhome_meeting_meeting_edit', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
+                                        <input type='hidden' name='_method' value='DELETE'>
+                                        <td class="center"><a href="{{ path('stanhome_meeting_meeting_delete', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

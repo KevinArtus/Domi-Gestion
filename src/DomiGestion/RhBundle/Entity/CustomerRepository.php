@@ -14,11 +14,13 @@ class CustomerRepository extends EntityRepository
      * @param User $user
      * @return array
      */
-    public function findAllOrderByNom($user)
+    public function findCustomerByStatus($user, $status)
     {
         return $this->createQueryBuilder('c')
-            ->where('c.user >= :user')
+            ->where('c.user = :user')
+            ->andWhere('c.status = :status')
             ->setParameter('user', $user)
+            ->setParameter('status', $status)
             ->orderBy('c.nom', 'ASC')
             ->getQuery()
             ->getResult();

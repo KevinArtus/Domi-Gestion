@@ -19,7 +19,7 @@ use DomiGestion\RhBundle\Form\Type\CustomerEditType;
 class CustomerController extends Controller
 {
     /**
-     * Liste tous les clients
+     * Liste toutes les clientes
      *
      * @Route("/", name="customer")
      * @Method("GET")
@@ -29,39 +29,28 @@ class CustomerController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findAllOrderByNom($this->get('security.token_storage')->getToken()->getUser());
+        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'Client');
 
-        $paginator = $this->get('knp_paginator');
-        $pagination = $paginator->paginate(
-            $customers,
-            $request->query->get('page', 1),
-            10
-        );
-
-        return array(
-            'pagination' => $pagination,
-        );
+        return $this->render('@DomiGestionRh/Customer/index.html.twig', array(
+            'customers' => $customers,
+        ));
     }
 
     /**
-     * Liste tout les produits d'une catégorie
+     * Liste toutes les hôtesses
      *
-     * @Template("DomiGestionRhBundle:Customer:list.html.twig")
+     * @Method("GET")
+     * @Template()
      */
-    public function listAction($id, $cat)
+    public function listHostessAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('DomiGestionRhBundle:Customer')->findBy(array('category' => $id));
+        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'Hôtesse');
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Aucun produit trouvé pour cette catégorie.');
-        }
-
-        return array(
-            'entity' => $entity,
-            'cat' => $cat,
-        );
+        return $this->render('@DomiGestionRh/Customer/listHostess.html.twig', array(
+            'customers' => $customers,
+        ));
     }
 
     /**
@@ -121,19 +110,11 @@ class CustomerController extends Controller
             $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
         }
 
-
-        $paginator2 = $this->get('knp_paginator');
-        $pagination2 = $paginator2->paginate(
-            $meetings,
-            $request->query->get('page', 1),
-            5
-        );
-
         //$deleteForm = $this->createDeleteForm($id);
 
         return array(
             'customer' => $customer,
-            'pagination2' => $pagination2,
+            'meetings' => $meetings,
             //'delete_form' => $deleteForm->createView(),
         );
     }

@@ -31,8 +31,13 @@ class CustomerType extends AbstractType
                 )
             )
             ->add('anniversaire', DateType::class, array("widget" => "single_text", "label" => "DomiGestionRhBundle.customers.page_new_edit.birthday", "format" => "dd/MM/yyyy"))
-            ->add('status', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.status"))
-            ->add('km', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.km"))
+            ->add('status', ChoiceType::class, array(
+                    "label" => "DomiGestionRhBundle.customers.page_new_edit.status",
+                    'choices' => array(
+                        "DomiGestionRhBundle.customers.page_new_edit.hostess"   => 'Hôte(sse)',
+                        'DomiGestionRhBundle.customers.page_new_edit.client'    => 'Client(e)')
+                )
+            )            ->add('km', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.km"))
             ->add('comment', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.comment"))
             ->add('nom', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.firstName"))
             ->add('prenom', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.lastName"))
