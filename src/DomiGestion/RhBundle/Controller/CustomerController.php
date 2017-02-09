@@ -25,13 +25,13 @@ class CustomerController extends Controller
      * @Method("GET")
      * @Template()
      */
-    public function indexAction(Request $request)
+    public function listClientAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
         $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'Client');
 
-        return $this->render('@DomiGestionRh/Customer/index.html.twig', array(
+        return $this->render('@DomiGestionRh/Customer/listClients.html.twig', array(
             'customers' => $customers,
         ));
     }
@@ -110,8 +110,6 @@ class CustomerController extends Controller
             $customer->setLongitude($json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'});
         }
 
-        //$deleteForm = $this->createDeleteForm($id);
-
         return array(
             'customer' => $customer,
             'meetings' => $meetings,
@@ -123,73 +121,32 @@ class CustomerController extends Controller
      * Displays a form to edit an existing Customer entity.
      *
      * @Route("/{id}/edit", name="customer_edit")
-     * @Method("GET")
      * @Template()
      */
-    public function editAction($id)
+    public function editAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
         $customer = $em->getRepository('DomiGestionRhBundle:Customer')->find($id);
-
         if (!$customer) {
             throw $this->createNotFoundException('Unable to find Customer entity.');
         }
 
-        $editForm = $this->createEditForm($customer);
-//        $deleteForm = $this->createDeleteForm($id);
+        $form = $this->createForm(CustomerEditType::class, $customer);
 
-        return array(
-            'customer'      => $customer,
-            'form'   => $editForm->createView(),
-//            'delete_form' => $deleteForm->createView(),
-        );
-    }
+        $form->handleRequest($request);
 
-    /**
-     * Creates a form to edit a Customer entity.
-     *
-     * @param Customer $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createEditForm(Customer $entity)
-    {
-        $form = $this->get('form.factory')->create(CustomerEditType::class, $entity);
-
-        return $form;
-    }
-    /**
-     * Edits an existing Customer entity.
-     *
-     * @Method("PUT")
-     * @Template("DomiGestionRhBundle:Customer:edit.html.twig")
-     */
-    public function updateAction(Request $request, $id)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('DomiGestionRhBundle:Customer')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Customer entity.');
-        }
-
-//        $deleteForm = $this->createDeleteForm($id);
-        $editForm = $this->createEditForm($entity);
-        $editForm->handleRequest($request);
-
-//        if ($editForm->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em->persist($customer);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $entity->getId())));
-//        }
+            return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $customer->getId())));
+        }
 
-//        return array(
-//            'entity'      => $entity,
-//            'edit_form'   => $editForm->createView(),
-////            'delete_form' => $deleteForm->createView(),
-//        );
+        return array(
+            'customer' => $customer,
+            'form'     => $form->createView(),
+        );
     }
 
     /**
@@ -209,7 +166,7 @@ class CustomerController extends Controller
         $em->remove($entity);
         $em->flush();
 
-        return $this->redirect($this->generateUrl('stanhome_rh_customer_index'));
+        return $this->redirect($this->generateUrl('domiGestion_rh_customer_client'));
     }
 
 //    /**

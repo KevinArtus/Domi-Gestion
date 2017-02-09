@@ -1,14 +1,14 @@
-stanhome_rh_customer_index:
+domiGestion_rh_customer_client:
     path: /client
     defaults:
-        _controller: DomiGestionRhBundle:Customer:index
+        _controller: DomiGestionRhBundle:Customer:listClient
 
 domiGestion_rh_customer_hostess:
     path: /hostess
     defaults:
         _controller: DomiGestionRhBundle:Customer:listHostess
 
-stanhome_rh_customer_add:
+domiGestion_rh_customer_add:
     path: /add
     defaults:
         _controller: DomiGestionRhBundle:Customer:add
@@ -19,9 +19,8 @@ stanhome_rh_customer_show:
     defaults:
         _controller: DomiGestionRhBundle:Customer:show
 
-stanhome_rh_customer_edit:
+domiGestion_rh_customer_edit:
     path: /edit/{id}
-    methods: [GET]
     defaults:
         _controller: DomiGestionRhBundle:Customer:edit
 
@@ -31,8 +30,8 @@ stanhome_rh_customer_update:
     defaults:
         _controller: DomiGestionRhBundle:Customer:update
 
-#stanhome_rh_customer_delete:
-#    path: /delete/{id}
-#    methods: [GET]
-#    defaults:
-#        _controller: DomiGestionRhBundle:Customer:delete
+domiGestion_rh_customer_delete:
+    path: /delete/{id}
+    methods: [GET]
+    defaults:
+        _controller: DomiGestionRhBundle:Customer:delete

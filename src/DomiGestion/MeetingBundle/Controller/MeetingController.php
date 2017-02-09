@@ -112,8 +112,6 @@ r     * @Template()
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-
             $user   = $this->get('security.token_storage')->getToken()->getUser();
             $tauxKm = $user->getTauxKm();
 

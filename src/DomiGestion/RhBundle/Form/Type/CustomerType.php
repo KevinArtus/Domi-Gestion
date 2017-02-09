@@ -37,8 +37,17 @@ class CustomerType extends AbstractType
                         "DomiGestionRhBundle.customers.page_new_edit.hostess"   => 'Hôte(sse)',
                         'DomiGestionRhBundle.customers.page_new_edit.client'    => 'Client(e)')
                 )
-            )            ->add('km', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.km"))
-            ->add('comment', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.comment"))
+            )
+            ->add('km', TextType::class, array(
+                "label" => "DomiGestionRhBundle.customers.page_new_edit.km",
+                'required' => false
+                )
+            )
+            ->add('comment', TextType::class, array(
+                "label" => "DomiGestionRhBundle.customers.page_new_edit.comment",
+                'required' => false
+                )
+            )
             ->add('nom', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.firstName"))
             ->add('prenom', TextType::class, array("label" => "DomiGestionRhBundle.customers.page_new_edit.lastName"))
             ->add('fixe', TextType::class, array(

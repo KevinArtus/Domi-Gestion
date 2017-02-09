@@ -1,22 +1,22 @@
 {% extends '::base.html.twig' %}
 
 {% block content %}
-    <ol class="breadcrumb">
-        <li class="active"><a href="{{ path('stanhome_rh_customer_index') }}">{{ 'DomiGestionRhBundle.customers.page_index.header'|trans }}</a></li>
-        <li class="active">{{ 'DomiGestionRhBundle.customers.page_new_edit.title'|trans }}</li>
-    </ol>
-    <div id="fwp-content" class="col-md-12">
+<ol class="breadcrumb">
+    <li class="active"><a href="{{ path('domiGestion_rh_customer_client') }}">{{ 'DomiGestionRhBundle.customers.page_index.header'|trans }}</a></li>
+    <li class="active">{{ 'DomiGestionRhBundle.customers.page_new_edit.title'|trans }}</li>
+</ol>
+<div id="fwp-content" class="col-md-12">
     <div class="row">
         <div class="col-md-4  col-md-offset-1">
-            <h2>{{ 'StanhomeProductBundle.products.page_new_edit.header'|trans }}</h2>
+            <h2>{{ 'DomiGestionRhBundle.customers.page_new_edit.title'|trans }}</h2>
         </div>
     </div>
     <div class="container panel panel-body">
-        {{ form_start(form, {"action": path('stanhome_rh_customer_update', {"id" : customer.id})} ) }}
+        {{ form_start(form) }}
         <div class="col-md-12">
             <div class="col-md-10 col-md-offset-1 panel panel-body panel-content panel-info">
                 <div class="panel-heading">
-                    <h4 class="center">{{ 'DomiGestionProductBundle.products.page_new_edit.subtitle_global'|trans }}</h4>
+                    <h4 class="center">{{ 'DomiGestionRhBundle.customers.page_new_edit.subtitle_global'|trans }}</h4>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -25,6 +25,24 @@
                         </div>
                         <div class="col-md-7">
                             {{ form_widget(form.sexe) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.anniversaire) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="input-group date">
+                                {{ form_widget(form.anniversaire, { 'attr': { 'class' : 'form-control' }}) }}<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.status) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.status) }}
                         </div>
                     </div>
                     <div class="row">
@@ -91,16 +109,30 @@
                             {{ form_widget(form.city) }}
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-md-11">
-                <div class="col-md-2 right">
-                    <button class="btn btn-block" type="submit">{{ 'DomiGestionProductBundle.products.page_new_edit.validate'|trans }}</button>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.km) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.km) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>{{ form_label(form.comment) }}</h6>
+                        </div>
+                        <div class="col-md-7">
+                            {{ form_widget(form.comment) }}
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="col-md-2 right">
+                            {{ form_widget(form.save) }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         {{ form_end(form) }}
     </div>
-{% endblock %}
+    {% endblock %}
