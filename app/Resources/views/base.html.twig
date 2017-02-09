@@ -40,20 +40,6 @@
 
                 <ul class="nav navbar-nav">
                     <li class=""><a href="{{ path('stanhome_portal_dashboard_index') }}"><span class="icon-dashboard"></span>Dashboard</a></li>
-                    {#<li class="dropdown">#}
-                    {#<a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><span class="icon-icon-livrable"></span>Marques</a>#}
-                    {#<ul class="dropdown-menu" role="menu">#}
-                    {#<li><a href="{{ path('stanhome_product_brand_index') }}">Toutes les marques</a></li>#}
-                    {#</ul>#}
-                    {#</li>#}
-                    {#<li class="dropdown">#}
-                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Produits</a>#}
-                    {#<ul class="dropdown-menu" role="menu">#}
-                    {#<li><a href="{{ path('stanhome_product_product_index') }}">Tous les produit</a></li>#}
-                    {#<li class="divider"></li>#}
-                    {#<li><a href="{{ path('stanhome_product_product_new') }}">Ajouter un produit</a></li>#}
-                    {#</ul>#}
-                    {#</li>#}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-rh"></span>Répertoire</a>
                         <ul class="dropdown-menu" role="menu">
@@ -63,14 +49,6 @@
                             <li><a href="{{ path('stanhome_rh_customer_add') }}">Ajouter un client</a></li>
                         </ul>
                     </li>
-                    {#<li class="dropdown">#}
-                    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Commandes</a>#}
-                    {#<ul class="dropdown-menu" role="menu">#}
-                    {#<li><a href="{{ path('stanhome_shopping_shopping_index') }}">Toutes les commandes</a></li>#}
-                    {#<li class="divider"></li>#}
-                    {#<li><a href="{{ path('stanhome_shopping_shopping_new') }}">Ajouter une commande</a></li>#}
-                    {#</ul>#}
-                    {#</li>#}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-project"></span>Réunions</a>
                         <ul class="dropdown-menu" role="menu">
@@ -79,21 +57,11 @@
                             <li><a href="{{ path('domiGestion_meeting_meeting_add') }}">Ajouter une réunion</a></li>
                         </ul>
                     </li>
-                    {#li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-icon-rh"></span>Gestion RH</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ path('fime_rh_user_index') }}"><i class="icon-address-book"></i>Employés</a></li>
-                            <li class="divider"></li>
-                            <li><a href="{{ path('fime_rh_userext_index') }}"><i class="icon-profile"></i>Externes</a></li>
-                            <li class="divider"></li>
-                            <li><a href="{{ path('fime_rh_company_index') }}"><i class="icon-office"></i>Entreprises</a></li>
-                        </ul>
-                    </li>#}
                 </ul>
 
                 <form class="navbar-form navbar-left" role="search">
                     <div class="input-group form-search">
-                        <input type="text" id="searchForm" class="form-control search-query" autocomplete="off" placeholder="{% trans from "menu_item" %}Rechercher{% endtrans %}" fwp-autocomplete fwp-autocomplete-url-source="{{ path('portal_search', {'fields':'customer', 'modes':'url', 'searchString':'*searchString*'}) }}">
+                        {#<input type="text" id="searchForm" class="form-control search-query" autocomplete="off" placeholder="{% trans from "menu_item" %}Rechercher{% endtrans %}" fwp-autocomplete fwp-autocomplete-url-source="{{ path('portal_search', {'fields':'customer', 'modes':'url', 'searchString':'*searchString*'}) }}">#}
                         {#<span class="input-group-btn">#}
                         {#<button class="btn btn-normal" data-type="last" type="submit">Search</button>#}
                         {#</span>#}
@@ -133,7 +101,7 @@
     {% endblock %}
 {% endblock %}
 
-{#<script type="text/javascript" src="{{ asset('assets/js/bundled.min.js') }}"></script>#}
+<script type="text/javascript" src="{{ asset('assets/js/bundled.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
 
