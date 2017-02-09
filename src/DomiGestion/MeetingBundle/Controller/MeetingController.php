@@ -41,28 +41,6 @@ class MeetingController extends Controller
         } else {
             throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
         }
-
-    }
-
-    /**
-     * Liste les informations d'une catégorie
-     *
-     * @Template("DomiGestionMeetingBundle:Meeting:list.html.twig")
-     */
-    public function listAction($id, $cat)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findBy(array('id' => $id));
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Aucune réunion trouvée.');
-        }
-
-        return array(
-            'entity' => $entity,
-            'cat' => $cat,
-        );
     }
 
     /**
@@ -78,17 +56,15 @@ class MeetingController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $meeting->setUser($this->get('security.token_storage')->getToken()->getUser());
-
-            $tauxKm = $this->get('security.token_storage')->getToken()->getUser()->getTauxKm();
-            $meeting->setMontantKm($meeting->getNbKm()*$tauxKm);
-            $meeting->setProfit($meeting->getMontantTtc()-$meeting->getMontantHt());
-
             $em = $this->getDoctrine()->getManager();
+
+            $user = $this->get('security.token_storage')->getToken()->getUser();
+            $meeting->setUser($user);
+
             $em->persist($meeting);
             $em->flush();
 
-            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $meeting->getId()));
+            return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
         }
 
         return array(
@@ -108,131 +84,84 @@ class MeetingController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
-//        $shoppings = $em->getRepository('StanhomeShoppingBundle:Shopping')->findBy(array('meeting' => $id));
 
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
         }
 
-        $deleteForm = $this->createDeleteForm($id);
-
         return array(
-            'meeting' => $meeting,
-//            'shopping' => $shoppings,
-            'delete_form' => $deleteForm->createView(),
+            'meeting' => $meeting
         );
     }
 
     /**
      * Displays a form to edit an existing Customer entity.
      *
-     * @Method("GET")
-     * @Template()
+r     * @Template()
      */
-    public function editAction($id)
+    public function editAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
         $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
-
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
         }
+        $form = $this->createForm(MeetingEditType::class, $meeting);
 
-        $editForm = $this->createEditForm($meeting);
-        $deleteForm = $this->createDeleteForm($id);
+        $form->handleRequest($request);
 
-        return array(
-            'meeting'      => $meeting,
-            'form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        );
-    }
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
 
-    /**
-     * Creates a form to edit a Customer entity.
-     *
-     * @param Customer $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createEditForm(Meeting $entity)
-    {
-        $form = $this->createForm(new MeetingEditType(), $entity, array(
-            'action' => $this->generateUrl('stanhome_meeting_meeting_update', array('id' => $entity->getId())),
-            'method' => 'PUT',
-        ));
+            $user   = $this->get('security.token_storage')->getToken()->getUser();
+            $tauxKm = $user->getTauxKm();
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+            $meeting->setUser($user);
+            $meeting->setMontantKm($meeting->getNbKm()*$tauxKm);
+            $meeting->setProfit($meeting->getMontantTtc()-$meeting->getMontantHt());
 
-        return $form;
-    }
+            $user->setSalary($user->getSalary() + $meeting->getProfit());
+            $user->setTotalAmountKm($user->getTotalAmountKm() + $meeting->getMontantKm());
+            $user->setTotalKm($user->getTotalKm() + $meeting->getNbKm());
 
-    /**
-     * Edits an existing Customer entity.
-     *
-     */
-    public function updateAction(Request $request, $id)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Meeting entity.');
-        }
-
-        $deleteForm = $this->createDeleteForm($id);
-        $editForm = $this->createEditForm($entity);
-        $editForm->handleRequest($request);
-
-
-        if ($editForm->isValid()) {
+            $em->persist($user);
+            $em->persist($meeting);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('stanhome_meeting_meeting_show', array('id' => $entity->getId())));
+            return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
         }
+
         return array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
+            'meeting' => $meeting,
+            'form'   => $form->createView(),
         );
     }
 
     /**
-     * Deletes a Customer entity.
+     * Deletes a Meeting entity.
      *
      * @Method("DELETE")
      */
     public function deleteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $entity = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
+        $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
+        $user   = $this->get('security.token_storage')->getToken()->getUser();
 
-        if (!$entity) {
+        if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
         }
 
-        $em->remove($entity);
+        $user->setSalary($user->getSalary() - $meeting->getProfit());
+        $user->setTotalAmountKm($user->getTotalAmountKm() - $meeting->getMontantKm());
+        $user->setTotalKm($user->getTotalKm() - $meeting->getNbKm());
+
+        $em->persist($user);
+        $em->remove($meeting);
         $em->flush();
 
-        return $this->redirect($this->generateUrl('stanhome_meeting_meeting_index'));
-    }
-
-    /**
-     * Creates a form to delete a Customer entity by id.
-     *
-     * @param mixed $id The entity id
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm($id)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('stanhome_meeting_meeting_delete', array('id' => $id)))
-            ->setMethod('DELETE')
-            ->getForm()
-            ;
+        return $this->redirect($this->generateUrl('domiGestion_meeting_meeting_index'));
     }
 
     /**

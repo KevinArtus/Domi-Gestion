@@ -21,19 +21,13 @@ class DashboardController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')) {
+            $user   = $this->get('security.token_storage')->getToken()->getUser();
 
-            $meetings = $em->getRepository('DomiGestionMeetingBundle:Meeting')->nextMeeting($this->get('security.token_storage')->getToken()->getUser());
+            $meetings   = $em->getRepository('DomiGestionMeetingBundle:Meeting')->nextMeeting($user);
 
-            $meetingskm = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findMontantKmByUser($this->get('security.token_storage')->getToken()->getUser());
-//            echo '<pre>';\Doctrine\Common\Util\Debug::dump($meetingskm, 3);die;
-            $salary = $this->get('security.token_storage')->getToken()->getUser()->getSalary();
+            $salary       = $user->getSalary();
+            $totalAmoutKm = $user->getTotalAmountKm();
 
-            $montantKm = 0;
-            foreach ($meetingskm as $value) {
-                $montantKm += $value->getMontantKm();
-            }
-
-            $salary -= $montantKm;
             $paginator = $this->get('knp_paginator');
             $pagination = $paginator->paginate(
                 $meetings,
@@ -43,14 +37,11 @@ class DashboardController extends Controller
             return $this->render('DomiGestionPortalBundle:Dashboard:index.html.twig',
                 array(
                     'pagination' => $pagination,
-                    'salary' => $salary,
+                    'salary' => $salary - $totalAmoutKm,
                 )
             );
         } else {
             throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
-
         }
-
-
     }
 }

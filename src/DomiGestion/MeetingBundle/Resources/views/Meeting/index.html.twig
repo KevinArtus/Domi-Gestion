@@ -7,28 +7,20 @@
     </ol>
     <div id="fwp-content" class="col-md-12">
         <div class="container">
-            {% if meetingToCome %}
-                <div class="row">
-                    <div class="col-md-2  col-md-offset-1">
-                        <h2>{{ 'DomiGestionMeetingBundle.meetings.page_index.meetingToCome'|trans }}</h2>
-                    </div>
+            <div class="row">
+                <div class="col-md-2  col-md-offset-1">
+                    <h2>{{ 'DomiGestionMeetingBundle.meetings.page_index.meetingToCome'|trans }}</h2>
                 </div>
-                {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': meetingToCome } %}
-            {% else %}
-                <p>Not found</p>
-            {% endif %}
+            </div>
+            {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': meetingToCome } %}
 
-            {% if pastMeetings %}
-                <div class="row">
-                    <div class="col-md-2  col-md-offset-1">
-                        <h2>{{ 'DomiGestionMeetingBundle.meetings.page_index.pastMeeting'|trans }}</h2>
-                    </div>
+            <div class="row">
+                <div class="col-md-2  col-md-offset-1">
+                    <h2>{{ 'DomiGestionMeetingBundle.meetings.page_index.pastMeeting'|trans }}</h2>
                 </div>
-                {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': pastMeetings } %}
-            {% else %}
-                <p>Not found</p>
-            {% endif %}
-        </div>
+            </div>
+            {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': pastMeetings } %}
+    </div>
     </div>
 {% endblock %}
 

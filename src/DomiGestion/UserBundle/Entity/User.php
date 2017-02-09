@@ -18,17 +18,27 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @ORM\Column(name="incentive", type="integer", nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $incentive;
 
     /**
-     * @ORM\Column(name="salary", type="decimal", scale=2, nullable=true)
+     * @ORM\Column(type="decimal", scale=2, nullable=true)
      */
     private $salary;
 
     /**
-     * @ORM\Column(name="tauxkm", type="decimal", scale=4, nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $totalKm;
+
+    /**
+     * @ORM\Column(type="decimal", scale=2, nullable=true)
+     */
+    private $totalAmountKm;
+
+    /**
+     * @ORM\Column(type="decimal", scale=4, nullable=true)
      */
     private $tauxKm;
 
@@ -77,9 +87,50 @@ class User extends BaseUser
     }
 
     /**
-     * Get tauxKm
+     * Get totalKm
      *
-     * @return decimal
+     * @return string
+     */
+    public function getTotalKm()
+    {
+        return $this->totalKm;
+    }
+
+    /**
+     * Set totalKm
+     * @param integer $totalKm
+     * @return integer
+     */
+    public function setTotalKm($totalKm)
+    {
+        $this->totalKm = $totalKm;
+
+        return $this;
+    }
+
+    /**
+     * Get $totalAmountKm
+     *
+     * @return string
+     */
+    public function getTotalAmountKm()
+    {
+        return $this->totalAmountKm;
+    }
+
+    /**
+     * @param $totalAmountKm
+     * @return $this
+     */
+    public function setTotalAmountKm($totalAmountKm)
+    {
+        $this->totalAmountKm = $totalAmountKm;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
      */
     public function getTauxKm()
     {

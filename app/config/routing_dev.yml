@@ -21,7 +21,7 @@ stanhome_portal:
     resource: "@DomiGestionPortalBundle/Resources/config/routing.yml"
     prefix: /
 
-stanhome_meeting:
+domiGestion_meeting:
     resource: "@DomiGestionMeetingBundle/Resources/config/routing.yml"
     prefix: /
 

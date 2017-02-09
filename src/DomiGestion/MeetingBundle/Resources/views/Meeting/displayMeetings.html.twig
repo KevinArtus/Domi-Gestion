@@ -14,15 +14,15 @@
         {% for meeting in meetings %}
             <tr>
                 <td>
-                    <a href="{{ path('stanhome_meeting_meeting_show', { 'id': meeting.id }) }}"> {{ 'DomiGestionMeetingBundle.meetings.page_index.details'|trans }}</a>
+                    <a href="{{ path('domiGestion_meeting_meeting_show', { 'id': meeting.id }) }}"> {{ 'DomiGestionMeetingBundle.meetings.page_index.details'|trans }}</a>
                 </td>
                 <td> {{ meeting.date|date("d/m/Y") }} </td>
                 <td> {{ meeting.customer.nom }} {{ meeting. customer.prenom }}</td>
                 <td> {{ meeting.address }} {{ meeting.cp }} {{ meeting.city }} </td>
                 <input type='hidden' name='_method' value='PUT'>
-                <td class="center"><a href="{{ path('stanhome_meeting_meeting_edit', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
+                <td class="center"><a href="{{ path('domiGestion_meeting_meeting_edit', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
                 <input type='hidden' name='_method' value='DELETE'>
-                <td class="center"><a href="{{ path('stanhome_meeting_meeting_delete', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
+                <td class="center"><a href="{{ path('domiGestion_meeting_meeting_delete', { 'id': meeting.id }) }}"><i class="icon-pencil2"></i></a></td>
             </tr>
         {% endfor %}
         </tbody>
