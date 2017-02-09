@@ -17,4 +17,3 @@ base de données, il est nécessaire de charger les fixtures existantes.
 **Liste des bundles tiers utilisés :**
 - FOSUserBundle
 - JMSSerializerBundle
-- KnpPaginatorBundle
