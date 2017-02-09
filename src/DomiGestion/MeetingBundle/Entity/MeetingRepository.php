@@ -40,14 +40,34 @@ class MeetingRepository extends EntityRepository
     }
 
     /**
+     * FInd pasted meetings
      * @param User $user
      * @return array
      */
-    public function findAllMeetingOrderByDate($user)
+    public function findPastMeeting($user)
     {
         return $this->createQueryBuilder('m')
             ->where('m.user >= :user')
+            ->andWhere('m.date < :date')
             ->setParameter('user', $user)
+            ->setParameter('date', date('y-m-d'))
+            ->orderBy('m.date', 'desc')
+            ->getQuery()
+            ->getResult();
+    }
+
+    /**
+     * Find meetings to come
+     * @param User $user
+     * @return array
+     */
+    public function findMeetingToCome($user)
+    {
+        return $this->createQueryBuilder('m')
+            ->where('m.user >= :user')
+            ->andWhere('m.date >= :date')
+            ->setParameter('user', $user)
+            ->setParameter('date', date('y-m-d'))
             ->orderBy('m.date', 'desc')
             ->getQuery()
             ->getResult();

@@ -19,7 +19,7 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 class MeetingController extends Controller
 {
     /**
-     * Liste toutes les réunions
+     * List all the meetings past and to come
      *
      * @Route("/", name="meeting")
      * @Method("GET")
@@ -31,17 +31,12 @@ class MeetingController extends Controller
 
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')) {
 
-            $customers = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findAllMeetingOrderByDate($this->get('security.token_storage')->getToken()->getUser());
-
-            $paginator = $this->get('knp_paginator');
-            $pagination = $paginator->paginate(
-                $customers,
-                $request->query->get('page', 1),
-                10
-            );
+            $pastMeeting   = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findPastMeeting($this->get('security.token_storage')->getToken()->getUser());
+            $meetingToCome = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findMeetingToCome($this->get('security.token_storage')->getToken()->getUser());
 
             return array(
-                'pagination' => $pagination,
+                'pastMeetings'  => $pastMeeting,
+                'meetingToCome' => $meetingToCome,
             );
         } else {
             throw new AccessDeniedException('Accès limité aux utilisateurs connectés.');
