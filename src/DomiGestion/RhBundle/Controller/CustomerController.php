@@ -2,6 +2,10 @@
 
 namespace DomiGestion\RhBundle\Controller;
 
+use DomiGestion\RhBundle\Entity\Client;
+use DomiGestion\RhBundle\Entity\Hostess;
+use DomiGestion\RhBundle\Form\Type\ClientType;
+use DomiGestion\RhBundle\Form\Type\HostessType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -54,28 +58,55 @@ class CustomerController extends Controller
     }
 
     /**
-     * Displays a form to create a new Customer entity.
+     * Displays a form to create a new Hostess.
      *
      * @Template()
      */
-    public function addAction(Request $request)
+    public function addHostessAction(Request $request)
     {
-        $customer = new Customer();
-        $form = $this->createForm(CustomerType::class, $customer);
+        $hostess = new Hostess();
+        $form = $this->createForm(HostessType::class, $hostess);
 
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $customer->setUser($this->get('security.token_storage')->getToken()->getUser());
+            $hostess->setUser($this->get('security.token_storage')->getToken()->getUser());
             $em = $this->getDoctrine()->getManager();
-            $em->persist($customer);
+            $em->persist($hostess);
             $em->flush();
 
-            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $customer->getId()));
+            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $hostess->getId()));
         }
 
         return array(
-            'entity' => $customer,
+            'entity' => $hostess,
+            'form'   => $form->createView(),
+        );
+    }
+
+    /**
+     * Displays a form to create a new Client.
+     *
+     * @Template()
+     */
+    public function addClientAction(Request $request)
+    {
+        $client = new Client();
+        $form = $this->createForm(ClientType::class, $client);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $client->setUser($this->get('security.token_storage')->getToken()->getUser());
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($client);
+            $em->flush();
+
+            return $this->redirectToRoute('stanhome_rh_customer_show', array('id' => $client->getId()));
+        }
+
+        return array(
+            'entity' => $client,
             'form'   => $form->createView(),
         );
     }

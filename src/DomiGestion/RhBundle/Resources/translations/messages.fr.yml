@@ -37,6 +37,8 @@ DomiGestionRhBundle:
         page_new_edit:
             title: "Création d'un nouveau client"
             subtitle_global: "Informations globales"
+            subtitle_hostess: "Informations spécifiques à l'hôtesse"
+            subtitle_client: "Informations spécifiques à la cliente"
             sexe: "Sexe"
             status: "Status de la personne"
             hostess: "Hôte(sse)"
@@ -54,6 +56,7 @@ DomiGestionRhBundle:
             city: "Ville"
             km: "Nombre de km"
             comment: "Commentaire"
+            preference: "Jours de préférences"
             validate: "Valider"
     base:
           dataTable:

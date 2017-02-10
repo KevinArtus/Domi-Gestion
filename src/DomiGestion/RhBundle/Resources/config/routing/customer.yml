@@ -8,10 +8,15 @@ domiGestion_rh_customer_hostess:
     defaults:
         _controller: DomiGestionRhBundle:Customer:listHostess
 
-domiGestion_rh_customer_add:
-    path: /add
+domiGestion_rh_customer_addHostess:
+    path: /add/hostess
     defaults:
-        _controller: DomiGestionRhBundle:Customer:add
+        _controller: DomiGestionRhBundle:Customer:addHostess
+
+domiGestion_rh_customer_addClient:
+    path: /add/client
+    defaults:
+        _controller: DomiGestionRhBundle:Customer:addClient
 
 stanhome_rh_customer_show:
     path: /show/{id}
@@ -23,12 +28,6 @@ domiGestion_rh_customer_edit:
     path: /edit/{id}
     defaults:
         _controller: DomiGestionRhBundle:Customer:edit
-
-stanhome_rh_customer_update:
-    path: /update/{id}
-    methods: [POST]
-    defaults:
-        _controller: DomiGestionRhBundle:Customer:update
 
 domiGestion_rh_customer_delete:
     path: /delete/{id}
