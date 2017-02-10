@@ -29,7 +29,7 @@ class CustomerController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'Client');
+        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'client');
 
         return $this->render('@DomiGestionRh/Customer/listClients.html.twig', array(
             'customers' => $customers,
@@ -46,7 +46,7 @@ class CustomerController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'Hôtesse');
+        $customers = $em->getRepository('DomiGestionRhBundle:Customer')->findCustomerByStatus($this->get('security.token_storage')->getToken()->getUser(), 'hostess');
 
         return $this->render('@DomiGestionRh/Customer/listHostess.html.twig', array(
             'customers' => $customers,

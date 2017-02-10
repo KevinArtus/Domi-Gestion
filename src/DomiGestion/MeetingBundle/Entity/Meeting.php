@@ -69,15 +69,10 @@ class Meeting
     protected $profit;
 
     /**
-     * @ORM\ManyToOne(targetEntity="DomiGestion\RhBundle\Entity\Customer", inversedBy="meeting")
+     * @ORM\ManyToOne(targetEntity="DomiGestion\RhBundle\Entity\Hostess", inversedBy="meeting")
      */
-    protected $customer;
-
-    /**
-     * @ORM\OneToMany(targetEntity="DomiGestion\ShoppingBundle\Entity\Shopping", mappedBy="shopping")
-     */
-//    private $shopping;
-
+    protected $hostess;
+    
     /**
      * @ORM\ManyToOne(targetEntity="DomiGestion\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
@@ -86,7 +81,7 @@ class Meeting
 
     public function __toString()
     {
-        return sprintf("(%s) - %s %s", date_format($this->getDate(), 'd-m-Y'),$this->getCustomer()->getNom(), $this->getCustomer()->getPrenom());
+        return sprintf("(%s) - %s %s", date_format($this->getDate(), 'd-m-Y'),$this->getHostess()->getNom(), $this->getHostess()->getPrenom());
     }
 
     /**
@@ -332,26 +327,26 @@ class Meeting
     }
 
     /**
-     * Set customer
+     * Set hostess
      *
-     * @param \DomiGestion\RhBundle\Entity\Customer $customer
+     * @param \DomiGestion\RhBundle\Entity\Hostess $hostess
      * @return Meeting
      */
-    public function setCustomer(\DomiGestion\RhBundle\Entity\Customer $customer = null)
+    public function setHostess(\DomiGestion\RhBundle\Entity\Hostess $hostess = null)
     {
-        $this->customer = $customer;
+        $this->hostess = $hostess;
 
         return $this;
     }
 
     /**
-     * Get customer
+     * Get hostess
      *
-     * @return \DomiGestion\RhBundle\Entity\Customer
+     * @return \DomiGestion\RhBundle\Entity\Hostess
      */
-    public function getCustomer()
+    public function getHostess()
     {
-        return $this->customer;
+        return $this->hostess;
     }
 
 

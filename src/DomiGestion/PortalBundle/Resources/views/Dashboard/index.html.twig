@@ -32,7 +32,7 @@
                                 <a href="{{ path('domiGestion_meeting_meeting_show', { 'id': meeting.id }) }}"> {{ 'DomiGestionMeetingBundle.meetings.page_index.details'|trans }}</a>
                             </td>
                             <td> {{ meeting.date|date("d/m/Y") }} </td>
-                            <td> <a href="{{ path('stanhome_rh_customer_show', { 'id': meeting.customer.id }) }}">{{ meeting.customer.nom }} {{ meeting.customer.prenom }}</a></td>
+                            <td> <a href="{{ path('stanhome_rh_customer_show', { 'id': meeting.hostess.id }) }}">{{ meeting.hostess.nom }} {{ meeting.hostess.prenom }}</a></td>
                             <td> {{ meeting.inlineAddress }} </td>
                         </tr>
                     {% endfor %}

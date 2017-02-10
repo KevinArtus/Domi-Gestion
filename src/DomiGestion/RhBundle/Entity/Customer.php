@@ -5,10 +5,15 @@ namespace DomiGestion\RhBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="DomiGestion\RhBundle\Entity\CustomerRepository")
+ * Partner
+ *
  * @ORM\Table(name="customer")
+ * @ORM\Entity(repositoryClass="DomiGestion\RhBundle\Repository\CustomerRepository")
+ * @ORM\InheritanceType("SINGLE_TABLE")
+ * @ORM\DiscriminatorColumn(name="status", type="string")
+ * @ORM\DiscriminatorMap({"client" = "Client", "hostess" = "Hostess"})
  */
-class Customer
+abstract class Customer
 {
     /**
      * @ORM\Id
@@ -16,11 +21,6 @@ class Customer
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
-
-    /**
-     * @ORM\Column(type="string", length=10)
-     */
-    protected $status;
 
     /**
      * @ORM\Column(type="string", length=5)
@@ -36,11 +36,6 @@ class Customer
      * @ORM\Column(type="string", length=50)
      */
     protected $prenom;
-
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    protected $anniversaire;
 
     /**
      * @ORM\Column(type="string", length=14, nullable=true)
@@ -73,26 +68,6 @@ class Customer
     protected $city;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    protected $km;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $comment;
-
-    /**
-     * @ORM\OneToMany(targetEntity="DomiGestion\ShoppingBundle\Entity\Shopping", mappedBy="customer")
-     */
-//    protected $shopping;
-
-    /**
-     * @ORM\OneToMany(targetEntity="DomiGestion\MeetingBundle\Entity\Meeting", mappedBy="customer")
-     */
-    protected $meeting;
-
-    /**
      * @ORM\ManyToOne(targetEntity="DomiGestion\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
@@ -113,16 +88,21 @@ class Customer
     public $longitude;
 
     /**
-     * @ORM\Column(type="integer", nullable=true, options={"default":0})
-     */
-    protected $pointCadeaux;
-
-    /**
      * @return string
      */
     public function __toString()
     {
         return sprintf("%s %s", strtoupper($this->getNom()), $this->getPrenom());
+    }
+
+    /**
+     * Google Map Address
+     *
+     * @return string
+     */
+    public function getInlineAddress()
+    {
+        return sprintf("%s,%s %s", $this->getAddress(), $this->getCp(), $this->getCity());
     }
 
     /**
@@ -136,32 +116,10 @@ class Customer
     }
 
     /**
-     * Set status
-     *
-     * @param string status
-     * @return Customer
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-
-        return $this;
-    }
-
-    /**
-     * Get status
-     *
-     * @return string
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
      * Set sexe
      *
      * @param string $sexe
+     *
      * @return Customer
      */
     public function setSexe($sexe)
@@ -185,6 +143,7 @@ class Customer
      * Set nom
      *
      * @param string $nom
+     *
      * @return Customer
      */
     public function setNom($nom)
@@ -208,6 +167,7 @@ class Customer
      * Set prenom
      *
      * @param string $prenom
+     *
      * @return Customer
      */
     public function setPrenom($prenom)
@@ -228,32 +188,10 @@ class Customer
     }
 
     /**
-     * Set anniversaire
+     * Set fixe
      *
-     * @param \DateTime $anniversaire
-     * @return Meeting
-     */
-    public function setAnniversaire($anniversaire)
-    {
-        $this->anniversaire = $anniversaire;
-
-        return $this;
-    }
-
-    /**
-     * Get anniversaire
+     * @param string $fixe
      *
-     * @return \DateTime
-     */
-    public function getAnniversaire()
-    {
-        return $this->anniversaire;
-    }
-
-    /**
-     * Set tel
-     *
-     * @param string $tel
      * @return Customer
      */
     public function setFixe($fixe)
@@ -264,7 +202,7 @@ class Customer
     }
 
     /**
-     * Get tel
+     * Get fixe
      *
      * @return string
      */
@@ -274,9 +212,10 @@ class Customer
     }
 
     /**
-     * Set tel
+     * Set portable
      *
-     * @param string $tel
+     * @param string $portable
+     *
      * @return Customer
      */
     public function setPortable($portable)
@@ -287,7 +226,7 @@ class Customer
     }
 
     /**
-     * Get tel
+     * Get portable
      *
      * @return string
      */
@@ -300,6 +239,7 @@ class Customer
      * Set email
      *
      * @param string $email
+     *
      * @return Customer
      */
     public function setEmail($email)
@@ -323,6 +263,7 @@ class Customer
      * Set address
      *
      * @param string $address
+     *
      * @return Customer
      */
     public function setAddress($address)
@@ -346,6 +287,7 @@ class Customer
      * Set cp
      *
      * @param string $cp
+     *
      * @return Customer
      */
     public function setCp($cp)
@@ -369,6 +311,7 @@ class Customer
      * Set city
      *
      * @param string $city
+     *
      * @return Customer
      */
     public function setCity($city)
@@ -389,154 +332,11 @@ class Customer
     }
 
     /**
-     * Set km
-     *
-     * @param string $city
-     * @return Customer
-     */
-    public function setKm($km)
-    {
-        $this->km = $km;
-
-        return $this;
-    }
-
-    /**
-     * Get km
-     *
-     * @return string
-     */
-    public function getKm()
-    {
-        return $this->km;
-    }
-
-    /**
-     * Set comment
-     *
-     * @param string $comment
-     * @return Customer
-     */
-    public function setComment($comment)
-    {
-        $this->comment = $comment;
-
-        return $this;
-    }
-
-    /**
-     * Get comment
-     *
-     * @return string
-     */
-    public function getComment()
-    {
-        return $this->comment;
-    }
-
-    /**
-     * Set pointCadeaux
-     *
-     * @param string $pointCadeaux
-     * @return Customer
-     */
-    public function setPointCadeaux($pointCadeaux)
-    {
-        $this->pointCadeaux = $pointCadeaux;
-
-        return $this;
-    }
-
-    /**
-     * Get pointCadeaux
-
-     *
-     * @return string
-     */
-    public function getPointCadeaux()
-    {
-        return $this->pointCadeaux;
-    }
-
-    /**
-     * Google Map Address
-     *
-     * @return string
-     */
-    public function getInlineAddress()
-    {
-        return sprintf("%s,%s %s", $this->getAddress(), $this->getCp(), $this->getCity());
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->shopping = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->meeting = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add meeting
-     *
-     * @param \DomiGestion\MeetingBundle\Entity\Meeting $meeting
-     * @return Customer
-     */
-    public function addMeeting(\DomiGestion\MeetingBundle\Entity\Meeting $meeting)
-    {
-        $this->meeting[] = $meeting;
-
-        return $this;
-    }
-
-    /**
-     * Remove meeting
-     *
-     * @param \DomiGestion\MeetingBundle\Entity\Meeting $meeting
-     */
-    public function removeMeeting(\DomiGestion\MeetingBundle\Entity\Meeting $meeting)
-    {
-        $this->meeting->removeElement($meeting);
-    }
-
-    /**
-     * Get meeting
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getMeeting()
-    {
-        return $this->meeting;
-    }
-
-    /**
-     * Set user
-     *
-     * @param \DomiGestion\UserBundle\Entity\User $user
-     * @return Customer
-     */
-    public function setUser(\DomiGestion\UserBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \DomiGestion\UserBundle\Entity\User
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
      * Set latitude
      *
      * @param float $latitude
-     * @return Fiche
+     *
+     * @return Customer
      */
     public function setLatitude($latitude)
     {
@@ -559,7 +359,8 @@ class Customer
      * Set longitude
      *
      * @param float $longitude
-     * @return Fiche
+     *
+     * @return Customer
      */
     public function setLongitude($longitude)
     {
@@ -576,5 +377,29 @@ class Customer
     public function getLongitude()
     {
         return $this->longitude;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \DomiGestion\UserBundle\Entity\User $user
+     *
+     * @return Customer
+     */
+    public function setUser(\DomiGestion\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \DomiGestion\UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

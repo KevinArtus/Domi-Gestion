@@ -1,13 +1,19 @@
 <?php
-namespace Stanhome\RhBundle\Entity;
+
+namespace DomiGestion\RhBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="Stanhome\RhBundle\Entity\CustomerRepository")
+ * Partner
+ *
  * @ORM\Table(name="customer")
+ * @ORM\Entity(repositoryClass="RhBundle\Repository\CustomerRepository")
+ * @ORM\InheritanceType("SINGLE_TABLE")
+ * @ORM\DiscriminatorColumn(name="status", type="string")
+ * @ORM\DiscriminatorMap({"client" = "Client", "hostess" = "Hostess"})
  */
-class Customer
+abstract class Customer
 {
     /**
      * @ORM\Id
@@ -32,61 +38,78 @@ class Customer
     protected $prenom;
 
     /**
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=14, nullable=true)
      */
     protected $fixe;
 
     /**
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=14, nullable=true)
      */
     protected $portable;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     protected $email;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     protected $address;
 
     /**
-     * @ORM\Column(type="string", length=5)
+     * @ORM\Column(type="string", length=5, nullable=true)
      */
     protected $cp;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     protected $city;
 
     /**
-     * @ORM\OneToMany(targetEntity="Stanhome\ShoppingBundle\Entity\Shopping", mappedBy="customer")
-     */
-    protected $shopping;
-
-    /**
-     * @ORM\OneToMany(targetEntity="Stanhome\MeetingBundle\Entity\Meeting", mappedBy="customer")
-     */
-    protected $meeting;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Stanhome\UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="meeting_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="DomiGestion\UserBundle\Entity\User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     protected $user;
 
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="latitude", type="float", nullable=true)
+     */
+    public $latitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="longitude", type="float", nullable=true)
+     */
+    public $longitude;
+
+    /**
+     * @return string
+     */
     public function __toString()
     {
-        return sprintf("%s %s", $this->getNom(), $this->getPrenom());
+        return sprintf("%s %s", strtoupper($this->getNom()), $this->getPrenom());
     }
 
     /**
- * Get id
- *
- * @return integer
- */
+     * Google Map Address
+     *
+     * @return string
+     */
+    public function getInlineAddress()
+    {
+        return sprintf("%s,%s %s", $this->getAddress(), $this->getCp(), $this->getCity());
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
     public function getId()
     {
         return $this->id;
@@ -96,6 +119,7 @@ class Customer
      * Set sexe
      *
      * @param string $sexe
+     *
      * @return Customer
      */
     public function setSexe($sexe)
@@ -119,6 +143,7 @@ class Customer
      * Set nom
      *
      * @param string $nom
+     *
      * @return Customer
      */
     public function setNom($nom)
@@ -142,6 +167,7 @@ class Customer
      * Set prenom
      *
      * @param string $prenom
+     *
      * @return Customer
      */
     public function setPrenom($prenom)
@@ -162,9 +188,10 @@ class Customer
     }
 
     /**
-     * Set tel
+     * Set fixe
      *
-     * @param string $tel
+     * @param string $fixe
+     *
      * @return Customer
      */
     public function setFixe($fixe)
@@ -175,7 +202,7 @@ class Customer
     }
 
     /**
-     * Get tel
+     * Get fixe
      *
      * @return string
      */
@@ -185,9 +212,10 @@ class Customer
     }
 
     /**
-     * Set tel
+     * Set portable
      *
-     * @param string $tel
+     * @param string $portable
+     *
      * @return Customer
      */
     public function setPortable($portable)
@@ -198,7 +226,7 @@ class Customer
     }
 
     /**
-     * Get tel
+     * Get portable
      *
      * @return string
      */
@@ -211,6 +239,7 @@ class Customer
      * Set email
      *
      * @param string $email
+     *
      * @return Customer
      */
     public function setEmail($email)
@@ -234,6 +263,7 @@ class Customer
      * Set address
      *
      * @param string $address
+     *
      * @return Customer
      */
     public function setAddress($address)
@@ -257,6 +287,7 @@ class Customer
      * Set cp
      *
      * @param string $cp
+     *
      * @return Customer
      */
     public function setCp($cp)
@@ -280,6 +311,7 @@ class Customer
      * Set city
      *
      * @param string $city
+     *
      * @return Customer
      */
     public function setCity($city)
@@ -300,86 +332,74 @@ class Customer
     }
 
     /**
-     * Google Map Address
+     * Set latitude
      *
-     * @return string
-     */
-    public function getInlineAddress()
-    {
-        return sprintf("%s,%s %s, %s", $this->getAddress(), $this->getCp(), $this->getCity());
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->shopping = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->meeting = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add shopping
+     * @param float $latitude
      *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
      * @return Customer
      */
-    public function addShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+    public function setLatitude($latitude)
     {
-        $this->shopping[] = $shopping;
+        $this->latitude = $latitude;
 
         return $this;
     }
 
     /**
-     * Remove shopping
+     * Get latitude
      *
-     * @param \Stanhome\ShoppingBundle\Entity\Shopping $shopping
+     * @return float
      */
-    public function removeShopping(\Stanhome\ShoppingBundle\Entity\Shopping $shopping)
+    public function getLatitude()
     {
-        $this->shopping->removeElement($shopping);
+        return $this->latitude;
     }
 
     /**
-     * Get shopping
+     * Set longitude
      *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getShopping()
-    {
-        return $this->shopping;
-    }
-
-    /**
-     * Add meeting
+     * @param float $longitude
      *
-     * @param \Stanhome\MeetingBundle\Entity\Meeting $meeting
      * @return Customer
      */
-    public function addMeeting(\Stanhome\MeetingBundle\Entity\Meeting $meeting)
+    public function setLongitude($longitude)
     {
-        $this->meeting[] = $meeting;
+        $this->longitude = $longitude;
 
         return $this;
     }
 
     /**
-     * Remove meeting
+     * Get longitude
      *
-     * @param \Stanhome\MeetingBundle\Entity\Meeting $meeting
+     * @return float
      */
-    public function removeMeeting(\Stanhome\MeetingBundle\Entity\Meeting $meeting)
+    public function getLongitude()
     {
-        $this->meeting->removeElement($meeting);
+        return $this->longitude;
     }
 
     /**
-     * Get meeting
+     * Set user
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @param \DomiGestion\UserBundle\Entity\User $user
+     *
+     * @return Customer
      */
-    public function getMeeting()
+    public function setUser(\DomiGestion\UserBundle\Entity\User $user = null)
     {
-        return $this->meeting;
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \DomiGestion\UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

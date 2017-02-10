@@ -159,7 +159,7 @@
                                 <tbody>
                                 {% for meeting in meetings %}
                                     <tr>
-                                        <td><span class="label label-default"> {{ meeting.customer.nom }} {{ meeting.customer.prenom }}</span></td>
+                                        <td><span class="label label-default"> {{ meeting.hostess.nom }} {{ meeting.hostess.prenom }}</span></td>
                                         <td><span class="label label-default">{{ meeting.date|date("d/m/Y") }}</span></td>
                                         <td><span class="label label-default">{{ meeting.nbKm }}</span></td>
                                         <td><span class="label label-default">{{ meeting.nbPersons }}</span></td>

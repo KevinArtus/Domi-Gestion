@@ -78,13 +78,13 @@ class MeetingRepository extends EntityRepository
      * @param Customer $customer
      * @return array
      */
-    public function findAllMeetingByCustomerOrderByDate($user, $customer)
+    public function findAllMeetingByCustomerOrderByDate($user, $hostess)
     {
         return $this->createQueryBuilder('m')
             ->where('m.user >= :user')
-            ->andWhere('m.customer = :customer')
+            ->andWhere('m.hostess = :hostess')
             ->setParameter('user', $user)
-            ->setParameter('customer', $customer)
+            ->setParameter('hostess', $hostess)
             ->orderBy('m.date', 'desc')
             ->getQuery()
             ->getResult();

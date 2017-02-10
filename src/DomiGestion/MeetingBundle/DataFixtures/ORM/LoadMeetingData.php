@@ -29,7 +29,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting1->setMontantTtc(1854.80);
         $meeting1->setMontantHt(1516.78);
         $meeting1->setProfit(338.02);
-        $meeting1->setCustomer($this->getReference('customer1'));
+        $meeting1->setHostess($this->getReference('customer1'));
         $meeting1->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting1->getProfit());
         $manager->persist($meeting1);
@@ -47,7 +47,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting2->setMontantTtc(1097.10);
         $meeting2->setMontantHt(920.72);
         $meeting2->setProfit(176.38);
-        $meeting2->setCustomer($this->getReference('customer1'));
+        $meeting2->setHostess($this->getReference('customer1'));
         $meeting2->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting2->getProfit());
         $manager->persist($meeting2);
@@ -64,7 +64,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting3->setMontantTtc(718.40);
         $meeting3->setMontantHt(338.36);
         $meeting3->setProfit(380.04);
-        $meeting3->setCustomer($this->getReference('customer2'));
+        $meeting3->setHostess($this->getReference('customer2'));
         $meeting3->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting3->getProfit());
         $manager->persist($meeting3);
@@ -81,7 +81,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting4->setMontantTtc(435.60);
         $meeting4->setMontantHt(366.00);
         $meeting4->setProfit(69.60);
-        $meeting4->setCustomer($this->getReference('customer3'));
+        $meeting4->setHostess($this->getReference('customer3'));
         $meeting4->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting4->getProfit());
         $manager->persist($meeting4);
@@ -98,7 +98,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting5->setMontantTtc(629.20);
         $meeting5->setMontantHt(537.86);
         $meeting5->setProfit(91.34);
-        $meeting5->setCustomer($this->getReference('customer4'));
+        $meeting5->setHostess($this->getReference('customer4'));
         $meeting5->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting5->getProfit());
         $manager->persist($meeting5);
@@ -115,7 +115,7 @@ class LoadMeetingData extends AbstractFixture implements OrderedFixtureInterface
         $meeting6->setMontantTtc(652.80);
         $meeting6->setMontantHt(478.77);
         $meeting6->setProfit(174.03);
-        $meeting6->setCustomer($this->getReference('customer5'));
+        $meeting6->setHostess($this->getReference('customer5'));
         $meeting6->setUser($this->getReference('user'));
         $this->getReference('user')->setSalary($this->getReference('user')->getSalary() + $meeting6->getProfit());
         $manager->persist($meeting6);

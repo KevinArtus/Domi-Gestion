@@ -1,12 +1,12 @@
 <?php
 
-namespace DomiGestion\RhBundle\Entity;
+namespace DomiGestion\RhBundle\Repository;
 
 use Doctrine\ORM\EntityRepository as EntityRepository;
 
 /**
  * Class CustomerRepository
- * @package DomiGestion\RhBundle\Entity
+ * @package DomiGestion\RhBundle\Repository
  */
 class CustomerRepository extends EntityRepository
 {
@@ -17,8 +17,8 @@ class CustomerRepository extends EntityRepository
     public function findCustomerByStatus($user, $status)
     {
         return $this->createQueryBuilder('c')
-            ->where('c.user = :user')
-            ->andWhere('c.status = :status')
+            ->where('c INSTANCE OF :status')
+            ->andWhere('c.user = :user')
             ->setParameter('user', $user)
             ->setParameter('status', $status)
             ->orderBy('c.nom', 'ASC')
