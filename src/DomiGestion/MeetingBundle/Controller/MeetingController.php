@@ -2,6 +2,8 @@
 
 namespace DomiGestion\MeetingBundle\Controller;
 
+use DomiGestion\RhBundle\Entity\Client;
+use DomiGestion\RhBundle\Entity\Hostess;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -50,23 +52,52 @@ class MeetingController extends Controller
      */
     public function addAction(Request $request)
     {
+        $em = $this->getDoctrine()->getManager();
+
         $meeting = new Meeting();
         $form = $this->createForm(MeetingType::class, $meeting);
 
-        $form->handleRequest($request);
+        $customerId = $request->get('meeting')['hostess'];
+        if(!empty($customerId)) {
+            if ($em->getRepository('DomiGestionRhBundle:Customer')->find($customerId) instanceof Client) {
+                $client = $em->getRepository('DomiGestionRhBundle:Customer')->find($customerId);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+                $hostess = new Hostess();
+                $hostess->setSexe($client->getSexe());
+                $hostess->setNom($client->getNom());
+                $hostess->setPrenom($client->getPrenom());
+                $hostess->setFixe($client->getFixe());
+                $hostess->setPortable($client->getPortable());
+                $hostess->setEmail($client->getEmail());
+                $hostess->setAddress($client->getAddress());
+                $hostess->setCp($client->getCp());
+                $hostess->setCity($client->getCity());
+                $hostess->setUser($client->getUser());
+                $hostess->setLatitude($client->getLatitude());
+                $hostess->setLongitude($client->getLongitude());
+                $em->remove($client);
+                $em->persist($hostess);
+                $em->flush();
 
-            $user = $this->get('security.token_storage')->getToken()->getUser();
-            $meeting->setUser($user);
+                $data = $request->get('meeting');
+                $data['hostess']= $hostess->getId();
+                $request->request->set('meeting', $data);
 
-            $em->persist($meeting);
-            $em->flush();
+            }
 
-            return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                $user = $this->get('security.token_storage')->getToken()->getUser();
+                $meeting->setUser($user);
+
+                $em->persist($meeting);
+                $em->flush();
+
+                return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
+            }
         }
-
+        
         return array(
             'entity' => $meeting,
             'form'   => $form->createView(),

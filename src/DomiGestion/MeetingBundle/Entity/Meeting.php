@@ -3,6 +3,7 @@
 namespace DomiGestion\MeetingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -19,6 +20,7 @@ class Meeting
     protected $id;
 
     /**
+     * @Assert\NotBlank()
      * @ORM\Column(type="datetime")
      */
     protected $date;

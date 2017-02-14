@@ -25,7 +25,7 @@ class MeetingType extends AbstractType
     {
         $builder
             ->add('date', DateType::class, array("widget" => "single_text", "label" => "DomiGestionMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy"))
-            ->add('customer',EntityType::class, array (
+            ->add('hostess',EntityType::class, array (
                     'class' => 'DomiGestion\RhBundle\Entity\Customer',
                     'query_builder' => function(EntityRepository $er) {
                         return $er->createQueryBuilder('c')
