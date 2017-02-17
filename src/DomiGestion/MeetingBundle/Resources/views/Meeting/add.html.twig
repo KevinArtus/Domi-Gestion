@@ -24,8 +24,11 @@
                             <h6>{{ form_label(form.date) }}</h6>
                         </div>
                         <div class="col-md-7">
-                            <div class="input-group date">
-                                {{ form_widget(form.date, { 'attr': { 'class' : 'form-control' }}) }}<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                            <div class="input-group date" id="datetimepicker">
+                                {{ form_widget(form.date, { 'attr': { 'class' : 'form-control' }}) }}
+                                <span class="input-group-addon">
+                                   <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -72,4 +75,15 @@
 
         {{ form_end(form) }}
     </div>
+{% endblock %}
+
+{% block javascripts %}
+        <script type="text/javascript">
+            (function ($) {
+                $("#datetimepicker").datetimepicker({
+                    locale: moment.locale('fr'),
+                    allowInputToggle: true
+                });
+            } )(jQuery);
+        </script>
 {% endblock %}

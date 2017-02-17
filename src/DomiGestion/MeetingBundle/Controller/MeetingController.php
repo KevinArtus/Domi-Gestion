@@ -97,7 +97,7 @@ class MeetingController extends Controller
                 return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
             }
         }
-        
+
         return array(
             'entity' => $meeting,
             'form'   => $form->createView(),

@@ -1,0 +1,21 @@
+{
+  "name": "domigestion",
+  "description": "Application de gestion de reunion",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-copy": "^1.0.0",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

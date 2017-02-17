@@ -31,7 +31,7 @@ class Hostess extends Customer
     protected $meeting;
 
     /**
-     * @ORM\OneToMany(targetEntity="DomiGestion\RhBundle\Entity\Client", mappedBy="hostess")
+     * @ORM\OneToMany(targetEntity="DomiGestion\RhBundle\Entity\Client", mappedBy="clientToHostess")
      */
     protected $client;
 

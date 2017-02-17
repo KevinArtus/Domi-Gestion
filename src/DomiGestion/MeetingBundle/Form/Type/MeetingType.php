@@ -7,10 +7,10 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 /**
  * Class MeetingType
@@ -24,7 +24,7 @@ class MeetingType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('date', DateType::class, array("widget" => "single_text", "label" => "DomiGestionMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy"))
+            ->add('date', DateTimeType::class, array("widget" => "single_text", "label" => "DomiGestionMeetingBundle.meetings.page_new_edit.date", "format" => "dd/MM/yyyy HH:mm"))
             ->add('hostess',EntityType::class, array (
                     'class' => 'DomiGestion\RhBundle\Entity\Customer',
                     'query_builder' => function(EntityRepository $er) {
