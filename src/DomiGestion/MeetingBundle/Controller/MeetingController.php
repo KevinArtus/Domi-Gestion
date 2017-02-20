@@ -52,12 +52,11 @@ class MeetingController extends Controller
      */
     public function addAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $meeting = new Meeting();
-        $form = $this->createForm(MeetingType::class, $meeting);
-
+        $em         = $this->getDoctrine()->getManager();
+        $meeting    = new Meeting();
+        $form       = $this->createForm(MeetingType::class, $meeting);
         $customerId = $request->get('meeting')['hostess'];
+
         if(!empty($customerId)) {
             if ($em->getRepository('DomiGestionRhBundle:Customer')->find($customerId) instanceof Client) {
                 $client = $em->getRepository('DomiGestionRhBundle:Customer')->find($customerId);
@@ -82,18 +81,15 @@ class MeetingController extends Controller
                 $data = $request->get('meeting');
                 $data['hostess']= $hostess->getId();
                 $request->request->set('meeting', $data);
-
             }
 
             $form->handleRequest($request);
-
             if ($form->isSubmitted() && $form->isValid()) {
                 $user = $this->get('security.token_storage')->getToken()->getUser();
                 $meeting->setUser($user);
 
                 $em->persist($meeting);
                 $em->flush();
-
                 return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
             }
         }
@@ -132,8 +128,7 @@ r     * @Template()
      */
     public function editAction(Request $request, $id)
     {
-        $em = $this->getDoctrine()->getManager();
-
+        $em      = $this->getDoctrine()->getManager();
         $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
@@ -141,7 +136,6 @@ r     * @Template()
         $form = $this->createForm(MeetingEditType::class, $meeting);
 
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $user   = $this->get('security.token_storage')->getToken()->getUser();
             $tauxKm = $user->getTauxKm();
@@ -149,7 +143,6 @@ r     * @Template()
             $meeting->setUser($user);
             $meeting->setMontantKm($meeting->getNbKm()*$tauxKm);
             $meeting->setProfit($meeting->getMontantTtc()-$meeting->getMontantHt());
-
             $user->setSalary($user->getSalary() + $meeting->getProfit());
             $user->setTotalAmountKm($user->getTotalAmountKm() + $meeting->getMontantKm());
             $user->setTotalKm($user->getTotalKm() + $meeting->getNbKm());
@@ -157,7 +150,6 @@ r     * @Template()
             $em->persist($user);
             $em->persist($meeting);
             $em->flush();
-
             return $this->redirectToRoute('domiGestion_meeting_meeting_show', array('id' => $meeting->getId()));
         }
 
