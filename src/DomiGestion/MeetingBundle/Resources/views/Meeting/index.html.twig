@@ -13,17 +13,15 @@
                 </div>
             </div>
             {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': meetingToCome } %}
-
             <div class="row">
                 <div class="col-md-2  col-md-offset-1">
                     <h2>{{ 'DomiGestionMeetingBundle.meetings.page_index.pastMeeting'|trans }}</h2>
                 </div>
             </div>
             {% include "@DomiGestionMeeting/Meeting/displayMeetings.html.twig"  with {'meetings': pastMeetings } %}
-    </div>
+        </div>
     </div>
 {% endblock %}
-
 
 {% block javascripts %}
     <script type="text/javascript">
@@ -65,5 +63,4 @@
             });
         } )(jQuery);
     </script>
-
 {% endblock %}
