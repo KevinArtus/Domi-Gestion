@@ -16,7 +16,8 @@ DomiGestionRhBundle:
             email: "Mail"
             address: "Adresse"
         page_show:
-            title: "Client: "
+            client: "Client: "
+            hostess: "Hôtesse: "
             sexe: "Sexe"
             firstName: "Nom"
             lastName: "Prénom"

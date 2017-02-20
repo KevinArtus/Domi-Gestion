@@ -144,7 +144,6 @@ class CustomerController extends Controller
         return array(
             'customer' => $customer,
             'meetings' => $meetings,
-            //'delete_form' => $deleteForm->createView(),
         );
     }
 

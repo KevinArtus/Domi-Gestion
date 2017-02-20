@@ -1,6 +1,7 @@
 DomiGestionMeetingBundle:
     meetings:
         page_index:
+            title: "Liste des réunions"
             meetingToCome: "Les réunions à venir"
             pastMeeting: "Les réunions passées"
             add: "Ajouter une réunion"
