@@ -54,7 +54,10 @@ class MeetingController extends Controller
     {
         $em         = $this->getDoctrine()->getManager();
         $meeting    = new Meeting();
-        $form       = $this->createForm(MeetingType::class, $meeting);
+        $form       = $this->createForm(MeetingType::class, $meeting, array(
+            'user' => $this->get('security.token_storage')->getToken()->getUser()
+        ));
+
         $customerId = $request->get('meeting')['hostess'];
 
         if(!empty($customerId)) {
@@ -133,7 +136,9 @@ r     * @Template()
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
         }
-        $form = $this->createForm(MeetingEditType::class, $meeting);
+        $form = $this->createForm(MeetingEditType::class, $meeting, array(
+            'user' => $this->get('security.token_storage')->getToken()->getUser()
+        ));
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
