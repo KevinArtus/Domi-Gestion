@@ -8,7 +8,6 @@ use DomiGestion\RhBundle\Form\Type\ClientType;
 use DomiGestion\RhBundle\Form\Type\HostessType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use DomiGestion\RhBundle\Form\Type\CustomerEditType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
