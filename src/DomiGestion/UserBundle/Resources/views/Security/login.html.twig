@@ -1,39 +1,30 @@
-{# On étend notre layout #}
-{% extends "DomiGestionUserBundle::layout.html.twig" %}
-
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends "::base.html.twig" %}
 
 {% block body %}
-    <body class='login theme-fime'>
-    <div class="wrapper">
-        <h1>{% block page_title %}{{ 'DomiGestionUserBundle.portal.login.page_title'|trans }}{% endblock page_title %}</h1>
-        <div class="login-body">
-            <h2>{{ 'DomiGestionUserBundle.portal.login.title'|trans }}</h2>
-            {% if error %}
-                <div class="alert alert-error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-            {% endif %}
-            <form action="{{ path('fos_user_security_check') }}" method="post" class='form-validate'>
-                <div class="control-group">
-                    <div class="email controls">
-                        <input type="text" name="_username" value="{{ last_username }}" placeholder="{{ 'DomiGestionUserBundle.portal.login.username'|trans }}" class='input-block-level' data-rule-required="true" data-rule-email="true">
-                    </div>
+    {% block fos_user_content %}
+        {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+        <form action="{{ path("fos_user_security_check") }}" method="post" class="form-signin">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            <div class="login-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    <label for="username">{{ 'security.login.username'|trans }}</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                    <label for="password">{{ 'security.login.password'|trans }}</label>
+                    <input type="password" id="password" name="_password" required="required" />
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                    <input type="submit" class="login login-submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                </form>
+                <div class="login-help">
+                    <a href="{{ path('fos_user_registration_register') }}">Register</a> - <a href="{{ path('fos_user_resetting_request') }}">Forgot Password</a>
                 </div>
-                <div class="control-group">
-                    <div class="pw controls">
-                        <input type="password" name="_password" placeholder="{{ 'DomiGestionUserBundle.portal.login.password'|trans }}" class='input-block-level' data-rule-required="true" >
-                    </div>
-                </div>
-                <div class="submit">
-                    <div class="remember">
-                        <input type="checkbox" name="_remember_me" class='icheck-me' data-skin="square" data-color="blue" id="remember" /> <label for="remember">{{ 'DomiGestionUserBundle.portal.login.remember_me'|trans }}</label>
-                    </div>
-                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-                    <input type="submit" value="{{ 'DomiGestionUserBundle.portal.login.button'|trans }}" class='btn btn-primary' />
-                </div>
-            </form>
-            {#<div class="forget">#}
-                {#<a href="#"><span>{{ 'fime.portal.login.form.forgot_password'|trans }}</span></a>#}
-            {#</div>#}
-        </div>
-    </div>
-    </body>
+            </div>
+        </form>
+    {% endblock fos_user_content %}
 {% endblock body %}
+
+

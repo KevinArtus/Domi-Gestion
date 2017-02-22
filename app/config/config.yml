@@ -83,6 +83,9 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: DomiGestion\UserBundle\Entity\User
+    registration:
+        form:
+            type: DomiGestion\UserBundle\Form\Type\RegistrationType
 
 #fos_elastica:
 #    clients:
