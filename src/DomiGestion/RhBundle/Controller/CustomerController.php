@@ -9,18 +9,17 @@ use DomiGestion\RhBundle\Form\Type\HostessType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use DomiGestion\RhBundle\Form\Type\CustomerEditType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 /**
  * Customer controller.
- *
- * @Route("/Customer")
  */
 class CustomerController extends Controller
 {
     /**
      * Liste toutes les clientes
      *
-     * @Route("/", name="customer")
      * @Method("GET")
      * @Template()
      */
@@ -109,7 +108,6 @@ class CustomerController extends Controller
     /**
      * Finds and displays a Customer entity.
      *
-     * @Route("/{reference}", name="customer_show")
      * @Method("GET")
      * @Template()
      */
@@ -144,9 +142,6 @@ class CustomerController extends Controller
 
     /**
      * Displays a form to edit an existing Customer entity.
-     *
-     * @Route("/{id}/edit", name="customer_edit")
-     * @Template()
      */
     public function editAction(Request $request, $id)
     {
@@ -157,7 +152,11 @@ class CustomerController extends Controller
             throw $this->createNotFoundException('Unable to find Customer entity.');
         }
 
-        $form = $this->createForm(CustomerEditType::class, $customer);
+        if ($customer instanceof Client) {
+            $form = $this->createForm(ClientType::class, $customer);
+        } else {
+            $form = $this->createForm(HostessType::class, $customer);
+        }
 
         $form->handleRequest($request);
 
@@ -168,10 +167,11 @@ class CustomerController extends Controller
             return $this->redirect($this->generateUrl('stanhome_rh_customer_show', array('id' => $customer->getId())));
         }
 
-        return array(
-            'customer' => $customer,
-            'form'     => $form->createView(),
-        );
+        if ($customer instanceof Client) {
+            return $this->render('@DomiGestionRh/Customer/addClient.html.twig', array('customer' => $customer, 'form' => $form->createView()));
+        } else {
+            return $this->render('@DomiGestionRh/Customer/addHostess.html.twig', array('customer' => $customer, 'form' => $form->createView()));
+        }
     }
 
     /**
