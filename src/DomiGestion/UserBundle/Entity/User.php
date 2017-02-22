@@ -206,132 +206,14 @@ class User extends BaseUser
 
         return $this;
     }
-//
-//    /**
-//     * @ORM\Column(name="username", type="string", length=255, unique=true)
-//     */
-//    private $username;
-//
-//    /**
-//     * @ORM\Column(name="password", type="string", length=255)
-//     */
-//    private $password;
-//
-//    /**
-//     * @ORM\Column(name="salt", type="string", length=255)
-//     */
-//    private $salt;
-//
-//    /**
-//     * @ORM\Column(name="roles", type="array")
-//     */
-//    private $roles = array();
-//
-//    // Les getters et setters
-//
-//    public function eraseCredentials()
-//    {
-//    }
-//
-//    /**
-//     * Get username
-//     *
-//     * @return string
-//     */
-//    public function getUsername()
-//    {
-//        return $this->username;
-//    }
-//
-//    /**
-//     * Get salt
-//     *
-//     * @return string
-//     */
-//    public function getSalt()
-//    {
-//        return $this->salt;
-//    }
-//
-//    /**
-//     * Get username
-//     *
-//     * @return string
-//     */
-//    public function getRoles()
-//    {
-//        return $this->roles;
-//    }
-//
-//    /**
-//     * Get username
-//     *
-//     * @return string
-//     */
-//    public function getPassword()
-//    {
-//        return $this->password;
-//    }
-//
-//    /**
-//     * Get id
-//     *
-//     * @return integer
-//     */
-//    public function getId()
-//    {
-//        return $this->id;
-//    }
-//
-//    /**
-//     * Set username
-//     *
-//     * @param string $username
-//     * @return User
-//     */
-//    public function setUsername($username)
-//    {
-//        $this->username = $username;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Set password
-//     *
-//     * @param string $password
-//     * @return User
-//     */
-//    public function setPassword($password)
-//    {
-//        $this->password = $password;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Set salt
-//     *
-//     * @param string $salt
-//     * @return User
-//     */
-//    public function setSalt($salt)
-//    {
-//        $this->salt = $salt;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Set roles
-//     *
-//     * @param array $roles
-//     * @return User
-//     */
-//    public function setRoles($roles)
-//    {
-//        $this->roles = $roles;
-//
-//        return $this;
-//    }
+
+    // OVERRIDE USERNAME
+    public function setEmail($email)
+    {
+        $email = is_null($email) ? '' : $email;
+        parent::setEmail($email);
+        $this->setUsername($email);
+
+        return $this;
+    }
 }
