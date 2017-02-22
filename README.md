@@ -1,6 +1,6 @@
 Stanhome
 ========
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/3ae1ff92-01d9-4281-9614-f0a11535965f/big.png)](https://insight.sensiolabs.com/projects/3ae1ff92-01d9-4281-9614-f0a11535965f) |
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/83ddaf3a-66d6-48a9-924d-c2933ff43a27/big.png)](https://insight.sensiolabs.com/projects/83ddaf3a-66d6-48a9-924d-c2933ff43a27) |
 
 Application permettant de gérer l'activité d'une conseillère pour des réunions à domicile.
 
