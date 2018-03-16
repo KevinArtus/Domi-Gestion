@@ -25,6 +25,7 @@ DomiGestionRhBundle:
             email: "Mail"
             address: "Adresse"
             km: "km"
+            no_address: "Aucune adresse de définie"
             montantKm: "Montant KM"
             comment: "Commentaire"
             benefit: "Bénéfice"

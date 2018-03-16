@@ -77,17 +77,25 @@
                                 {#<div class="right"><a href="{{ path('fime_rh_company_create') }}"><i class="icon-office"></i><i class="icon-plus"></i></a></div>#}
                                 <h3 class="">{{ 'DomiGestionRhBundle.customers.page_show.address'|trans }}</h3>
                             </div>
-                            <div class="col-md-5 panel panel-body">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="col-md-offset-1">{{ customer.address }}</p>
-                                        <p class="col-md-offset-1">{{ customer.cp }}<span class="col-md-offset-1">{{ customer. city }}</span></p>
-                                        {% if customer.km is defined %}
-                                            <p class="col-md-offset-1">{{ customer.km }}  {{ 'DomiGestionRhBundle.customers.page_show.km'|trans }}</p>
-                                        {% endif %}
+                            {% if customer.comment is defined %}
+                                <div class="col-md-5 panel panel-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="col-md-offset-1">{{ customer.address }}</p>
+                                            <p class="col-md-offset-1">{{ customer.cp }}<span class="col-md-offset-1">{{ customer. city }}</span></p>
+                                            {% if customer.km is defined %}
+                                                <p class="col-md-offset-1">{{ customer.km }}  {{ 'DomiGestionRhBundle.customers.page_show.km'|trans }}</p>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
+                            {% else %}
+                            <div class="col-md-5 panel panel-body">
+                                <div class="row">
+                                    <p>{{ 'DomiGestionRhBundle.customers.page_show.no_address'|trans }}</p>
+                                </div>
                             </div>
+                            {% endif %}
                             <div class="col-md-7">
                                 {#<iframe class="right" frameborder="0" style="border:0"#}
                                         {#src="https://www.google.com/maps/embed/v1/place?q={{ customer.inlineAddress }}key=AIzaSyCJgkR957zlNVpVXcnJTWy5k_Pt8RDtoFk"></iframe>#}
