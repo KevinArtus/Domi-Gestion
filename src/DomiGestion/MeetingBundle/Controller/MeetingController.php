@@ -25,7 +25,7 @@ class MeetingController extends Controller
      *
      * @Route("/", name="meeting")
      * @Method("GET")
-     * @Template()
+     * @Template("DomiGestionMeetingBundle:Meeting:index.html.twig")
      */
     public function indexAction(Request $request)
     {
@@ -48,7 +48,7 @@ class MeetingController extends Controller
     /**
      * Affiche le formulaire de création d'une entité Meeting
      *
-     * @Template()
+     * @Template("DomiGestionMeetingBundle:Meeting:add.html.twig")
      */
     public function addAction(Request $request)
     {
@@ -107,7 +107,7 @@ class MeetingController extends Controller
      * Trouve et affiche les informations d'une entitée Meeting
      *
      * @Method("GET")
-     * @Template()
+     * @Template("DomiGestionMeetingBundle:Meeting:show.html.twig")
      */
     public function showAction(Request $request, $id)
     {
@@ -127,7 +127,7 @@ class MeetingController extends Controller
     /**
      * Displays a form to edit an existing Customer entity.
      *
-r     * @Template()
+     * @Template("DomiGestionMeetingBundle:Meeting:edit.html.twig")
      */
     public function editAction(Request $request, $id)
     {

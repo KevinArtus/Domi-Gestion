@@ -20,7 +20,6 @@ class CustomerController extends Controller
      * Liste toutes les clientes
      *
      * @Method("GET")
-     * @Template()
      */
     public function listClientAction(Request $request)
     {
@@ -37,7 +36,6 @@ class CustomerController extends Controller
      * Liste toutes les hôtesses
      *
      * @Method("GET")
-     * @Template()
      */
     public function listHostessAction(Request $request)
     {
@@ -53,7 +51,7 @@ class CustomerController extends Controller
     /**
      * Displays a form to create a new Hostess.
      *
-     * @Template()
+     * @Template("DomiGestionRhBundle:Customer:addHostess.html.twig")
      */
     public function addHostessAction(Request $request)
     {
@@ -80,7 +78,7 @@ class CustomerController extends Controller
     /**
      * Displays a form to create a new Client.
      *
-     * @Template()
+     * @Template("DomiGestionRhBundle:Customer:addClient.html.twig")
      */
     public function addClientAction(Request $request)
     {
@@ -108,7 +106,7 @@ class CustomerController extends Controller
      * Finds and displays a Customer entity.
      *
      * @Method("GET")
-     * @Template()
+     * @Template("DomiGestionRhBundle:Customer:show.html.twig")
      */
     public function showAction(Request $request, $id)
     {
