@@ -12,7 +12,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 /**
- * Customer controller.
+ * Class CustomerController
+ * @package DomiGestion\RhBundle\Controller
+ * 
+ * @author Kévin A.
  */
 class CustomerController extends Controller
 {
@@ -71,7 +74,7 @@ class CustomerController extends Controller
 
         return array(
             'entity' => $hostess,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         );
     }
 
@@ -98,7 +101,7 @@ class CustomerController extends Controller
 
         return array(
             'entity' => $client,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         );
     }
 
@@ -118,12 +121,12 @@ class CustomerController extends Controller
             throw $this->createNotFoundException('Unable to find Customer entity.');
         }
 
-        $adress = str_replace(" ", "_",$customer->getAddress());
+        $adress = str_replace(" ", "_", $customer->getAddress());
         $adress = utf8_encode($adress);
         $adress = urlencode($adress);
         $cp = $customer->getCp();
 
-        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$adress."".$cp."&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
+        $coordpolaire = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $adress . "" . $cp . "&key=AIzaSyCL6CN-w4FFCJ26udqHyMVX21rTbm7gVNc");
         $json = json_decode($coordpolaire);
 
         if ($json->status != 'ZERO_RESULTS') {

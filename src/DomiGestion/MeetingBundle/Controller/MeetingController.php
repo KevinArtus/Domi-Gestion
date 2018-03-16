@@ -17,6 +17,8 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 /**
  * Class MeetingController
  * @package DomiGestion\MeetingBundle\Controller
+ *
+ * @author Kévin A.
  */
 class MeetingController extends Controller
 {
@@ -33,11 +35,11 @@ class MeetingController extends Controller
 
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')) {
 
-            $pastMeeting   = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findPastMeeting($this->get('security.token_storage')->getToken()->getUser());
+            $pastMeeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findPastMeeting($this->get('security.token_storage')->getToken()->getUser());
             $meetingToCome = $em->getRepository('DomiGestionMeetingBundle:Meeting')->findMeetingToCome($this->get('security.token_storage')->getToken()->getUser());
 
             return array(
-                'pastMeetings'  => $pastMeeting,
+                'pastMeetings' => $pastMeeting,
                 'meetingToCome' => $meetingToCome,
             );
         } else {
@@ -52,15 +54,15 @@ class MeetingController extends Controller
      */
     public function addAction(Request $request)
     {
-        $em         = $this->getDoctrine()->getManager();
-        $meeting    = new Meeting();
-        $form       = $this->createForm(MeetingType::class, $meeting, array(
+        $em = $this->getDoctrine()->getManager();
+        $meeting = new Meeting();
+        $form = $this->createForm(MeetingType::class, $meeting, array(
             'user' => $this->get('security.token_storage')->getToken()->getUser()
         ));
 
         $customerId = $request->get('meeting')['hostess'];
 
-        if(!empty($customerId)) {
+        if (!empty($customerId)) {
             if ($em->getRepository('DomiGestionRhBundle:Customer')->find($customerId) instanceof Client) {
                 $client = $em->getRepository('DomiGestionRhBundle:Customer')->find($customerId);
 
@@ -82,7 +84,7 @@ class MeetingController extends Controller
                 $em->flush();
 
                 $data = $request->get('meeting');
-                $data['hostess']= $hostess->getId();
+                $data['hostess'] = $hostess->getId();
                 $request->request->set('meeting', $data);
             }
 
@@ -99,7 +101,7 @@ class MeetingController extends Controller
 
         return array(
             'entity' => $meeting,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         );
     }
 
@@ -131,7 +133,7 @@ class MeetingController extends Controller
      */
     public function editAction(Request $request, $id)
     {
-        $em      = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine()->getManager();
         $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
@@ -142,12 +144,12 @@ class MeetingController extends Controller
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $user   = $this->get('security.token_storage')->getToken()->getUser();
+            $user = $this->get('security.token_storage')->getToken()->getUser();
             $tauxKm = $user->getTauxKm();
 
             $meeting->setUser($user);
-            $meeting->setMontantKm($meeting->getNbKm()*$tauxKm);
-            $meeting->setProfit($meeting->getMontantTtc()-$meeting->getMontantHt());
+            $meeting->setMontantKm($meeting->getNbKm() * $tauxKm);
+            $meeting->setProfit($meeting->getMontantTtc() - $meeting->getMontantHt());
             $user->setSalary($user->getSalary() + $meeting->getProfit());
             $user->setTotalAmountKm($user->getTotalAmountKm() + $meeting->getMontantKm());
             $user->setTotalKm($user->getTotalKm() + $meeting->getNbKm());
@@ -160,7 +162,7 @@ class MeetingController extends Controller
 
         return array(
             'meeting' => $meeting,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         );
     }
 
@@ -173,7 +175,7 @@ class MeetingController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $meeting = $em->getRepository('DomiGestionMeetingBundle:Meeting')->find($id);
-        $user   = $this->get('security.token_storage')->getToken()->getUser();
+        $user = $this->get('security.token_storage')->getToken()->getUser();
 
         if (!$meeting) {
             throw $this->createNotFoundException('Unable to find Meeting entity.');
@@ -193,7 +195,8 @@ class MeetingController extends Controller
     /**
      * Search meeting
      */
-    public function searchAction(Request $request) {
+    public function searchAction(Request $request)
+    {
         $searchString = $request->get("text", "");
         $customers = $this->get("stanhome.rh.search.customer_Search")->search($searchString, 15);
 
